@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5me.onl</title>
+    <link rel="stylesheet" href="libs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/css/all.css">
+    <link rel="stylesheet" href="libs/css/all.min.css">
+    <link rel="stylesheet" href="libs/css/login.css">
+    <script src="https://kit.fontawesome.com/dacb7735c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <wrapper>
+        
+        <section class="header">
+            <div class="custom-container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="logo">
+                            <a href="#"><img src="img/5me.onl.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="img/call.svg" alt=""></a>
+                                    <p>(+1) 514 697 4413</p>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/message.svg" alt=""></a>
+                                    <p>contact@newgenpharma.com</p>
+                                </li>
+                                <li>
+                                    <div class="span"></div>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/info.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="login-section">
+            <div class="Form">
+                <form action="post" class="login-form" class="col-lg-12">
+                    <h1>Đăng nhập</h1>
+                    <div class="line">
+                        <img src="img/line.svg" alt="">
+                    </div>
+                    <p>Bạn có tài khoản chưa ?<span><a href="#">Tạo tài khoản</a></span></p>
+                    <div class="form-group">
+                        <label for="username">Email/Tên đăng nhập</label>
+                        <input type="text" name="username" id="username" class="form-control" placeholder="abc@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Mật khẩu</label>
+                        <div class="password-form">
+                            <input type="password" name="password" autocomplete="current-password" required="" id="id_password" class="form-control">
+                            <i class="fas fa-eye" id="togglePassword"></i>
+                        </div>
+                    </div>
+                    <div class="save-pwd">
+                        <div class="remember-me">
+                            <input type="checkbox" name="remember-me" id="remember-me" class="save">
+                            <label for="remember-me">Lưu lại</label>
+                        </div>
+                        <div class="forget-pwd">
+                            <a href="#">Quên mật khẩu ?</a>
+                        </div>
+                    </div>
+                    <input type="submit" name="submit" value="Đăng nhập" class="submit">
+                    <div id="or">
+                        <span class="line-red"></span>
+                        <span class="or">Hoặc</span>
+                        <span class="line-red"></span>
+                    </div>
+                    <div class="facebook-btn">
+                        <a href="">
+                            <img src="img/facebook.svg" alt="">
+                            <p>Đăng nhập bằng Facebook</p>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="footer">
+            <p>Copyright © 5me.onl.All Reserved</p>
+        </section>
+    </wrapper>
+
+
+
+    <script src="libs/js/jquery.min.js"></script>
+    <script src="libs/js/script.js"></script>
+</body>
+</html>
