@@ -332,6 +332,445 @@ wrapper{
     font-size: 16px;
 }
 
+.form-group input{
+    padding: 12px 12px;
+}
+
+.form-group label{
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(101, 1, 7, 0.87);
+}
+
+
+
+.password-form{
+    display: flex;
+}
+
+.password-form i{
+    margin-left: -30px; 
+    cursor: pointer;
+    line-height: 50px;
+    color: #FE616B;
+}
+
+.save-pwd{
+    display: flex;
+    justify-content: space-between;
+}
+
+.save-pwd .remember-me input.save{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.save-pwd .remember-me label{
+    line-height: 24px;
+    margin: 0px;
+}
+
+.forget-pwd a{
+    line-height: 24px;
+}
+
+.email{
+    display: flex;
+}
+
+.email p{
+    margin-left: -72px;
+    cursor: pointer;
+    color: #FE616B;
+    padding-top: 17px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.get-code{
+    display: flex;
+}
+
+.get-code .code{
+    flex: 1;
+}
+
+.line-red{
+    width: 2px;
+    height: 84px;
+    background: #FE616B;
+    opacity: 0.38;
+    border-radius: 1000px;
+    margin: 0 16px;
+}
+
+
+
+.submit{
+    width: 100%;
+    background: linear-gradient(180deg, #FE858D 0%, #FE616B 100%);
+    border-radius: 8px;
+    border:0px;
+    padding: 13px;
+    color: #ffff;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 73px;
+    margin-bottom: 24px;
+}
+
+.footer p{
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(101, 1, 7, 0.38);
+
+/* font css */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-Black.woff2') format('woff2'),
+        url('../../font/Montserrat-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-ExtraLightItalic.woff2') format('woff2'),
+        url('../../font/Montserrat-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-BlackItalic.woff2') format('woff2'),
+        url('../../font/Montserrat-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-ExtraLight.woff2') format('woff2'),
+        url('../../font/Montserrat-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-ExtraBoldItalic.woff2') format('woff2'),
+        url('../../font/Montserrat-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-Italic.woff2') format('woff2'),
+        url('../../font/Montserrat-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-Bold.woff2') format('woff2'),
+        url('../../font/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-ExtraBold.woff2') format('woff2'),
+        url('../../font/Montserrat-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-BoldItalic.woff2') format('woff2'),
+        url('../../font/Montserrat-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-Light.woff2') format('woff2'),
+        url('../../font/Montserrat-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-Medium.woff2') format('woff2'),
+        url('../../font/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-MediumItalic.woff2') format('woff2'),
+        url('../../font/Montserrat-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-LightItalic.woff2') format('woff2'),
+        url('../../font/Montserrat-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-Regular.woff2') format('woff2'),
+        url('../../font/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../../font/Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-ThinItalic.woff2') format('woff2'),
+        url('../../font/Montserrat-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-SemiBoldItalic.woff2') format('woff2'),
+        url('../../font/Montserrat-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-Thin.woff2') format('woff2'),
+        url('../../font/Montserrat-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{font-family:"Font Awesome 5 Pro";font-style:normal;font-weight:300;font-display:auto;src:url(../webfonts/fa-light-300.eot);src:url(../webfonts/fa-light-300.eot?#iefix) format("embedded-opentype"),url(../webfonts/fa-light-300.woff2) format("woff2"),url(../webfonts/fa-light-300.woff) format("woff"),url(../webfonts/fa-light-300.ttf) format("truetype"),url(../webfonts/fa-light-300.svg#fontawesome) format("svg")}.fal{font-weight:300}@font-face{font-family:"Font Awesome 5 Pro";font-style:normal;font-weight:400;font-display:auto;src:url(../webfonts/fa-regular-400.eot);src:url(../webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"),url(../webfonts/fa-regular-400.woff2) format("woff2"),url(../webfonts/fa-regular-400.woff) format("woff"),url(../webfonts/fa-regular-400.ttf) format("truetype"),url(../webfonts/fa-regular-400.svg#fontawesome) format("svg")}.fal,.far{font-family:"Font Awesome 5 Pro"}.far{font-weight:400}@font-face{font-family:"Font Awesome 5 Pro";font-style:normal;font-weight:900;font-display:auto;src:url(../webfonts/fa-solid-900.eot);src:url(../webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(../webfonts/fa-solid-900.woff2) format("woff2"),url(../webfonts/fa-solid-900.woff) format("woff"),url(../webfonts/fa-solid-900.ttf) format("truetype"),url(../webfonts/fa-solid-900.svg#fontawesome) format("svg")}.fa,.fas{font-family:"Font Awesome 5 Pro";font-weight:900}
+
+
+/* reset style */
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+}
+
+body{
+    color: rgba(101, 1, 7, 0.87);
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0; padding: 0;
+    font-family: 'Montserrat';
+}
+
+ul,li{
+    list-style: none;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+/* Main css */
+body{
+    background-image: url(/5me.onl/Rectangle.png);
+    background-size: cover;
+}
+
+.custom-container{
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    padding:0 80px;
+}
+
+wrapper{
+    width: 100%;
+    max-width: 1440px;
+}
+.form-background {
+    max-width: 1066px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    
+}
+.form-background img {
+    position: absolute;
+    width: 100%;
+    top: 112px;
+    opacity: 0.4;
+}
+
+.header{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+    margin-bottom: 80px;
+}
+
+.logo {
+    padding: 24px 0px;
+}
+
+.logo img{
+    width: 200px;
+    height: 61px;
+}
+
+.contact{
+    padding: 40px 0px 37px 100px;
+}
+
+.contact ul,li{
+    display: flex;
+}
+
+.contact ul{
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.contact li a{
+    background:rgba(255, 255, 255, 0.24);
+    padding: 8px;
+    border-radius: 50%;
+    line-height: 0;
+}
+
+.contact li a img{
+    line-height: 14px;
+    width: 12px;
+    height: 12px;
+}
+
+.contact li p{
+    line-height: 28px;
+    margin-left: 8px;
+    font-size: 14px;
+    color:rgba(255, 255, 255, 0.87); ;
+}
+
+.contact li .span{
+    line-height: 27px;
+    width: 2px;
+    height: 27px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+#login-section{
+    justify-content: center;
+}
+
+.Form{
+    width: 100%;
+    max-width: 519px;
+    margin: 0 auto;
+}
+
+.form-control{
+    padding: .375rem 12px;
+}
+
+.form-control label{
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(101, 1, 7, 0.87);
+}
+
+.login-form{
+    background:#ffff;
+    border-radius: 40px;
+    /* text-align: center; */
+    position: relative;
+    padding: 40px 24px;
+}
+
+.login-form h1{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 32px;
+}
+
+.login-form .line{
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.login-form p{
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.login-form p span{
+    margin-left: 10px;
+}
+
+.login-form a{
+    color:  #FE616B;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group ::placeholder{
+    color:rgba(101, 1, 7, 0.87);
+    font-size: 16px;
+}
+
 .password-form{
     display: flex;
 }
@@ -393,6 +832,11 @@ wrapper{
     margin: 0 16px;
 }
 
+.form-control label{
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(101, 1, 7, 0.87);
+}
 
 
 .submit{
