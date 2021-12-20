@@ -211,6 +211,20 @@ wrapper{
     max-width: 1440px;
 }
 
+.form-background {
+    max-width: 1066px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    
+}
+.form-background img {
+    position: absolute;
+    width: 100%;
+    top: 112px;
+    opacity: 0.4;
+}
+
 .header{
     border-bottom: 1px solid rgba(255, 255, 255, 0.24);
     margin-bottom: 112px;
