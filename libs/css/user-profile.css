@@ -161,7 +161,10 @@
     font-display: swap;
 }
 
+
+
 @font-face{font-family:"Font Awesome 5 Pro";font-style:normal;font-weight:300;font-display:auto;src:url(../webfonts/fa-light-300.eot);src:url(../webfonts/fa-light-300.eot?#iefix) format("embedded-opentype"),url(../webfonts/fa-light-300.woff2) format("woff2"),url(../webfonts/fa-light-300.woff) format("woff"),url(../webfonts/fa-light-300.ttf) format("truetype"),url(../webfonts/fa-light-300.svg#fontawesome) format("svg")}.fal{font-weight:300}@font-face{font-family:"Font Awesome 5 Pro";font-style:normal;font-weight:400;font-display:auto;src:url(../webfonts/fa-regular-400.eot);src:url(../webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"),url(../webfonts/fa-regular-400.woff2) format("woff2"),url(../webfonts/fa-regular-400.woff) format("woff"),url(../webfonts/fa-regular-400.ttf) format("truetype"),url(../webfonts/fa-regular-400.svg#fontawesome) format("svg")}.fal,.far{font-family:"Font Awesome 5 Pro"}.far{font-weight:400}@font-face{font-family:"Font Awesome 5 Pro";font-style:normal;font-weight:900;font-display:auto;src:url(../webfonts/fa-solid-900.eot);src:url(../webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(../webfonts/fa-solid-900.woff2) format("woff2"),url(../webfonts/fa-solid-900.woff) format("woff"),url(../webfonts/fa-solid-900.ttf) format("truetype"),url(../webfonts/fa-solid-900.svg#fontawesome) format("svg")}.fa,.fas{font-family:"Font Awesome 5 Pro";font-weight:900}
+
 
 
 
@@ -169,6 +172,8 @@
 *{
     box-sizing: border-box;
     -webkit-box-sizing: border-box; 
+    transition: all .2s linear;
+    font-family: 'Montserrat';
 }
 
 body{
@@ -176,7 +181,6 @@ body{
     font-size: 14px;
     line-height: 17px;
     margin: 0; padding: 0;
-    font-family: 'Montserrat';
 }
 
 ul,li{
@@ -191,14 +195,11 @@ a{
     text-decoration: none;
 }
 
-
-
-
-/* Main css */
-body{
-    background-image: url(/5me.onl/Rectangle.png);
-    background-size: cover;
+input:focus{
+    outline: none;
 }
+
+ /* header css start */ 
 
 .custom-container{
     max-width: 1280px;
@@ -206,221 +207,335 @@ body{
     width: 100%;
 }
 
-wrapper{
+.wrapper{
     width: 100%;
     max-width: 1440px;
 }
 
 .header{
-    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
-    margin-bottom: 112px;
+    
 }
 
 .logo {
-    padding: 24px 0px;
+    padding: 14px 0px;
 }
 
 .logo img{
-    width: 200px;
-    height: 61px;
+    width: 167px;
+    height: 51px;
 }
 
-.contact{
-    padding: 40px 0px 37px 100px;
+.navbar{
+    margin: 34px 0;
+    padding: 0px 20px
 }
 
-.contact ul,li{
-    display: flex;
-}
-
-.contact ul{
-    justify-content: space-between;
-    padding: 0px;
-}
-
-.contact li a{
-    background:rgba(255, 255, 255, 0.24);
-    padding: 8px;
-    border-radius: 50%;
-    line-height: 0;
-}
-
-.contact li a img{
-    line-height: 14px;
-    width: 12px;
-    height: 12px;
-}
-
-.contact li p{
-    line-height: 28px;
-    margin-left: 8px;
-    font-size: 14px;
-    color:rgba(255, 255, 255, 0.87); ;
-}
-
-.contact li .span{
-    line-height: 27px;
-    width: 2px;
-    height: 27px;
-    background: rgba(255, 255, 255, 0.4);
-}
-
-.form-group label{
-    font-weight: 600;
-    font-size: 14px;
-    color: rgba(101, 1, 7, 0.87);
-}
-
-.form-group input{
-    padding: 12px 12px;
-}
-
-#login-section{
-    justify-content: center;
-}
-
-.Form{
-    width: 100%;
-    max-width: 519px;
-    margin: 0 auto;
-}
-
-.login-form{
-    background:#ffff;
-    border-radius: 40px;
-    /* text-align: center; */
-    position: relative;
-    padding: 40px 24px;
-}
-
-.login-form h1{
-    font-size: 24px;
-    font-weight: bold;
+.navbar .navbar-nav{
+    flex: 1;
     text-align: center;
-    line-height: 32px;
 }
 
-.login-form .line{
-    text-align: center;
-    margin-bottom: 24px;
-}
-
-.login-form p{
-    font-size: 14px;
-    margin-bottom: 14px;
-}
-
-.login-form a{
-    color:  #FE616B;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.group ::placeholder{
-    color:rgba(101, 1, 7, 0.87);
+.navbar .navbar-nav a{
     font-size: 16px;
+    text-decoration: none;
+    color: rgba(101, 1, 7, 0.6);
 }
 
-.password-form{
-    display: flex;
+.navbar .navbar-nav a:hover{
+    color: #FE616B;
+    font-weight: 600;
 }
 
-.password-form i{
-    margin-left: -30px; 
-    cursor: pointer;
-    line-height: 50px;
+.underline{
+    display: block;
+    width: 48px;
+    height: 4px;
     color: #FE616B;
 }
 
-.save-pwd{
+.user-nav{
     display: flex;
-    justify-content: space-between;
+    float: right;
 }
 
-.save-pwd .remember-me input.save{
-    width: 20px;
-    height: 20px;
+.user-nav .icon{
+    padding: 18px 0;
+    margin-right: 12px;
+    position: relative;
+    line-height: 50px;
+}
+
+.icon span{
+    position: absolute;
+    top: 26px;
+    right: 5px;
+    width: 8px;
+    height: 8px;
+    background: #FE616B;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box; 
     border-radius: 50%;
 }
 
-.save-pwd .remember-me label{
-    line-height: 24px;
-    margin: 0px;
-}
-
-.forget-pwd a{
-    line-height: 24px;
-}
-
-#or{
-    display: flex;
-    justify-content: center;
-    margin: 20px 0px;
-    align-items: center;
-}
-
-#or .line-red {
-    background: rgba(101, 1, 7, 0.16);
-    width: 128px;
-    height: 1px;
-}
-
-#or .or{
-    padding: 0 10px;
-}
-
-.submit{
-    width: 100%;
-    background: linear-gradient(180deg, #FE858D 0%, #FE616B 100%);
-    border-radius: 8px;
-    border:0px;
-    padding: 13px;
-    color: #ffff;
-    font-weight: 600;
-    font-size: 16px;
-    margin-top: 24px;
-    cursor: pointer;
-}
-
-.facebook-btn{
-    background: #FFFFFF;
-    cursor: pointer;
-    width: 100%;
-    padding: 8px;
-    border-radius: 8px;
-    box-shadow: 0 4px 5px 0 rgb(0 0 0 / 2%);
-}
-
-
-.facebook-btn a{
-    display: flex;
-    justify-content: space-between;
-    text-decoration: none;
-}
-
-.ffacebook-btn img{
-    width: 30px;
-}
-
-.facebook-btn a p{
+.user-nav .icon i{
+    width: 40px;
+    height: 40px;
+    background: rgba(254, 97, 107, 0.06);
+    border-radius: 50%;
+    color: #FE616B;
+    line-height: 40px;
     text-align: center;
-    color: rgba(101, 1, 7, 0.87);
-    font-size: 16px;
-    margin-right: 112px;
-    margin-bottom: 0;
-    line-height: 36px;
+}
+
+.user-status{
+    display: flex;
+    margin-left: 16px;
+    padding: 13px 0;
+    position: relative;
+}
+
+.user-status .img-user{
+    width: 56px;
+    height: 56px;
+    position: relative;
+    margin-right: 12px;
+    padding: 4px;
+    border-radius: 50%;
+    border: 1px solid #FE616B;
+    box-sizing: border-box;
+}
+
+.user-status .img-user img{
+    width: 100%;
+}
+
+.user-status .img-user span{
+    position: absolute;
+    top: 38px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.user-status .img-user span img{
+    width: 20px;
+    height: 20px;
+    color: #FE616B;
+}
+
+.user-status h5{
     font-weight: 500;
-}
-
-.footer {
-    text-align: center;
-    margin-top: 169px;
-    margin-bottom: 24px;
-}
-
-.footer p{
     font-size: 16px;
-    line-height: 24px;
-    color: rgba(101, 1, 7, 0.38);
+    line-height: 24px;  
+}
+
+.user-status p{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FE616B;
+}
+
+/* header css end */
+
+
+
+
+
+/* content css start */
+.content {
+    background: #f9f9f9;
+    padding-top: 40px;
+}
+
+.wall-profile{
+    padding-bottom: 121px;
+    background: #fff;
+    border-radius: 24px;
+}
+
+.wall-background{
+    position: relative;
+    
+}
+
+.wall-background .user-info a{
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px 24px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    border: 2px solid #fff;
+    text-decoration: none;
+    display: flex;
+}
+
+.wall-background a:hover{
+    font-size: 15px;
+}
+
+.wall-background a p{
+    font-size: 26px;
+    margin-right: 8px;
+}
+
+.wall-background .user-name{
 
 }
+
+.profile-detail{
+    padding:0 32px;
+    display: flex;
+    width: 100%;
+    top: 172px;
+    position: absolute;
+}
+
+.profile-detail .user-img{
+    position: relative;
+    margin-right: 38px;
+    top: -14px;
+}
+
+.profile-detail .user-img img{
+    width: 160px;
+    height: 160px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+}
+
+.profile-detail .user-info{
+    width: 100%;
+}
+
+.line1{
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+}
+
+.user-info .user-name h3{
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.user-info .user-cost{
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+
+.user-info .user-cost p{
+    font-size: 20px;
+    color: #FE616B;
+    font-weight: 700;
+}
+
+.user-info .user-cost span{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.user-info .line3{
+    display: flex;
+}
+
+.user-info .line3 .rent{
+    margin-right: 8px;
+}
+
+.user-info .line3 .rent a{
+    font-size: 16px;
+    padding: 10px 24px;
+    background:#FE616B ;
+}
+
+.user-info .line3 .donate{
+    margin-right: 8px;
+}
+
+.user-info .line3 .donate a{
+    font-size: 16px;
+    padding: 10px 24px;
+    color:#FE616B ;
+    border: 1px solid #FE616B;
+}
+
+.user-info .line3 .chat{
+    margin-right: 84px;
+}
+
+.user-info .line3 .chat a{
+    font-size: 16px;
+    padding: 10px 24px;
+    color:#650107 ;
+    border: 1px solid rgba(101, 1, 7, 0.12);
+}
+
+.user-info .line3 .chat i{
+    margin-right: 8px;
+}
+
+.follower p{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.follower .devices{
+    display: flex;
+}
+
+.follower .devices a{
+    padding: 0px;
+}
+
+
+.follower .devices a i{
+    color: #650107;
+    font-size: 14px;
+    padding: 7px;
+}
+
+
+.line {
+    width: 1px;
+    height: 32px;
+    background: #F2F2F2;
+    margin: 6px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* content css end */
