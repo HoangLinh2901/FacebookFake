@@ -628,7 +628,7 @@ a{
 
 /* Main css */
 body{
-    background-image: url(/5me.onl/Rectangle.png);
+    background-image: url(../../img/Rectangle.png);
     background-size: cover;
 }
 
