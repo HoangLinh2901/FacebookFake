@@ -1,0 +1,596 @@
+/* font css */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-Black.woff2') format('woff2'),
+        url('../../font/Montserrat-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-ExtraLightItalic.woff2') format('woff2'),
+        url('../../font/Montserrat-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-BlackItalic.woff2') format('woff2'),
+        url('../../font/Montserrat-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-ExtraLight.woff2') format('woff2'),
+        url('../../font/Montserrat-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-ExtraBoldItalic.woff2') format('woff2'),
+        url('../../font/Montserrat-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-Italic.woff2') format('woff2'),
+        url('../../font/Montserrat-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-Bold.woff2') format('woff2'),
+        url('../../font/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-ExtraBold.woff2') format('woff2'),
+        url('../../font/Montserrat-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-BoldItalic.woff2') format('woff2'),
+        url('../../font/Montserrat-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-Light.woff2') format('woff2'),
+        url('../../font/Montserrat-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-Medium.woff2') format('woff2'),
+        url('../../font/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-MediumItalic.woff2') format('woff2'),
+        url('../../font/Montserrat-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-LightItalic.woff2') format('woff2'),
+        url('../../font/Montserrat-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-Regular.woff2') format('woff2'),
+        url('../../font/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../../font/Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-ThinItalic.woff2') format('woff2'),
+        url('../../font/Montserrat-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-SemiBoldItalic.woff2') format('woff2'),
+        url('../../font/Montserrat-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../font/Montserrat-Thin.woff2') format('woff2'),
+        url('../../font/Montserrat-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face{font-family:"Font Awesome 5 Pro";font-style:normal;font-weight:300;font-display:auto;src:url(../webfonts/fa-light-300.eot);src:url(../webfonts/fa-light-300.eot?#iefix) format("embedded-opentype"),url(../webfonts/fa-light-300.woff2) format("woff2"),url(../webfonts/fa-light-300.woff) format("woff"),url(../webfonts/fa-light-300.ttf) format("truetype"),url(../webfonts/fa-light-300.svg#fontawesome) format("svg")}.fal{font-weight:300}@font-face{font-family:"Font Awesome 5 Pro";font-style:normal;font-weight:400;font-display:auto;src:url(../webfonts/fa-regular-400.eot);src:url(../webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"),url(../webfonts/fa-regular-400.woff2) format("woff2"),url(../webfonts/fa-regular-400.woff) format("woff"),url(../webfonts/fa-regular-400.ttf) format("truetype"),url(../webfonts/fa-regular-400.svg#fontawesome) format("svg")}.fal,.far{font-family:"Font Awesome 5 Pro"}.far{font-weight:400}@font-face{font-family:"Font Awesome 5 Pro";font-style:normal;font-weight:900;font-display:auto;src:url(../webfonts/fa-solid-900.eot);src:url(../webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(../webfonts/fa-solid-900.woff2) format("woff2"),url(../webfonts/fa-solid-900.woff) format("woff"),url(../webfonts/fa-solid-900.ttf) format("truetype"),url(../webfonts/fa-solid-900.svg#fontawesome) format("svg")}.fa,.fas{font-family:"Font Awesome 5 Pro";font-weight:900}
+
+
+
+
+/* reset style */
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    transition: all .2s linear;
+    font-family: 'Montserrat';
+}
+
+body{
+    color: rgba(101, 1, 7, 0.87);
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0; padding: 0;
+}
+
+ul,li{
+    list-style: none;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+/* Main style */
+
+.custom-container{
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    padding:0 80px;
+}
+
+wrapper{
+    width: 100%;
+    max-width: 1440px;
+}
+
+.header{
+    
+}
+
+.logo {
+    padding: 14px 0px;
+}
+
+.logo img{
+    width: 167px;
+    height: 51px;
+}
+
+.navbar{
+    margin: 34px 0;
+    padding: 0px 20px
+}
+
+.navbar .navbar-nav{
+    flex: 1;
+    text-align: center;
+}
+
+.navbar .navbar-nav a{
+    font-size: 16px;
+    text-decoration: none;
+    color: rgba(101, 1, 7, 0.6);
+}
+
+.navbar .navbar-nav a:hover{
+    color: #FE616B;
+    font-weight: 600;
+}
+
+.underline{
+    display: block;
+    width: 48px;
+    height: 4px;
+    color: #FE616B;
+}
+
+.user-nav{
+    display: flex;
+    float: right;
+}
+
+.user-nav .icon{
+    padding: 18px 0;
+    margin-right: 12px;
+    position: relative;
+    line-height: 50px;
+}
+
+.icon span{
+    position: absolute;
+    top: 26px;
+    right: 5px;
+    width: 8px;
+    height: 8px;
+    background: #FE616B;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box; 
+    border-radius: 50%;
+}
+
+.user-nav .icon i{
+    width: 40px;
+    height: 40px;
+    background: rgba(254, 97, 107, 0.06);
+    border-radius: 50%;
+    color: #FE616B;
+    line-height: 40px;
+    text-align: center;
+}
+
+.user-status{
+    display: flex;
+    margin-left: 16px;
+    padding: 13px 0;
+    position: relative;
+}
+
+.user-status .img-user{
+    margin-right: 12px;
+    padding: 4px;
+    border-radius: 50%;
+    border: 1px solid #FE616B;
+    box-sizing: border-box;
+}
+
+.user-status .img-user img{
+    width: 48px;
+    height: 48px;
+}
+
+.user-status .img-user span{
+    position: absolute;
+    top: 59px;
+    right: 87px;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.user-status .img-user span img{
+    width: 20px;
+    height: 20px;
+    color: #FE616B;
+}
+
+.user-status h5{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;  
+}
+
+.user-status p{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FE616B;
+}
+
+
+.content {
+    background: #f9f9f9;
+}
+
+
+
+/* col-lg-3 custom */
+.custom{
+    max-width: 20%;
+    flex: 0 0 20%;
+}
+
+.custom1{
+    max-width: 55%;
+    flex: 0 0 55%;
+}
+
+.custom2{
+    max-width: 25%;
+    flex: 0 0 25%;
+}
+
+/* col-lg-3 custom */
+
+.content .top-donate{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.content .donater h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;    
+    color: rgba(101, 1, 7, 0.24);
+}
+
+.content .donater .img-donater{
+    display: flex;
+    position: relative;
+    background: #FEFEFE;
+    border-radius: 24px;
+    padding: 8px 10px;
+}
+
+.content .donater .img-donater img{
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.content .donater .img-donater .donater2{
+    right: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.content .donater .img-donater .donater3{
+    right: 10px;
+}
+
+.content .donater .img-donater span{
+    padding: 10px 4px;
+    margin-right: 4px;
+    color: rgba(101, 1, 7, 0.38);
+    font-size: 14px;
+}
+
+.content .donater .img-donater .sidebar{
+    background: rgba(254, 97, 107, 0.08);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 31px;
+    margin-top: 4px;
+}
+
+.content .donater .img-donater .sidebar a{
+    color: #FE616B;
+}
+
+.post {
+    margin-top: 40px;
+    padding: 24px;
+    background: #FFFFFF;
+    border-radius: 24px;
+}
+
+.post .upload-time{
+    display: flex;
+}
+
+.post .upload-time .time{
+    margin-left: 12px;
+    padding: 2px 0;
+}
+
+.post .upload-time .time h5{
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+}
+
+.post .upload-time .time p{
+    font-size: 12px;
+    color: rgba(101, 1, 7, 0.38);
+}
+
+.post .status{
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.post .post-img{
+    border-radius: 16px;
+}
+
+.post .post-img img{
+    width: 100%;
+}
+
+.post .like{
+    display: flex;
+    margin-top: 15px;
+}
+
+.post .like i{
+    color: #FE616B;
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.post .like span{
+    font-weight: bold;
+}
+
+.post .like p{
+    line-height: 20px;
+    font-size: 14px;
+    color: rgba(101, 1, 7, 0.6);
+    
+}
+
+.post .write-comment{
+    display: flex;
+    margin-top: 14px;
+}
+
+.post .write-comment img{
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.post .write-comment input{
+    width: 100%;
+    background: #F5F5F5;
+    border-radius: 8px;
+    border:none;
+    padding: 10px 12px;
+    color: rgba(101, 1, 7, 0.87);
+
+}
+
+.write-comment ::placeholder{
+    color: rgba(101, 1, 7, 0.38);
+}
+
+.chat-box{
+    margin-top: 40px;
+    background: #FEFEFE;
+    border-radius: 0px 24px 24px 24px;
+    padding: 32px 12px;
+}
+
+.chat-box h3{
+    color: rgba(101, 1, 7, 0.24);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.messenger-tab{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.messenger-tab .chat-user-img{
+    margin-right: 8px;
+}
+
+.messenger-tab .chat-user-img img{
+    width: 32px;
+    height: 32px;
+}
+
+.chat-row .username{
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-row .username h5{
+    font-weight: 600;
+    font-size: 13px;
+    color: rgba(101, 1, 7, 0.38);
+    margin-bottom: 4px;
+}
+
+.chat-row .username p{
+    font-size: 13px;
+    color: rgba(101, 1, 7, 0.38);
+}
+
+.chat-box .messenger{
+    background: rgba(101, 1, 7, 0.02);
+    border-radius: 0px 16px 16px 16px;
+    padding: 8px 12px;
+}
+
+.chat-box .messenger p{
+    font-weight: 400;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.chat-box .write-chat{
+    margin-top: 28px;
+    display: flex;
+}
+
+.chat-box .write-chat input{
+    width: 82%;
+    margin-right: 10px;
+    border: none;
+    color: rgba(101, 1, 7, 0.87);
+}
+
+.write-chat ::placeholder{
+    color: rgba(101, 1, 7, 0.32);
+    font-size: 14px;
+}
+
+.chat-box .write-chat a{
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(180deg, #FE858D 0%, #FE616B 100%);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+
+.chat-box .write-chat i{
+    color: #FFFFFF;
+    font-size: 17px;
+    transform: rotate(40deg);
+}
