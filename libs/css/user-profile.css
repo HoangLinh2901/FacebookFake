@@ -329,7 +329,8 @@ input:focus{
 .user-status h5{
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;  
+    line-height: 24px; 
+    margin-bottom: 4px; 
 }
 
 .user-status p{
@@ -483,7 +484,7 @@ input:focus{
 
 .follower p{
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .follower .devices{
@@ -508,6 +509,259 @@ input:focus{
     background: #F2F2F2;
     margin: 6px 20px;
 }
+
+.profile-feed .introduce{
+    padding: 32px 24px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin-top: 31px;
+}
+
+.profile-feed .introduce h5{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(101, 1, 7, 0.24);
+}
+
+.profile-feed .introduce p{
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(101, 1, 7, 0.87);
+    margin-top: 12px;
+    line-height: 24px;
+}
+
+.profile-feed .introduce .img-produce{
+    margin-top: 16px;
+}
+
+.profile-feed .top-donate{
+    padding: 32px 24px 20px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin-top: 31px;
+}
+
+.profile-feed .top-donate h5{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(101, 1, 7, 0.24);
+}
+
+.profile-feed .top-donate .donater{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.profile-feed .top-donate .donater .donater-name{
+    display: flex;
+}
+
+.profile-feed .top-donate .donater .donater-name img{
+    margin-right: 12px;
+}
+
+.profile-feed .top-donate .donater .donater-name p{
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.profile-feed .top-donate .donater .money p{
+    font-weight: bold;
+    font-size: 16px;
+    color: rgba(101, 1, 7, 0.87);
+    line-height: 30px;
+}
+
+.profile-feed .top-donate .donater .money span{
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(101, 1, 7, 0.87);
+}
+
+.profile-feed .evaluate{
+    padding: 32px 24px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin-top: 31px;
+}
+
+.profile-feed .evaluate h5{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(101, 1, 7, 0.24);
+    margin-bottom: 12px;
+}
+
+.profile-feed .evaluate .rate {
+    display: flex;
+    border-bottom: 1px solid #E8E8E8;
+    margin-top: 16px;
+}
+
+.profile-feed .evaluate .rate .img-eva {
+    margin-right: 8px;
+}
+
+.eva-content{
+    width: 100%;
+}
+
+.profile-feed .evaluate .rate .name-eva {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-feed .evaluate .rate .name-eva p{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.profile-feed .evaluate .rate .name-eva .heart i{
+    font-size: 14px;
+    color: #FE616B;
+}
+
+.profile-feed .evaluate .rate .date-time{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-feed .evaluate .rate .date-time p{
+    font-size: 12px;
+    color: rgba(101, 1, 7, 0.38);
+}
+
+.eva-content .rate-comment p{
+    font-weight: normal;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    color: rgba(101, 1, 7, 0.87);
+}
+
+.profile-feed .write-comment{
+    display: flex;
+    margin-top: 31px;
+    padding: 24px;
+    background: #fff;
+    border-radius: 24px;
+}
+
+.profile-feed .write-comment img{
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.profile-feed .write-comment input{
+    width: 100%;
+    background: #F5F5F5;
+    border-radius: 8px;
+    border:none;
+    padding: 10px 12px;
+    color: rgba(101, 1, 7, 0.87);
+
+}
+
+.write-comment ::placeholder{
+    color: rgba(101, 1, 7, 0.38);
+}
+
+.post {
+    margin-top: 40px;
+    padding: 24px;
+    background: #FFFFFF;
+    border-radius: 24px;
+}
+
+.post .upload-time{
+    display: flex;
+}
+
+.post .upload-time .time{
+    margin-left: 12px;
+    padding: 2px 0;
+}
+
+.post .upload-time .time h5{
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+}
+
+.post .upload-time .time p{
+    font-size: 12px;
+    color: rgba(101, 1, 7, 0.38);
+}
+
+.post .status{
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.post .post-img{
+    border-radius: 16px;
+}
+
+.post .post-img img{
+    width: 100%;
+}
+
+.post .like{
+    display: flex;
+    margin-top: 15px;
+}
+
+.post .like i{
+    color: #FE616B;
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.post .like span{
+    font-weight: bold;
+}
+
+.post .like p{
+    line-height: 20px;
+    font-size: 14px;
+    color: rgba(101, 1, 7, 0.6);
+    
+}
+
+.post .write-comment1{
+    display: flex;
+    margin-top: 14px;
+}
+
+.post .write-comment1 img{
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.post .write-comment1 input{
+    width: 100%;
+    background: #F5F5F5;
+    border-radius: 8px;
+    border:none;
+    padding: 10px 12px;
+    color: rgba(101, 1, 7, 0.87);
+
+}
+
+.write-comment1 ::placeholder{
+    color: rgba(101, 1, 7, 0.38);
+}
+
 
 
 
