@@ -252,6 +252,10 @@ wrapper{
     padding: 0px;
 }
 
+.fb{
+    display: none;
+}
+
 .contact li a{
     background:rgba(255, 255, 255, 0.24);
     padding: 8px;
@@ -287,6 +291,10 @@ wrapper{
 
 .form-group input{
     padding: 12px 12px;
+}
+.form-group::placeholder{
+    font-size: 14px;
+    color: rgba(101, 1, 7, 0.87);
 }
 
 #login-section{
@@ -338,6 +346,7 @@ wrapper{
 .password-form{
     display: flex;
 }
+
 
 .password-form i{
     margin-left: -30px; 
@@ -408,19 +417,18 @@ wrapper{
 
 .facebook-btn a{
     display: flex;
-    justify-content: space-between;
+    text-align: center;
     text-decoration: none;
 }
 
-.ffacebook-btn img{
+.facebook-btn img{
     width: 30px;
+    margin-right: 80px;
 }
 
 .facebook-btn a p{
-    text-align: center;
     color: rgba(101, 1, 7, 0.87);
     font-size: 16px;
-    margin-right: 112px;
     margin-bottom: 0;
     line-height: 36px;
     font-weight: 500;
@@ -436,5 +444,116 @@ wrapper{
     font-size: 16px;
     line-height: 24px;
     color: rgba(101, 1, 7, 0.38);
+}
 
+
+/* responsive  start */
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .custom-container {
+        max-width: 1140px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .contact {
+        padding: 25px 50px 25px 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .custom-container {
+        max-width: 960px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .contact {
+        padding: 25px 50px 25px 50px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .logo {
+        text-align: center;
+    }
+
+    .contact {
+        padding: 25px 50px 25px 50px;
+    }
+}
+
+@media (min-width: 430px) and (max-width: 576px) {
+    .header {
+        margin-bottom: 50px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .contact {
+        padding: 25px 50px 25px 50px;
+    }
+
+    .contact li{
+        margin: 12px 0;
+    }
+
+    .contact li .span {
+        display: none;
+    }
+
+    .contact ul{
+        justify-content: space-between;
+        padding: 0px;
+        display: block;
+    }
+    
+    .fb{
+        display: block;
+    }
+    
+}
+
+@media(max-width: 430px) {
+    .header {
+        margin-bottom: 50px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .contact {
+        padding: 0px 25px 30px;
+    }
+
+    .contact li{
+        margin: 12px 0;
+    }
+
+    .contact li .span {
+        display: none;
+    }
+
+    .contact ul{
+        justify-content: space-between;
+        padding: 0px;
+        display: block;
+    }
+    
+    .fb{
+        display: block;
+    }
+
+    .facebook-btn img{
+        margin-right: 20px;
+    }
+    
 }

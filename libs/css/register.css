@@ -863,3 +863,115 @@ wrapper{
     color: rgba(101, 1, 7, 0.38);
 
 }
+
+
+/* responsive  start */
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .custom-container {
+        max-width: 1140px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .contact {
+        padding: 25px 50px 25px 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .custom-container {
+        max-width: 960px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .contact {
+        padding: 25px 50px 25px 50px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .logo {
+        text-align: center;
+    }
+
+    .contact {
+        padding: 25px 50px 25px 50px;
+    }
+}
+
+@media (min-width: 430px) and (max-width: 576px) {
+    .header {
+        margin-bottom: 50px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .contact {
+        padding: 25px 50px 25px 50px;
+    }
+
+    .contact li{
+        margin: 12px 0;
+    }
+
+    .contact li .span {
+        display: none;
+    }
+
+    .contact ul{
+        justify-content: space-between;
+        padding: 0px;
+        display: block;
+    }
+    
+    .fb{
+        display: block;
+    }
+    
+}
+
+@media(max-width: 430px) {
+    .header {
+        margin-bottom: 50px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .contact {
+        padding: 0px 25px 30px;
+    }
+
+    .contact li{
+        margin: 12px 0;
+    }
+
+    .contact li .span {
+        display: none;
+    }
+
+    .contact ul{
+        justify-content: space-between;
+        padding: 0px;
+        display: block;
+    }
+    
+    .fb{
+        display: block;
+    }
+
+    .facebook-btn img{
+        margin-right: 20px;
+    }
+    
+}
