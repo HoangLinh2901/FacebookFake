@@ -442,12 +442,46 @@ wrapper{
         max-width: 1140px;
     }
 
+    .header {
+        margin-bottom: 50px;
+    }
+
+    .login-form {
+        padding: 25px 24px;
+    }
+
+    #or {
+        margin: 15px 0px;
+    }
+
+    .facebook-btn {
+        padding: 8px 16px;
+    }
+
+    .login-form h1 {
+        font-size: 23px;
+    }
+
+    .login-form .line {
+        margin-bottom: 12px;
+    }
+
     .logo {
         text-align: center;
+        padding: 5px 0px;
     }
 
     .contact {
-        padding: 25px 50px 25px 50px;
+        padding: 15px 75px 15px 75px;
+    }
+
+    .fb {
+        display: block;
+    }
+
+    .footer {
+        margin-top: 50px;
+        margin-bottom: 15px;
     }
 }
 
@@ -456,40 +490,316 @@ wrapper{
         max-width: 960px;
     }
 
+    .header {
+        margin-bottom: 30px;
+    }
+
+    .logo img {
+        width: 180px;
+        height: 40px;
+    }
+
+    .login-form {
+        padding: 25px 24px;
+    }
+
+    .contact li p {
+        font-size: 13px;
+    }
+
+    #or {
+        margin: 15px 0px;
+    }
+
+    .facebook-btn {
+        padding: 8px 16px;
+    }
+
+    .login-form h1 {
+        font-size: 20px;
+    }
+
+    .login-form .line {
+        margin-bottom: 12px;
+    }
+
+    .form-group label {
+        font-size: 13px;
+    }
+
+    .form-group input {
+        font-size: 13px;
+    }
+
+    .login-form p {
+        font-size: 13px;
+        margin-bottom: 13px;
+    }
+
+    .login-form a {
+        font-size: 13px;
+    }
+
     .logo {
         text-align: center;
+        padding: 15px 0px;
+    }
+
+    .submit{
+        font-size: 15px;
+    }
+
+    .save-pwd .remember-me input.save {
+        margin-right: 10px;
+    }
+
+    .save-pwd .remember-me label {
+        font-size: 13px;
+    }
+
+    .facebook-btn a p {
+        font-size: 15px;
     }
 
     .contact {
-        padding: 25px 50px 25px 50px;
+        padding: 10px 70px 10px 70px;
+    }
+    
+
+    .footer {
+        margin-top: 35px;
+        margin-bottom: 15px;
+    }
+
+    .footer p {
+        font-size: 15px;
     }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
+    .header {
+        margin-bottom: 30px;
+    }
+    
+    .Form {
+        max-width: 485px;
+    }
+
+    .logo img {
+        width: 175px;
+        height: 40px;
+    }
+
+    .login-form {
+        padding: 25px 24px;
+    }
+
+    .contact li p {
+        font-size: 12px;
+    }
+
+    #or {
+        margin: 15px 0px;
+    }
+
+    .facebook-btn {
+        padding: 8px 16px;
+    }
+
+    .login-form h1 {
+        font-size: 19px;
+    }
+
+    .login-form .line {
+        margin-bottom: 12px;
+    }
+
+    .form-group label {
+        font-size: 13px;
+    }
+
+    .form-group input {
+        font-size: 13px;
+    }
+
+    .login-form p {
+        font-size: 13px;
+        margin-bottom: 13px;
+    }
+
+    .login-form a {
+        font-size: 13px;
+    }
+
     .logo {
         text-align: center;
+        padding: 15px 0px;
+    }
+
+    .submit{
+        font-size: 15px;
+    }
+
+    .save-pwd .remember-me input.save {
+        margin-right: 10px;
+    }
+
+    .save-pwd .remember-me label {
+        font-size: 13px;
+    }
+
+    .facebook-btn a p {
+        font-size: 15px;
     }
 
     .contact {
-        padding: 25px 50px 25px 50px;
+        padding: 10px 70px 10px 70px;
+    }
+    
+
+    .footer {
+        margin-top: 26px;
+        margin-bottom: 5px;
+    }
+
+    .footer p {
+        font-size: 15px;
     }
 }
 
 @media (min-width: 430px) and (max-width: 576px) {
+    .custom-span{
+        display: none;
+    }
+
     .header {
-        margin-bottom: 50px;
+        margin-bottom: 25px;
+    }
+    
+    .Form {
+        max-width: 405px;
+    }
+
+    .logo img {
+        width: 170px;
+        height: 31px;
+    }
+
+    .login-form {
+        padding: 25px 24px;
+    }
+
+    .contact li p {
+        font-size: 12px;
+    }
+
+    .contact li a img {
+        width: 10px;
+        height: 10px;
+    }
+
+    #or {
+        margin: 10px 0px
+    }
+
+    .facebook-btn {
+        padding: 6px 14px;
+    }
+
+    .login-form h1 {
+        font-size: 17px;
+        margin: 0;
+    }
+
+    .line img {
+        width: 73px;
+    }
+
+    .login-form .line {
+        margin-bottom: 8px;
+    }
+
+    .form-group label {
+        font-size: 12px;
+    }
+
+    .form-group input {
+        font-size: 12px;
+    }
+
+    .login-form p {
+        font-size: 11px;
+        margin-bottom: 13px;
+    }
+
+    .login-form a {
+        font-size: 12px;
     }
 
     .logo {
         text-align: center;
+        padding: 10px 0px
+    }
+
+    .save-pwd {
+        margin-top: 14px;
+    }
+
+    .submit{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .save-pwd .remember-me input.save {
+        margin-right: 10px;
+    }
+
+    .save-pwd .remember-me label {
+        font-size: 12px;
+    }
+
+    .save-pwd .remember-me input.save {
+        width: 17px;
+        height: 17px;
+    }
+
+    #or .line-red {
+        width: 110px;
+    }
+
+    #or .or {
+        font-size: 12px;
+    }
+
+    .facebook-btn a p {
+        font-size: 13px;
+    }
+
+    .facebook-btn img {
+        width: 28px;
+        margin-right: 32px;
     }
 
     .contact {
-        padding: 25px 50px 25px 50px;
+        padding: 10px 70px 10px 70px;
+    }
+    
+
+    .footer {
+        margin-top: 26px;
+        margin-bottom: 5px;
+    }
+
+    .footer p {
+        font-size: 15px;
+    }
+
+    .contact {
+        padding: 0 30px;
     }
 
     .contact li{
-        margin: 12px 0;
+        margin: 9px 0;
     }
 
     .contact li .span {
@@ -505,24 +815,155 @@ wrapper{
     .fb{
         display: block;
     }
-    
 }
 
 @media(max-width: 430px) {
+    .custom-span{
+        display: none;
+    }
+
     .header {
-        margin-bottom: 50px;
+        margin-bottom: 25px;
+    }
+    
+    .Form {
+        max-width: 300px;
+    }
+
+    .logo img {
+        width: 170px;
+        height: 31px;
+    }
+
+    .login-form {
+        padding: 10px 17px;
+    }
+
+    .contact li p {
+        font-size: 10px;
+    }
+
+    .contact li a img {
+        width: 10px;
+        height: 10px;
+    }
+
+    #or {
+        margin: 7px 0px;
+    }
+
+    .facebook-btn {
+        padding: 6px 14px;
+    }
+
+    .login-form h1 {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .line img {
+        width: 73px;
+    }
+
+    .login-form .line {
+        margin-bottom: 3px;
+    }
+
+    .form-group label {
+        font-size: 11px;
+        margin-bottom: 4px;
+    }
+
+    .form-group input {
+        font-size: 11px;
+        padding: 8px 9px;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    .password-form i {
+        line-height: 34px;
+        font-size: 13px;
+        margin-left: -24px;
+    }
+
+    .login-form p {
+        font-size: 10px;
+        margin-bottom: 4px;
+    }
+
+    .login-form a {
+        font-size: 12px;
     }
 
     .logo {
         text-align: center;
+        padding: 5px 0px
+    }
+
+    .save-pwd {
+        margin-top: 7px;
+
+    }
+
+    .submit{
+        font-size: 13px;
+        margin-top: 5px;
+        padding: 9px;
+    }
+
+    .save-pwd .remember-me input.save {
+        margin-right: 10px;
+    }
+
+    .save-pwd .remember-me label {
+        font-size: 12px;
+    }
+
+    .save-pwd .remember-me input.save {
+        width: 17px;
+        height: 17px;
+    }
+
+    #or .line-red {
+        width: 80px;
+    }
+
+    #or .or {
+        font-size: 10px;
+    }
+
+    .facebook-btn a p {
+        font-size: 10px;
+    }
+
+    .facebook-btn img {
+        width: 25px;
+        margin-right: 25px;
     }
 
     .contact {
-        padding: 0px 25px 30px;
+        padding: 10px 70px 10px 70px;
+    }
+    
+
+    .footer {
+        margin-top: 19px;
+        margin-bottom: 1px;
+    }
+
+    .footer p {
+        font-size: 11px;
+    }
+
+    .contact {
+        padding: 0 30px;
     }
 
     .contact li{
-        margin: 12px 0;
+        margin: 4px 0;
     }
 
     .contact li .span {
@@ -533,14 +974,10 @@ wrapper{
         justify-content: space-between;
         padding: 0px;
         display: block;
+        margin-bottom:7px;
     }
     
     .fb{
         display: block;
     }
-
-    .facebook-btn img{
-        margin-right: 20px;
-    }
-    
 }
