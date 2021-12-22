@@ -340,6 +340,12 @@ wrapper{
     font-size: 16px;
 }
 
+.form-group label{
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(101, 1, 7, 0.87);
+}
+
 .password-form{
     display: flex;
 }
@@ -450,6 +456,19 @@ wrapper{
         padding: 25px 24px;
     }
 
+    .line-red {
+        height: 75px;
+    }
+
+    .submit {
+        margin-top: 15px;
+    }
+
+    .form-group ::placeholder{
+        font-size: 15px;
+    }
+    
+
     #or {
         margin: 15px 0px;
     }
@@ -460,10 +479,11 @@ wrapper{
 
     .login-form h1 {
         font-size: 23px;
+        margin-bottom: 2px;
     }
 
     .login-form .line {
-        margin-bottom: 12px;
+            margin-bottom: 8px;
     }
 
     .logo {
@@ -480,8 +500,8 @@ wrapper{
     }
 
     .footer {
-        margin-top: 50px;
-        margin-bottom: 15px;
+        margin-top: 40px;
+        margin-bottom: 8px;
     }
 }
 
@@ -505,6 +525,10 @@ wrapper{
 
     .contact li p {
         font-size: 13px;
+    }
+
+    .line-red {
+        height: 70px;
     }
 
     #or {
@@ -531,6 +555,14 @@ wrapper{
         font-size: 13px;
     }
 
+    .form-group ::placeholder{
+        font-size: 14px;
+    }
+
+    .email p {
+        margin-left: -60px;
+    }
+
     .login-form p {
         font-size: 13px;
         margin-bottom: 13px;
@@ -547,6 +579,7 @@ wrapper{
 
     .submit{
         font-size: 15px;
+        margin-top: 13px;
     }
 
     .save-pwd .remember-me input.save {
@@ -591,7 +624,7 @@ wrapper{
     }
 
     .login-form {
-        padding: 25px 24px;
+        padding: 20px 24px;
     }
 
     .contact li p {
@@ -615,16 +648,39 @@ wrapper{
     }
 
     .form-group label {
-        font-size: 13px;
+        font-size: 12px;
+        margin-bottom: 3px;
     }
 
     .form-group input {
         font-size: 13px;
     }
 
-    .login-form p {
+    .form-group ::placeholder{
         font-size: 13px;
-        margin-bottom: 13px;
+    }
+
+    .login-form p {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .form-group input{
+        height: 38px;
+    }
+
+    .email p{
+        margin-bottom: 3px;
+        margin-left: -57px;
+        padding-top: 8px;
+    }
+
+    .email input{
+        height: 38px;
+    }
+
+    .code .form-group{
+        margin-bottom: 0px;
     }
 
     .login-form a {
@@ -638,6 +694,11 @@ wrapper{
 
     .submit{
         font-size: 15px;
+        margin-top: 19px;
+    }
+
+    .line-red {
+        display: none;
     }
 
     .save-pwd .remember-me input.save {
@@ -715,25 +776,47 @@ wrapper{
         width: 73px;
     }
 
+    .line-red {
+        display: none;
+    }
+
     .login-form .line {
+        margin-bottom: 8px;
+    }
+
+    .form-group {
         margin-bottom: 8px;
     }
 
     .form-group label {
         font-size: 12px;
+        margin-bottom: 3px;
     }
 
     .form-group input {
         font-size: 12px;
     }
 
+    .form-group input{
+        height: 38px;
+    }
+
+    .email p {
+        margin-left: -55px;
+        padding-top: 8px;
+    }
+
+    .email input{
+        height: 38px;
+    }
+
     .login-form p {
         font-size: 11px;
-        margin-bottom: 13px;
+        margin-bottom: 3px;
     }
 
     .login-form a {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .logo {
@@ -746,7 +829,7 @@ wrapper{
     }
 
     .submit{
-        font-size: 14px;
+        font-size: 13px;
         margin-top: 10px;
     }
 
@@ -791,7 +874,7 @@ wrapper{
     }
 
     .footer p {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .contact {
@@ -836,7 +919,8 @@ wrapper{
     }
 
     .login-form {
-        padding: 10px 17px;
+        padding: 13px 17px;
+        border-radius: 23px;
     }
 
     .contact li p {
@@ -846,6 +930,15 @@ wrapper{
     .contact li a img {
         width: 10px;
         height: 10px;
+    }
+
+    .line-red {
+        display: none;
+    }
+
+    .email p {
+        margin-left: -46px;
+        padding-top: 8px;
     }
 
     #or {
@@ -859,6 +952,7 @@ wrapper{
     .login-form h1 {
         font-size: 16px;
         margin: 0;
+        line-height: 20px;
     }
 
     .line img {
@@ -891,7 +985,7 @@ wrapper{
 
     .login-form p {
         font-size: 10px;
-        margin-bottom: 4px;
+        margin-bottom: 0px;
     }
 
     .login-form a {
@@ -909,7 +1003,7 @@ wrapper{
     }
 
     .submit{
-        font-size: 13px;
+        font-size: 12px;
         margin-top: 5px;
         padding: 9px;
     }

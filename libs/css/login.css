@@ -293,9 +293,9 @@ wrapper{
 .form-group input{
     padding: 12px 12px;
 }
-.form-group::placeholder{
-    font-size: 14px;
-    color: rgba(101, 1, 7, 0.87);
+.form-group ::placeholder{
+    color:rgba(101, 1, 7, 0.87);
+    font-size: 16px;
 }
 
 #login-section{
