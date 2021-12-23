@@ -241,6 +241,7 @@ input:focus{
     color: rgba(101, 1, 7, 0.6);
 }
 
+.navbar .navbar-nav a.active,
 .navbar .navbar-nav a:hover{
     color: #FE616B;
     font-weight: 600;
@@ -485,6 +486,7 @@ input:focus{
 .follower p{
     font-size: 14px;
     font-weight: 400;
+    margin-bottom: 8px;
 }
 
 .follower h5{
@@ -496,19 +498,8 @@ input:focus{
     display: flex;
 }
 
-.follower .percent{
-    width: 104px;
-    height: 4px;
-    color: rgba(254, 97, 107, 0.16);
-    position: relative;
-}
-
-.follower .percent .done-task{
-    width: 96%;
-    height: 2px;
-    color: #FE616B;
-    position: absolute;
-    top: 0%;
+.follower .complete-task .done-task{
+    margin-right: 7px;
 }
 
 .follower .devices{
@@ -532,7 +523,7 @@ input:focus{
     width: 1px;
     height: 32px;
     background: #F2F2F2;
-    margin: 6px 20px;
+    margin: 6px 19px;
 }
 
 .profile-feed .introduce{
@@ -710,6 +701,16 @@ input:focus{
     color: rgba(101, 1, 7, 0.38);
 }
 
+.eva-content .rate1 .rate-comment p{
+    font-weight: normal;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    margin-top: 4px;
+    margin-bottom: 0;
+    color: rgba(101, 1, 7, 0.87);
+}
+
 .profile-feed .page-change{
     margin-top: 32px;
     display: flex;
@@ -731,6 +732,16 @@ input:focus{
 .profile-feed .page-change .page a{
     padding: 12px;
     color: rgba(101, 1, 7, 0.6);
+    text-decoration: none;
+}
+
+.profile-feed .page-change .page:hover{
+    border: 1px solid #FE616B;
+}
+
+
+.profile-feed .page-change .page a:hover{
+    color: #FE616B;
 }
 
 

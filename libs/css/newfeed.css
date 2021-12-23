@@ -241,6 +241,7 @@ wrapper{
     color: rgba(101, 1, 7, 0.6);
 }
 
+.navbar .navbar-nav a.active,
 .navbar .navbar-nav a:hover{
     color: #FE616B;
     font-weight: 600;
