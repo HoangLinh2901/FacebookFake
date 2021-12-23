@@ -647,6 +647,64 @@ input:focus{
     color: rgba(101, 1, 7, 0.87);
 }
 
+.profile-feed .evaluate .rate1 {
+    display: flex;
+    margin-top: 16px;
+}
+
+.profile-feed .evaluate .rate1 .img-eva {
+    margin-right: 8px;
+}
+
+.eva-content{
+    width: 100%;
+}
+
+.profile-feed .evaluate .rate1 .name-eva {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-feed .evaluate .rate1 .name-eva p{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.profile-feed .evaluate .rate1 .name-eva .heart i{
+    font-size: 14px;
+    color: #FE616B;
+}
+
+.profile-feed .evaluate .rate1 .date-time{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-feed .evaluate .rate1 .date-time p{
+    font-size: 12px;
+    color: rgba(101, 1, 7, 0.38);
+}
+
+.profile-feed .page-change{
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-feed .page-change .page{
+
+}
+
+.profile-feed .page-change .page a{
+    padding: 8px;
+    color: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+
+
 .profile-feed .write-comment{
     display: flex;
     margin-top: 31px;

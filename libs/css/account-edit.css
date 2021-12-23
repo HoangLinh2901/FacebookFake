@@ -199,3 +199,147 @@ input:focus{
     outline: none;
 }
 
+/* Main style */
+
+.custom-container{
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+wrapper{
+    width: 100%;
+    max-width: 1440px;
+}
+
+.header{
+    
+}
+
+.logo {
+    padding: 14px 0px;
+}
+
+.logo img{
+    width: 167px;
+    height: 51px;
+}
+
+.navbar{
+    margin: 34px 0;
+    padding: 0px 20px
+}
+
+.navbar .navbar-nav{
+    flex: 1;
+    text-align: center;
+}
+
+.navbar .navbar-nav a{
+    font-size: 16px;
+    text-decoration: none;
+    color: rgba(101, 1, 7, 0.6);
+}
+
+.navbar .navbar-nav a:hover{
+    color: #FE616B;
+    font-weight: 600;
+}
+
+.underline{
+    display: block;
+    width: 48px;
+    height: 4px;
+    color: #FE616B;
+}
+
+.user-nav{
+    display: flex;
+    float: right;
+}
+
+.user-nav .icon{
+    padding: 18px 0;
+    margin-right: 12px;
+    position: relative;
+    line-height: 50px;
+}
+
+.icon span{
+    position: absolute;
+    top: 26px;
+    right: 5px;
+    width: 8px;
+    height: 8px;
+    background: #FE616B;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box; 
+    border-radius: 50%;
+}
+
+.user-nav .icon i{
+    width: 40px;
+    height: 40px;
+    background: rgba(254, 97, 107, 0.06);
+    border-radius: 50%;
+    color: #FE616B;
+    line-height: 40px;
+    text-align: center;
+}
+
+.user-status{
+    display: flex;
+    margin-left: 16px;
+    padding: 13px 0;
+    position: relative;
+}
+
+.user-status .img-user{
+    width: 56px;
+    height: 56px;
+    position: relative;
+    margin-right: 12px;
+    padding: 4px;
+    border-radius: 50%;
+    border: 1px solid #FE616B;
+    box-sizing: border-box;
+}
+
+.user-status .img-user img{
+    width: 100%;
+}
+
+.user-status .img-user span{
+    position: absolute;
+    top: 38px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.user-status .img-user span img{
+    width: 20px;
+    height: 20px;
+    color: #FE616B;
+}
+
+.user-status h5{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;  
+}
+
+.user-status p{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FE616B;
+}
+
+
+.content {
+    background: #f9f9f9;
+}
