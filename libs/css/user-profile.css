@@ -487,6 +487,30 @@ input:focus{
     font-weight: 400;
 }
 
+.follower h5{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.follower .complete-task{
+    display: flex;
+}
+
+.follower .percent{
+    width: 104px;
+    height: 4px;
+    color: rgba(254, 97, 107, 0.16);
+    position: relative;
+}
+
+.follower .percent .done-task{
+    width: 96%;
+    height: 2px;
+    color: #FE616B;
+    position: absolute;
+    top: 0%;
+}
+
 .follower .devices{
     display: flex;
 }
@@ -494,6 +518,7 @@ input:focus{
 .follower .devices a{
     padding: 0px;
 }
+
 
 
 .follower .devices a i{
@@ -689,18 +714,23 @@ input:focus{
     margin-top: 32px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .profile-feed .page-change .page{
-
+    text-align: center;
+    line-height: 33px;
+    margin: 0 8px;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+    box-sizing: border-box;
 }
 
 .profile-feed .page-change .page a{
-    padding: 8px;
-    color: #FFFFFF;
-    border: 1px solid #E8E8E8;
-    box-sizing: border-box;
-    border-radius: 8px;
+    padding: 12px;
+    color: rgba(101, 1, 7, 0.6);
 }
 
 
