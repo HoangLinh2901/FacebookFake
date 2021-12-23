@@ -1,3 +1,6 @@
+// password show/hide
+
+
 const togglePassword = document.querySelector('#togglePassword');
   const password = document.querySelector('#id_password');
  
@@ -20,3 +23,8 @@ const togglePassword1 = document.querySelector('#togglePassword1');
     // toggle the eye slash icon
     this.classList.toggle('fa-eye-slash');
 });
+
+
+
+// -------------------------------------------------- //
+Thuê 

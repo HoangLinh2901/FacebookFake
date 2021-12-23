@@ -233,6 +233,7 @@ input:focus{
 .navbar .navbar-nav{
     flex: 1;
     text-align: center;
+    position: relative;
 }
 
 .navbar .navbar-nav a{
@@ -247,13 +248,11 @@ input:focus{
     font-weight: 600;
 }
 
-.underline{
-    display: block;
-    width: 48px;
-    height: 4px;
-    color: #FE616B;
+.underline {
+    position: absolute;
+    top: 40px;
+    left: 33%;
 }
-
 .user-nav{
     display: flex;
     float: right;
@@ -286,6 +285,7 @@ input:focus{
     color: #FE616B;
     line-height: 40px;
     text-align: center;
+    cursor: pointer;
 }
 
 .user-status{
