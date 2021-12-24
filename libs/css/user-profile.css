@@ -451,10 +451,14 @@ input:focus{
     margin-right: 8px;
 }
 
-.user-info .line3 .rent a{
+.user-info .line3 .rent button{
     font-size: 16px;
     padding: 10px 24px;
     background:#FE616B ;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    outline: none;
 }
 
 .user-info .line3 .donate{
@@ -518,17 +522,31 @@ input:focus{
     padding: 7px;
 }
 
-#rent-background{
+
+
+
+
+
+/* Rent Form start */
+
+
+.rent-background{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     background:rgba(0,0,0,0.7);
-    display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
+    transition: 0.5s;
 }
+.bg-active {
+    display: flex;
+}
+
+
 
 .rent-form{
     background: #fff;
@@ -595,31 +613,31 @@ input:focus{
     font-size: 12px;
 }
 
-#rent-background .rent-background{
+.rent-background #rent-background{
     position: absolute;
     top: 64px;
     left: 0;
     z-index: 0;
 }
 
-#rent-background .rent-time{
+.rent-background .rent-time{
     z-index: 2;
     position: relative;
     display: flex;
     justify-content: space-between;
 }
 
-#rent-background .rent-time .caculate-time{
+.rent-background .rent-time .caculate-time{
     display: flex;
     margin-bottom: 5px;
     float: right;
 }
 
-#rent-background .rent-time .caculate-time .total-cost{
+.rent-background .rent-time .caculate-time .total-cost{
     margin-right: 16px;
 }
 
-#rent-background .rent-time .caculate-time p{
+.rent-background .rent-time .caculate-time p{
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
@@ -629,7 +647,7 @@ input:focus{
     text-align: right;
 }
 
-#rent-background .rent-time .caculate-time .gio{
+.rent-background .rent-time .caculate-time .gio{
     font-weight: normal;
     font-size: 12px;
     color: #650107;
@@ -637,7 +655,7 @@ input:focus{
     margin-left: 6px;
 }
 
-#rent-background .rent-time .caculate-time i{
+.rent-background .rent-time .caculate-time i{
     width: 32px;
     height: 32px;
     background: linear-gradient(180deg, #FE858D 0%, #FE616B 100%);
@@ -651,30 +669,30 @@ input:focus{
     color: #FFFFFF;
 }
 
-#rent-background .rent-time .caculate-time #plus {
+.rent-background .rent-time .caculate-time #plus {
     font-size: 26px;
 }
 
-#rent-background .rent-time .total-cost h5{
+.rent-background .rent-time .total-cost h5{
     font-weight: bold;
     font-size: 14px;
     line-height: 20px;
     color: #FE616B;
 }
 
-#rent-background .rent-time .total-cost span{
+.rent-background .rent-time .total-cost span{
     font-weight: normal;
     font-size: 12px;
     color: rgba(101, 1, 7, 0.32);
 }
 
-#rent-background .rent-time .time .money-account{
+.rent-background .rent-time .time .money-account{
     display: flex;
     float: right;
     align-items: center;
 }
 
-#rent-background .rent-time .time .money-account h5{
+.rent-background .rent-time .time .money-account h5{
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
@@ -683,7 +701,7 @@ input:focus{
     margin-right: 16px;
 }
 
-#rent-background .rent-time .time .money-account p{
+.rent-background .rent-time .time .money-account p{
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
@@ -692,7 +710,7 @@ input:focus{
     margin-right: 12px;
 }
 
-#rent-background .rent-time .time .money-account span{
+.rent-background .rent-time .time .money-account span{
     font-weight: normal;
     font-size: 12px;
     line-height: 20px;
@@ -700,7 +718,7 @@ input:focus{
     font-weight: 400;
 }
 
-#rent-background .rent-time .time .money-account i{
+.rent-background .rent-time .time .money-account i{
     width: 32px;
     height: 32px;
     background: #fff;
@@ -715,12 +733,12 @@ input:focus{
     border: 1px solid #FE616B;
 }
 
-#rent-background .rent-form .description{
+.rent-background .rent-form .description{
     margin-top: 22px;
     margin-bottom: 24px;
 }
 
-#rent-background .rent-form .description TextArea{
+.rent-background .rent-form .description TextArea{
     width: 100%;
     background: #FFFFFF;
     border: 1px solid #E8E8E8;
@@ -733,11 +751,11 @@ input:focus{
     line-height: 20px;
 }
 
-#rent-background .rent-form .description TextArea:focus{
+.rent-background .rent-form .description TextArea:focus{
     outline: none;
 }
 
-#rent-background .rent-submit{
+.rent-background .rent-submit{
     color: #fff;
     font-size: 16px;
     padding: 10px 24px;
@@ -749,7 +767,7 @@ input:focus{
     line-height: 24px;
 }
 
-
+/* Rent Form end */
 
 
 
@@ -1111,34 +1129,6 @@ input:focus{
 .write-comment1 ::placeholder{
     color: rgba(101, 1, 7, 0.38);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* content css end */
