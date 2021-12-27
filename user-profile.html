@@ -94,7 +94,7 @@
                                     <button class="modal-button">Thuê</button> 
                                 </div>
                                 <div class="donate">
-                                    <a href="#">Donate</a>
+                                    <a href="#" class="modal-button1">Donate</a>
                                 </div>
                                 <div class="chat">
                                     <a href="#">
@@ -154,6 +154,7 @@
                             <div class="donater">
                                 <div class="donater-name">
                                     <img src="img/donater11.svg" alt="">
+                                    <img src="img/crown.svg" alt="" class="crown">
                                     <p>Linh Trần</p>
                                 </div>
                                 <div class="money">
@@ -483,7 +484,8 @@
             </div>
             <div class="rent-user">
                 <div class="rent-user-img">
-                    <img src="img/user1.svg" alt="">
+                    <img src="img/esclipse.png" alt="" class="user-img1">
+                    <img src="img/user1.svg" alt="" class="user-img2">
                 </div>
                 <div class="rent-price">
                     <h5>Trần Thị Thùy Linh</h5>
@@ -513,15 +515,79 @@
                 </div>
             </div>
             <div class="description">
-                <TextArea name='txtArea' rows="5" cols="70" placeholder="Thêm lời nhắn.."></TextArea> 
+                <TextArea name='txtArea' rows="4" cols="70" placeholder="Thêm lời nhắn.."></TextArea> 
             </div>
             <a href="#" class="rent-submit">Thuê</a>
         </div>
     </div>
 
-    <!-- rent form start -->
+    <!-- rent form end -->
+
+     <!-- donate form start -->
+
+     <div class="donate-background">
+        <div class="donate-form">
+            <div class="donate">
+                <h5>Donate</h5>
+                <span class="modal-close1"><i class="fas fa-times"></i></span>
+            </div>
+            <div class="donate-user">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="donate-user-img">
+                            <img src="img/esclipse.png" alt="" class="user-img3">
+                            <img src="img/donater16.svg" alt="" class="user-img4">
+                        </div>
+                        <div class="donate-price">
+                            <h5>Nguyễn Đình Trần Thiện <span><a href="#"><i class="fas fa-pen"></i></a></span></h5>
+                            <p>Người gửi (bạn)</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="donate-user-img">
+                            <img src="img/esclipse.png" alt="" class="user-img3">
+                            <img src="img/user1.svg" alt="" class="user-img4">
+                        </div>
+                        <div class="donate-price">
+                            <h5>Trần Thị Thùy Linh</h5>
+                            <p>Người nhận</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="donate-arrow">
+                    <img src="img/donate-arrow.png" alt="">
+                </div>
+            </div>
+            <div id="donate-background">
+                <img src="img/donate-background.png" alt="">
+            </div>
+            <div class="donate-time">
+                <h5>Số tiền muốn Donate</h5>
+                <div class="time">
+                    <div class="caculate-time">
+                        <div class="total-cost">
+                            <p>150,000 <span class="gio">VND</span></p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="money-account">
+                        <h5>Số dư hiện tại</h5>
+                        <p>0 <span>VNĐ</span></p>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="description">
+                <TextArea name='txtArea' rows="4" cols="70" placeholder="Thêm lời nhắn.."></TextArea> 
+            </div>
+            <a href="#" class="donate-submit">Donate</a>
+        </div>
+    </div>
+
+    <!-- donate form end -->
 
 
+   
 
     <script src="libs/js/jquery.min.js"></script>
     <script src="libs/js/script.js"></script>
@@ -536,6 +602,20 @@
 
         modalClose.addEventListener('click',function(){
         modalBg.classList.remove('bg-active');
+        });
+    </script>
+
+    <script>
+        var modalBtn1 = document.querySelector('.modal-button1');
+        var modalBg1 = document.querySelector('.donate-background');
+        var modalClose1 = document.querySelector('.modal-close1');
+
+        modalBtn1.addEventListener('click',function(){
+        modalBg1.classList.add('bg-active1');
+        });
+
+        modalClose1.addEventListener('click',function(){
+        modalBg1.classList.remove('bg-active1');
         });
     </script>
 </body>

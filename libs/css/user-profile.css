@@ -536,7 +536,7 @@ input:focus{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background:rgba(0,0,0,0.7);
     justify-content: center;
     align-items: center;
@@ -584,12 +584,18 @@ input:focus{
 
 .rent-form .rent-user .rent-user-img{
     padding: 8px;
-    border: 1px solid #fff;
-    border-radius: 50%;
     margin-right: 16px;
 }
 
-.rent-form .rent-user .rent-user-img img{
+.rent-form .rent-user .rent-user-img .user-img1{
+    width: 80px;
+    height: 80px;
+}
+
+.user-img2{
+    position: absolute;
+    top: 16px;
+    left: 16px;
     width: 64px;
     height: 64px;
 }
@@ -626,6 +632,12 @@ input:focus{
     position: relative;
     display: flex;
     justify-content: space-between;
+}
+
+.rent-background .rent-time h5{
+    font-weight: 600;
+    font-size: 16px;
+    color: #650107;
 }
 
 .rent-background .rent-time .caculate-time{
@@ -766,9 +778,279 @@ input:focus{
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
+    text-decoration: none;
 }
 
 /* Rent Form end */
+
+/* Donate Form start */
+
+
+.donate-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: 0.5s;
+}
+.bg-active1 {
+    display: flex;
+}
+
+
+
+.donate-form{
+    background: #fff;
+    max-width: 628px;
+    width: 100%;
+    position: relative;
+    padding: 24px;
+    border-radius: 24px;
+}
+
+.donate-form .donate{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.donate-form .donate h5{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.donate-form .donate i{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.donate-form .donate-user{
+    position: relative;
+    z-index: 2;
+    margin-bottom: 46px;
+}
+
+.donate-form .donate-user .donate-arrow{
+    top: 25%;
+    right: 39%;
+    position: absolute;
+}
+
+.donate-form .donate-user .donate-user-img{
+    text-align: center;
+    margin-right: 16px;
+    position: relative;
+}
+
+.donate-form .donate-user .donate-user-img .user-img3{
+    width: 96px;
+    height: 96px;
+}
+
+.donate-form .donate-user .donate-user-img .user-img4{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 8px;
+    left: 90px;
+}
+
+.donate-form .donate-price{
+    text-align: center;
+}
+
+
+.donate-form .donate-user .donate-price h5{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    letter-spacing: 0.024em;
+    margin: 0;
+}
+
+.donate-form .donate-user .donate-price p{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    opacity: 0.72;
+    letter-spacing: 0.024em;
+}
+
+.donate-form .donate-user .donate-price span a{
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-left: 4px;
+}
+
+.donate-background #donate-background{
+    position: absolute;
+    top: 64px;
+    left: 0;
+    z-index: 0;
+}
+
+.donate-background .donate-time{
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.donate-background .donate-time h5{
+    font-weight: 600;
+    font-size: 16px;
+    color: #650107;
+}
+
+.donate-background .donate-time .caculate-time{
+    display: flex;
+    margin-bottom: 5px;
+    float: right;
+}
+
+.donate-background .donate-time .caculate-time .total-cost{
+    margin-right: 16px;
+}
+
+.donate-background .donate-time .caculate-time p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: 2px solid #E8E8E8;
+    padding-left: 12px;
+    color: #650107;
+    text-align: right;
+}
+
+.donate-background .donate-time .caculate-time .gio{
+    font-weight: normal;
+    font-size: 12px;
+    color: #650107;
+    opacity: 0.6;
+    margin-left: 6px;
+}
+
+.donate-background .donate-time .caculate-time i{
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(180deg, #FE858D 0%, #FE616B 100%);
+    font-size: 17px;
+    margin-left: 8px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 31px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.donate-background .donate-time .caculate-time #plus {
+    font-size: 26px;
+}
+
+.donate-background .donate-time .total-cost h5{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FE616B;
+}
+
+.donate-background .donate-time .total-cost span{
+    font-weight: normal;
+    font-size: 12px;
+    color: rgba(101, 1, 7, 0.32);
+}
+
+.donate-background .donate-time .time .money-account{
+    display: flex;
+    float: right;
+    align-items: center;
+}
+
+.donate-background .donate-time .time .money-account h5{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(101, 1, 7, 0.6);
+    margin: 0;
+    margin-right: 16px;
+}
+
+.donate-background .donate-time .time .money-account p{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FE616B;
+    font-weight: 700;
+    margin-right: 12px;
+}
+
+.donate-background .donate-time .time .money-account span{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgba(101, 1, 7, 0.32);
+    font-weight: 400;
+}
+
+.donate-background .donate-time .time .money-account i{
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    font-size: 26px;
+    margin-left: 8px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 31px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #FE616B;
+    border: 1px solid #FE616B;
+}
+
+.donate-background .donate-form .description{
+    margin-top: 22px;
+    margin-bottom: 24px;
+}
+
+.donate-background .donate-form .description TextArea{
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 8px; 
+    padding: 10px 16px;
+    resize: none;
+    color: rgba(101, 1, 7, 0.32);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.donate-background .donate-form .description TextArea:focus{
+    outline: none;
+}
+
+.donate-background .donate-submit{
+    color: #fff;
+    padding: 13px 24px;
+    background: #FE616B;
+    border-radius: 8px;
+    float: right;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0px 6px 24px rgba(254, 97, 107, 0.16);
+    text-decoration: none;
+}
+
+/* Donate Form end */
 
 
 
@@ -844,11 +1126,20 @@ input:focus{
 
 .profile-feed .top-donate .donater .donater-name{
     display: flex;
+    position: relative;
 }
 
 .profile-feed .top-donate .donater .donater-name img{
     margin-right: 12px;
 }
+
+.profile-feed .top-donate .donater .donater-name .crown{
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    width: 16px;
+}
+
 
 .profile-feed .top-donate .donater .donater-name p{
     line-height: 30px;
