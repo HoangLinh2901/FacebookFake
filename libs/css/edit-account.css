@@ -199,7 +199,7 @@ input:focus{
     outline: none;
 }
 
-/* Main style */
+ /* header css start */ 
 
 .custom-container{
     max-width: 1280px;
@@ -207,7 +207,7 @@ input:focus{
     width: 100%;
 }
 
-wrapper{
+.wrapper{
     width: 100%;
     max-width: 1440px;
 }
@@ -233,6 +233,7 @@ wrapper{
 .navbar .navbar-nav{
     flex: 1;
     text-align: center;
+    position: relative;
 }
 
 .navbar .navbar-nav a{
@@ -247,13 +248,11 @@ wrapper{
     font-weight: 600;
 }
 
-.underline{
-    display: block;
-    width: 48px;
-    height: 4px;
-    color: #FE616B;
+.underline {
+    position: absolute;
+    top: 40px;
+    left: 33%;
 }
-
 .user-nav{
     display: flex;
     float: right;
@@ -286,6 +285,7 @@ wrapper{
     color: #FE616B;
     line-height: 40px;
     text-align: center;
+    cursor: pointer;
 }
 
 .user-status{
@@ -330,7 +330,8 @@ wrapper{
 .user-status h5{
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;  
+    line-height: 24px; 
+    margin-bottom: 4px; 
 }
 
 .user-status p{
@@ -397,260 +398,201 @@ wrapper{
 .user-status .sub-menu a:hover{
     color: #FE616B;
 }
+/* header css end */
 
 
 
-.content {
+
+
+/* content css start */
+.content{
     background: #f9f9f9;
 }
 
-
-/* col-lg-3 custom */
-.custom{
-    max-width: 20%;
-    flex: 0 0 20%;
+.content .user-detail{
+    margin-top: 40px;
+    text-align: center;
 }
 
-.custom1{
-    max-width: 55%;
-    flex: 0 0 55%;
+.content .user-detail .user-img{
+    width: 160px;
+    padding: 11px;
+    border: 1px solid #FE616B;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
 }
 
-.custom2{
-    max-width: 25%;
-    flex: 0 0 25%;
-}
-
-/* col-lg-3 custom */
-
-.content .top-donate{
-    margin-top: 30px;
+.content .user-detail .user-img img{
     width: 100%;
 }
 
-.content .donater h3{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;    
-    color: rgba(101, 1, 7, 0.24);
-}
-
-.content .donater .img-donater{
-    display: flex;
-    position: relative;
-    background: #FEFEFE;
-    border-radius: 24px;
-    padding: 8px 10px;
-}
-
-.content .donater .img-donater img{
-    position: relative;
-    width: 40px;
-    height: 40px;
-}
-
-.content .donater .img-donater .donater2{
-    right: 5px;
-    width: 40px;
-    height: 40px;
-}
-
-.content .donater .img-donater .donater3{
-    right: 10px;
-}
-
-.content .donater .img-donater span{
-    padding: 10px 4px;
-    margin-right: 4px;
-    color: rgba(101, 1, 7, 0.38);
-    font-size: 14px;
-}
-
-.content .donater .img-donater .sidebar{
-    background: rgba(254, 97, 107, 0.08);
+.content .user-detail .user-img i{
+    padding: 12px;
+    color: #FE616B;
+    background: #ffff;
     border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    text-align: center;
-    line-height: 31px;
-    margin-top: 4px;
+    border: 6px solid #FAFAFA;
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
-.content .donater .img-donater .sidebar a{
+.content .user-detail h5{
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.024em;
+    color: #650107;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.content .user-detail .master{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.content .user-detail .master img{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.content .user-detail .master p{
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.024em;
+    color: rgba(101, 1, 7, 0.6);
+}
+
+.content .user-detail .money{
+    display: flex;
+    align-items: center;
+    padding-left: 117px;
+}
+
+.content .user-detail .money img{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.content .user-detail .money p{
+    font-weight: 600;
+    font-size: 16px;
     color: #FE616B;
 }
 
-.post {
+.content .user-detail .money span{
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(101, 1, 7, 0.38);
+}
+
+
+
+
+.content .edit-bubble{
     margin-top: 40px;
-    padding: 24px;
+    margin-bottom: 32px;
+    display: flex;
+}
+
+.content .edit-bubble .bg-bubble{
+    position: relative;
+    margin-right:24px;
+}
+
+.content .edit-bubble .bubble-detail{
+    position: absolute;
+    top: 16px;
+    left: 24px;
+}
+
+.content .edit-bubble .bubble-detail h5{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.content .edit-bubble .bubble-detail h4{
+    font-weight: 600;
+    font-size: 28px;
+    color: #FFFFFF;
+}
+
+.content .edit-bubble .bubble-detail span{
+    font-size: 14px;
+}
+
+
+
+.content .user-info{
+    padding: 32px 24px;
     background: #FFFFFF;
     border-radius: 24px;
 }
 
-.post .upload-time{
-    display: flex;
-}
-
-.post .upload-time .time{
-    margin-left: 12px;
-    padding: 2px 0;
-}
-
-.post .upload-time .time h5{
-    font-weight: 600;
-    font-size: 16px;
-    margin: 0;
-}
-
-.post .upload-time .time p{
-    font-size: 12px;
-    color: rgba(101, 1, 7, 0.38);
-}
-
-.post .status{
-    margin-top: 8px;
-    margin-bottom: 24px;
-}
-
-.post .post-img{
-    border-radius: 16px;
-}
-
-.post .post-img img{
-    width: 100%;
-}
-
-.post .like{
-    display: flex;
-    margin-top: 15px;
-}
-
-.post .like i{
-    color: #FE616B;
-    margin-right: 12px;
-    font-size: 20px;
-}
-
-.post .like span{
-    font-weight: bold;
-}
-
-.post .like p{
-    line-height: 20px;
-    font-size: 14px;
-    color: rgba(101, 1, 7, 0.6);
-    
-}
-
-.post .write-comment{
-    display: flex;
-    margin-top: 14px;
-}
-
-.post .write-comment img{
-    width: 40px;
-    height: 40px;
-    margin-right: 12px;
-}
-
-.post .write-comment input{
-    width: 100%;
-    background: #F5F5F5;
+.content .user-info .form-group input{
     border-radius: 8px;
-    border:none;
-    padding: 10px 12px;
-    color: rgba(101, 1, 7, 0.87);
-
-}
-
-.write-comment ::placeholder{
-    color: rgba(101, 1, 7, 0.38);
-}
-
-.chat-box{
-    margin-top: 40px;
-    background: #FEFEFE;
-    border-radius: 0px 24px 24px 24px;
-    padding: 32px 12px;
-}
-
-.chat-box h3{
-    color: rgba(101, 1, 7, 0.24);
-    font-weight: bold;
+    font-weight: normal;
     font-size: 16px;
+    color: rgba(101, 1, 7, 0.87);
+    padding: 12px 16px;
+    border: 1px solid #E8E8E8;
 }
 
-.messenger-tab{
-    display: flex;
-    margin-bottom: 16px;
-}
-
-.messenger-tab .chat-user-img{
-    margin-right: 8px;
-}
-
-.messenger-tab .chat-user-img img{
-    width: 32px;
-    height: 32px;
-}
-
-.chat-row .username{
-    display: flex;
-    justify-content: space-between;
-}
-
-.chat-row .username h5{
+.content .user-info .form-group label{
     font-weight: 600;
-    font-size: 13px;
-    color: rgba(101, 1, 7, 0.38);
-    margin-bottom: 4px;
-}
-
-.chat-row .username p{
-    font-size: 13px;
-    color: rgba(101, 1, 7, 0.38);
-}
-
-.chat-box .messenger{
-    background: rgba(101, 1, 7, 0.02);
-    border-radius: 0px 16px 16px 16px;
-    padding: 8px 12px;
-}
-
-.chat-box .messenger p{
-    font-weight: 400;
     font-size: 14px;
-    text-align: justify;
+    text-transform: capitalize;
 }
 
-.chat-box .write-chat{
-    margin-top: 28px;
-    display: flex;
-}
-
-.chat-box .write-chat input{
-    width: 82%;
-    margin-right: 10px;
-    border: none;
+.content .user-info .form-group input::placeholder{
     color: rgba(101, 1, 7, 0.87);
 }
 
-.write-chat ::placeholder{
+.content .user-info .form-group .sex-choose{
+    display: flex;
+}
+
+
+.content .user-info .form-group .sex-choose .male{
+    padding: 15px 84px;   
+    border-radius: 8px; 
     color: rgba(101, 1, 7, 0.32);
-    font-size: 14px;
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: none;
 }
 
-.chat-box .write-chat a{
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(180deg, #FE858D 0%, #FE616B 100%);
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
+
+
+.content .user-info .form-group .sex-choose .female{
+    padding: 15px 84px;   
+    background: rgba(254, 97, 107, 0.08);
+    border-radius: 8px; 
+    color: #FE616B;
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: none;
 }
 
-.chat-box .write-chat i{
-    color: #FFFFFF;
-    font-size: 17px;
-    transform: rotate(40deg);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+/* content css end */
