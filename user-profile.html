@@ -106,7 +106,7 @@
                                     <a href="#" class="modal-button1">Donate</a>
                                 </div>
                                 <div class="chat">
-                                    <a href="#">
+                                    <a href="#" class="modal-messenger">
                                         <i class="fas fa-comment"></i>
                                         Nhắn tin
                                     </a>
@@ -596,6 +596,57 @@
     <!-- donate form end -->
 
 
+
+    <!-- chat form start -->
+    <div class="chat-form">
+        <div class="user-chat">
+            <div class="user">
+                <img src="img/donater17.png" alt="">
+                <p>Nguyễn Đình Trần Thiện</p>
+            </div>
+            <i class="fas fa-times close-messenger"></i>
+        </div>
+        <div class="form">
+            <div class="text1">
+                <div class="row">
+                    <div class="col-2 custom-col1">
+                        <img src="img/donater17.png" alt="">
+                    </div>
+                    <div class="col-10 custom-col2">
+                        <div class="chat-text1">
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                            <p>22/10/2020 | 08:32</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text2">
+                <div class="row">
+                    <div class="col-10 custom-col1">
+                        <div class="chat-text2">
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</h5>
+                            <p>25/12/2020 | 10:55</p>
+                        </div>
+                    </div>
+                    <div class="col-2 custom-col2">
+                        <div class="text2-img">
+                            <img src="img/donater18.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="input-text">
+                <img src="img/donater18.png" alt="" >
+                <input type="text" placeholder="Nhập tin nhắn">
+                <i class="fas fa-paperclip"></i>
+                <i class="fas fa-paper-plane"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- chat form end -->
+
    
 
     <script src="libs/js/jquery.min.js"></script>
@@ -604,6 +655,9 @@
         var modalBtn = document.querySelector('.modal-button');
         var modalBg = document.querySelector('.rent-background');
         var modalClose = document.querySelector('.modal-close');
+        var modalMessenger = document.querySelector('.modal-messenger');
+        var chatForm = document.querySelector('.chat-form');
+        var chatFormClose = document.querySelector('.close-messenger');
 
         modalBtn.addEventListener('click',function(){
         modalBg.classList.add('bg-active');
@@ -611,6 +665,14 @@
 
         modalClose.addEventListener('click',function(){
         modalBg.classList.remove('bg-active');
+        });
+
+        modalMessenger.addEventListener('click',function(){
+        chatForm.classList.add('chat-active');
+        });
+
+        chatFormClose.addEventListener('click',function(){
+        chatForm.classList.remove('chat-active');
         });
     </script>
 

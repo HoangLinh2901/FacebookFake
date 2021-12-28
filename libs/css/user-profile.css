@@ -199,6 +199,18 @@ input:focus{
     outline: none;
 }
 
+/* custom col */
+.custom-col1{
+    padding-right: 6px;
+}
+
+.custom-col2{
+    padding-left: 6px;
+}
+
+
+/* custom col */
+
  /* header css start */ 
 
 .custom-container{
@@ -351,6 +363,7 @@ input:focus{
     border: none;
     width: 240px;
     z-index: 1000;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 30%);
 }
 
 .user-status:hover .sub-menu{
@@ -397,6 +410,7 @@ input:focus{
 
 .user-status .sub-menu a:hover{
     color: #FE616B;
+    font-weight: 600;
 }
 
 
@@ -1484,3 +1498,187 @@ input:focus{
 
 
 /* content css end */
+
+
+
+/* chat form start */
+.chat-form{
+    position: fixed;
+    bottom: -500px;
+    right: 80px;
+    width: 367px;
+    height: 488px;
+    border-radius: 24px 24px 0px 0px;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 30%);
+    transition-duration: 0.4s;
+}
+
+.chat-active{
+    bottom:0;
+}
+
+.chat-form .user-chat{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px 12px 12px;
+    background: #FFFFFF;
+    border-radius: 24px 24px 0px 0px;
+}
+
+.chat-form .user-chat .user{
+    display: flex;
+    align-items: center;
+}
+
+.chat-form .user-chat .user img{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.chat-form .user-chat i{
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.chat-form .user-chat .user p{
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    color: #650107;
+}
+
+.chat-form .form{
+    display: flex;
+    flex-direction: column;
+    height: 440px;
+    justify-content: flex-end;
+    background: #FAFAFA;
+    padding: 0 12px;
+}
+
+.form .text1{
+    margin-bottom: 24px;
+}
+
+.form .text1 .chat-text1{
+    width: 85%;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.form .text1 .chat-text1 img{
+    width: 40px;
+    height: 40px;
+}
+
+.form .text1 .chat-text1 h5{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: #650107;
+}
+
+.form .text1 .chat-text1 p{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: rgba(101, 1, 7, 0.38);
+}
+
+.form .text2{
+
+}
+
+.form .text2 .chat-text2{
+    width: 85%;
+    background: linear-gradient(180deg, #FE858D 0%, #FE616B 100%);
+    border-radius: 8px;
+    padding: 12px;
+    float: right;
+}
+
+.text2-img img{
+    width: 40px;
+    height: 40px;
+    
+}
+
+.form .text2 .chat-text2 h5{
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+    text-align: justify;
+}
+
+.form .text2 .chat-text2 p{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form .input-text{
+    margin-top: 24px;
+    margin-bottom: 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(29, 68, 73, 0.08);
+    border-radius: 1000px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+}
+
+.form .input-text img{    
+    width: 24px;
+    height: 24px;
+}
+
+
+.form .input-text input{    
+    margin: 0 8px;
+    width: 232px;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    color: rgba(101, 1, 7, 0.32);
+    border: none;
+}
+
+.form .input-text input::placeholder{
+    color: rgba(101, 1, 7, 0.32); 
+}
+
+.fa-paperclip{
+    margin-left: 8px;
+    color: rgba(101, 1, 7, 0.38);
+    cursor: pointer;
+}
+
+.fa-paper-plane{
+    margin-left: 16px;
+    color: #FE616B;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* chat form end */

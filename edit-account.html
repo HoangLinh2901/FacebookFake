@@ -188,7 +188,8 @@
                         <div class="pwd">
                             <h5>Mật khẩu</h5>
                             <div class="dot"></div>
-                            <a class="change">Đổi mật khẩu</a>
+                            <button class="change">Đổi mật khẩu</button>
+                            <button class="dischange">Hủy bỏ</button>
                         </div>
                         <div class="form-pwd">
                             <form action="">
@@ -221,7 +222,16 @@
                 </div>
             </div>
         </div>
+        <section class="save">
+            <div class="custom-container">
+                <div class="save-button">
+                    <button>Lưu lại</button>
+                </div>
+            </div>
+        </section>
     </section>
+
+    
 
 
 
@@ -236,15 +246,23 @@
     <script>
         var changeBt = document.querySelector('.change');
         var changePwd = document.querySelector('.form-pwd');
-        // var modalClose = document.querySelector('.modal-close');
+        var dischangeBt = document.querySelector('.dischange');
+        var pwd = document.querySelector('.pwd');
+
 
         changeBt.addEventListener('click',function(){
             changePwd.classList.add('change-active');
+            changeBt.classList.add('remove');
+            dischangeBt.classList.add('add');
+            pwd.classList.add('margin');
         });
 
-        // modalClose.addEventListener('click',function(){
-        // modalBg.classList.remove('bg-active');
-        // });
+        dischangeBt.addEventListener('click',function(){
+            changePwd.classList.remove('change-active');
+            changeBt.classList.remove('remove');
+            dischangeBt.classList.remove('add');
+            pwd.classList.remove('margin');
+        });
     </script>
 </body>
 </html>

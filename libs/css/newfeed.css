@@ -350,6 +350,7 @@ wrapper{
     border: none;
     width: 240px;
     z-index: 1000;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 30%);
 }
 
 .user-status:hover .sub-menu{
@@ -396,6 +397,7 @@ wrapper{
 
 .user-status .sub-menu a:hover{
     color: #FE616B;
+    font-weight: 600;
 }
 
 
