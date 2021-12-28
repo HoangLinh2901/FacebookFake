@@ -1510,7 +1510,7 @@ input:focus{
     height: 488px;
     border-radius: 24px 24px 0px 0px;
     box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 30%);
-    transition-duration: 0.4s;
+    transition-duration: 0.35s;
 }
 
 .chat-active{
