@@ -150,10 +150,101 @@
                         </form>
                     </div>
 
-                    
+                    <div class="country">
+                        <form action="">
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="name">Quốc gia</label>  
+                                    <select class="custom-select">
+                                        <option selected>Viêt Nam</option>
+                                        <option value="1">Mỹ</option>
+                                        <option value="2">Anh</option>
+                                        <option value="3">Pháp</option>
+                                      </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="name">Thành Phố</label>  
+                                    <select class="custom-select">
+                                        <option selected>Tp Hồ Chí Minh</option>
+                                        <option value="1">Hà Nội</option>
+                                        <option value="2">Ninh Bình</option>
+                                        <option value="3">Nam Định</option>
+                                      </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="name">Ngôn ngữ</label>  
+                                    <select class="custom-select">
+                                        <option selected>Viêt Nam</option>
+                                        <option value="1">Mỹ</option>
+                                        <option value="2">Anh</option>
+                                        <option value="3">Pháp</option>
+                                      </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="change-pwd">
+                        <div class="pwd">
+                            <h5>Mật khẩu</h5>
+                            <div class="dot"></div>
+                            <a class="change">Đổi mật khẩu</a>
+                        </div>
+                        <div class="form-pwd">
+                            <form action="">
+                                <div class="form-row">
+                                    <div class="form-group col-md-4">
+                                        <label for="name">Mật khẩu cũ</label>
+                                        <div class="password-form">
+                                            <input type="password" name="password" autocomplete="current-password" required="" id="id_password" class="form-control">
+                                            <i class="fas fa-eye" id="togglePassword"></i>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="name">Mật khẩu mới</label>
+                                        <div class="password-form">
+                                            <input type="password" name="password" autocomplete="current-password" required="" id="id_password1" class="form-control">
+                                            <i class="fas fa-eye" id="togglePassword1"></i>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="name">Nhập lại mật khẩu mới</label>
+                                        <div class="password-form">
+                                            <input type="password" name="password" autocomplete="current-password" required="" id="id_password2" class="form-control">
+                                            <i class="fas fa-eye" id="togglePassword2"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+
+
+
+
+
+
+
+    <script src="libs/js/jquery.min.js"></script>
+    <script src="libs/js/script.js"></script>
+    <script>
+        var changeBt = document.querySelector('.change');
+        var changePwd = document.querySelector('.form-pwd');
+        // var modalClose = document.querySelector('.modal-close');
+
+        changeBt.addEventListener('click',function(){
+            changePwd.classList.add('change-active');
+        });
+
+        // modalClose.addEventListener('click',function(){
+        // modalBg.classList.remove('bg-active');
+        // });
+    </script>
 </body>
 </html>

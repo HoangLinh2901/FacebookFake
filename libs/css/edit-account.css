@@ -536,6 +536,7 @@ input:focus{
     padding: 32px 24px;
     background: #FFFFFF;
     border-radius: 24px;
+    margin-bottom: 32px;
 }
 
 .content .user-info .form-group input{
@@ -547,7 +548,7 @@ input:focus{
     border: 1px solid #E8E8E8;
 }
 
-.content .user-info .form-group label{
+.form-group label{
     font-weight: 600;
     font-size: 14px;
     text-transform: capitalize;
@@ -571,8 +572,6 @@ input:focus{
     text-decoration: none;
 }
 
-
-
 .content .user-info .form-group .sex-choose .female{
     padding: 15px 84px;   
     background: rgba(254, 97, 107, 0.08);
@@ -583,13 +582,76 @@ input:focus{
     text-decoration: none;
 }
 
+.content .country{
+    padding: 32px 24px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin-bottom: 40px;
+}
+
+.content .country .form-group{
+    margin: 0;
+}
+
+.custom-select{
+    height: 48px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.content .change-pwd .pwd{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.content .change-pwd .pwd h5{
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(101, 1, 7, 0.38);
+    margin: 0;
+}
+
+.content .change-pwd .pwd .dot{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(101, 1, 7, 0.2);
+    margin: 0 12px;
+}
+
+.content .change-pwd .pwd a{
+    font-weight: 600;
+    font-size: 16px;
+    color: #FE616B;
+    text-decoration: none;
+}
+.content .form-pwd{
+    display: none;
+    padding: 32px 24px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin-bottom: 40px;
+}
+
+.change-active{
+    display: block;
+}
 
 
 
 
+.password-form{
+    display: flex;
+}
 
 
-
+.password-form i{
+    margin-left: -30px; 
+    cursor: pointer;
+    line-height: 50px;
+    color: #FE616B;
+}
 
 
 
