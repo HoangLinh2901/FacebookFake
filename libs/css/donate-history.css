@@ -404,3 +404,164 @@ button:focus {outline:0;}
 }
 /* header css end */
 
+
+
+
+/* donate-history css start */
+.donate-history{
+    background: #f9f9f9;
+}
+
+.donate-history h2{
+    padding-top: 40px;
+    padding-bottom: 24px;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0.024em;
+    color: #650107;
+}
+
+.donate-history .searching-bar{
+    padding: 24px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin-bottom: 24px;
+}
+
+.donate-history .searching-bar form{
+    display: flex;
+    align-items: center;
+}
+
+.donate-history .searching-bar form input{
+    width: 76%;
+    padding: 12px 16px;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(101, 1, 7, 0.32);
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-right: 12px;
+}
+
+.donate-history .searching-bar form input::placeholder{
+    color: rgba(101, 1, 7, 0.32);
+}
+
+.donate-history .searching-bar form select{
+    width: 20.5%;
+    padding: 0 16px;
+    color: rgba(101, 1, 7, 0.32);
+    height: 43px;
+    margin-right: 16px;
+    font-size: 16px;
+}
+
+.donate-history .searching-bar form select:focus{
+    outline: none;
+}
+
+.donate-history .searching-bar form i{
+    width: 3.5%;
+    padding: 14px;
+    background: linear-gradient(180deg, #FE858D 0%, #FE616B 100%);
+    box-shadow: 0px 6px 16px rgba(254, 97, 107, 0.16);
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+
+
+
+.donate-history .donate-.table{
+    
+}
+
+.donate-history .donate-table .table{
+    border-radius: 24px;
+    background: #FFFFFF;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+
+.donate-history .donate-table .table .thead{
+    background: rgba(254, 97, 107, 0.06);
+    border-radius: 24px 24px 0px 0px;
+}
+
+.donate-history .donate-table .table .thead th{
+    font-weight: 600;
+    font-size: 14px;
+    color: #FE616B;
+    text-align: center;
+}
+
+.donate-history .donate-table .table .thead th:last-child{
+    text-align: left;
+}
+
+.donate-history .donate-table .table .description{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.img-detail{
+    display: none;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.donate-history .donate-table .table .img-detail img{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+.donate-history .donate-table .table .img-detail p{
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(101, 1, 7, 0.38)
+}
+
+.read-more{
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: block;
+}
+
+.read-less{
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+
+
+.content{
+    display: none;
+}
+
+.more-content{
+    display: block;
+ }
+
+ .less-content{
+    display: none;
+ }
+
+ .flex-content{
+     display: flex;
+ }
+
+
+
+
+
+
+
+
+/* donate-history css end */
