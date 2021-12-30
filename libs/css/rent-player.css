@@ -199,7 +199,17 @@ input:focus{
     outline: none;
 }
 
-button:focus {outline:0;}
+/* custom col */
+.custom-col1{
+    padding-right: 6px;
+}
+
+.custom-col2{
+    padding-left: 6px;
+}
+
+
+/* custom col */
 
  /* header css start */ 
 
@@ -402,309 +412,394 @@ button:focus {outline:0;}
     color: #FE616B;
     font-weight: 600;
 }
+
+
 /* header css end */
 
 
 
 
-/* donate-history css start */
-.donate-history{
+
+/* content css start */
+.content {
     background: #f9f9f9;
-    padding-bottom: 60px;
-}
-
-.donate-history h2{
     padding-top: 40px;
-    padding-bottom: 24px;
-    font-weight: bold;
-    font-size: 24px;
-    letter-spacing: 0.024em;
-    color: #650107;
 }
 
-.donate-history .searching-bar{
-    padding: 24px;
-    background: #FFFFFF;
+.wall-profile{
+    padding-bottom: 121px;
+    background: #fff;
     border-radius: 24px;
-    margin-bottom: 24px;
 }
 
-.donate-history .searching-bar form{
-    display: flex;
-    align-items: center;
-}
-
-.donate-history .searching-bar form input{
-    width: 76%;
-    padding: 12px 16px;
-    font-weight: normal;
-    font-size: 16px;
-    color: rgba(101, 1, 7, 0.32);
-    background: #FFFFFF;
-    border: 1px solid #E8E8E8;
-    box-sizing: border-box;
-    border-radius: 8px;
-    margin-right: 12px;
-}
-
-.donate-history .searching-bar form input::placeholder{
-    color: rgba(101, 1, 7, 0.32);
-}
-
-.donate-history .searching-bar form select{
-    width: 20.5%;
-    padding: 0 16px;
-    color: rgba(101, 1, 7, 0.32);
-    height: 43px;
-    margin-right: 16px;
-    font-size: 16px;
-}
-
-.donate-history .searching-bar form select:focus{
-    outline: none;
-}
-
-.donate-history .searching-bar form i{
-
-    padding: 14px;
-    background: linear-gradient(180deg, #FE858D 0%, #FE616B 100%);
-    box-shadow: 0px 6px 16px rgba(254, 97, 107, 0.16);
-    border-radius: 8px;
-    color: #FFFFFF;
-}
-
-
-
-.donate-history .donate-table{
-    border-radius: 24px;
-    background: #FFFFFF; 
-}
-
-.table th{
-    font-weight: normal;
-    font-size: 16px;
-    color: rgba(101, 1, 7, 0.6);
-}
-
-.table td{
-    font-size: 16px;
-}
-
-.donate-history .donate-table .table{
-    border-radius: 24px;
-    background: #FFFFFF;
-    overflow-y: scroll;
-    white-space: nowrap;
-}
-
-.donate-history .donate-table .table .thead{
-    background: rgba(254, 97, 107, 0.06);
-    border-radius: 24px 24px 0px 0px;
-}
-
-.donate-history .donate-table .table .thead th{
-    font-weight: 600;
-    font-size: 14px;
-    color: #FE616B;
-    text-align: center;
-}
-
-.donate-history .donate-table .table .thead th:last-child{
-    text-align: left;
-}
-
-.donate-history .donate-table .table .description{
-    display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.img-detail{
-    display: none;
-    align-items: center;
-    margin-top: 4px;
-}
-
-.donate-history .donate-table .table .img-detail img{
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
-}
-.donate-history .donate-table .table .img-detail p{
-    font-weight: normal;
-    font-size: 14px;
-    color: rgba(101, 1, 7, 0.38)
-}
-
-.read-more{
-    border: none;
-    background: none;
-    cursor: pointer;
-    display: block;
-}
-
-.read-less{
-    border: none;
-    background: none;
-    cursor: pointer;
-    display: none;
-}
-
-
-.content{
-    display: none;
-}
-
-.more-content{
-    display: block;
- }
-
- .less-content{
-    display: none;
- }
-
- .flex-content{
-     display: flex;
- }
-
-
-
-
- .donate-table .choose-page{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 24px;
-    padding-bottom: 32px;
- }
-
-.donate-table .choose-page p{
-    color: rgba(101, 1, 7, 0.6);
-    font-weight: 600;
-    font-size: 14px;
-}
-
-.donate-table .choose-page span{
-    color: #FE616B;
-    font-weight: 600;
-    font-size: 14px;
-}
-
-
- .donate-table .page-change{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.wall-background{
+    position: relative;
     
 }
 
-.donate-table .page-change .page{
-    text-align: center;
-    line-height: 33px;
-    margin: 0 8px;
-    width: 36px;
-    height: 36px;
-    border: 1px solid #E8E8E8;
-    border-radius: 8px;
-    box-sizing: border-box;
-}
-
-.donate-table .page-change .page a{
-    padding: 12px;
-    color: rgba(101, 1, 7, 0.6);
+.wall-background .user-info a{
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px 24px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    border: 2px solid #fff;
     text-decoration: none;
+    display: flex;
 }
 
-.donate-table .page-change .page:hover{
+.wall-background a:hover{
+    font-size: 15px;
+}
+
+.wall-background a p{
+    font-size: 26px;
+    margin-right: 8px;
+}
+
+.wall-background .user-name{
+
+}
+
+.profile-detail{
+    padding:0 32px;
+    display: flex;
+    width: 100%;
+    top: 172px;
+    position: absolute;
+}
+
+.profile-detail .user-img{
+    position: relative;
+    margin-right: 38px;
+    top: -14px;
+}
+
+.profile-detail .user-img img{
+    width: 160px;
+    height: 160px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+}
+
+.profile-detail .user-info{
+    width: 100%;
+}
+
+.line1{
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+}
+
+.user-info .user-name h3{
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.user-info .user-cost{
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+
+.user-info .user-cost p{
+    font-size: 20px;
+    color: #FE616B;
+    font-weight: 700;
+}
+
+.user-info .user-cost span{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.user-info .line3{
+    display: flex;
+}
+
+.user-info .line3 .rent{
+    margin-right: 8px;
+}
+
+.user-info .line3 .rent button{
+    font-size: 16px;
+    padding: 10px 24px;
+    background:#FE616B ;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.user-info .line3 .donate{
+    margin-right: 8px;
+}
+
+.user-info .line3 .donate a{
+    font-size: 16px;
+    padding: 10px 24px;
+    color:#FE616B ;
     border: 1px solid #FE616B;
 }
 
+.user-info .line3 .chat{
+    margin-right: 84px;
+}
 
-.donate-table .page-change .page a:hover{
+.user-info .line3 .chat a{
+    font-size: 16px;
+    padding: 10px 24px;
+    color:#650107 ;
+    border: 1px solid rgba(101, 1, 7, 0.12);
+}
+
+.user-info .line3 .chat i{
+    margin-right: 8px;
+}
+
+.follower p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.follower h5{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.follower .complete-task{
+    display: flex;
+}
+
+.follower .complete-task .done-task{
+    margin-right: 7px;
+}
+
+.follower .devices{
+    display: flex;
+}
+
+.follower .devices a{
+    padding: 0px;
+}
+
+
+
+.follower .devices a i{
+    color: #650107;
+    font-size: 14px;
+    padding: 7px;
+}
+
+
+
+
+
+
+
+/* col-lg-3 custom */
+.custom{
+    max-width: 25%;
+    flex: 0 0 25%;
+}
+
+.custom1{
+    max-width: 75%;
+    flex: 0 0 75%;
+    padding-left: 33px;
+}
+
+
+/* col-lg-3 custom */
+
+.content .top-donate{
+    width: 100%;
+}
+
+.content .donater h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;    
+    color: rgba(101, 1, 7, 0.24);
+}
+
+.content .donater .img-donater{
+    display: flex;
+    position: relative;
+    background: #FEFEFE;
+    border-radius: 24px;
+    padding: 8px 10px;
+}
+
+.content .donater .img-donater img{
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.content .donater .img-donater .donater2{
+    right: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.content .donater .img-donater .donater3{
+    right: 10px;
+}
+
+.content .donater .img-donater span{
+    padding: 10px 4px;
+    margin-right: 15px;
+    color: rgba(101, 1, 7, 0.38);
+    font-size: 14px;
+}
+
+.content .donater .img-donater .sidebar{
+    background: rgba(254, 97, 107, 0.08);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 31px;
+    margin-top: 4px;
+}
+
+.content .donater .img-donater .sidebar a{
     color: #FE616B;
 }
 
 
-/* donate-history css end */
-
-
-/* rent form start */
-.recharge-background{
-    position: fixed;
-    top: -1000px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background:rgba(0,0,0,0.7);
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    transition: 0.5s;
-}
-
-.recharge-active {
-    top: 0;
-}
-
-
-.recharge-form{
-    background: #fff;
-    max-width: 628px;
-    width: 100%;
-    position: relative;
-    border-radius: 24px;
-}
-
-.recharge-form .recharge{
+.content .vip-player{
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #E2E2E2;
-    padding: 24px 24px 16px 24px;
 }
 
-.recharge-form .recharge h5{
-    font-weight: bold;
-    font-size: 18px;
+.content .vip-player .vip-label{
+    position: relative;
 }
 
-.recharge-form .recharge i{
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.recharge-form .recharge-method{
-    padding: 8px 24px;
-}
-
-.recharge-form .recharge-method .method{
-    display: flex;
-    align-items: center;
-    padding: 16px 0;
-    border-top: 1px solid #E8E8E8;
-    cursor: pointer;
-}
-
-.recharge-form .recharge-method .method:first-child{
-    border-top: none; 
-}
-
-.recharge-form .recharge-method .method .bank-img{
-    margin-right: 12px;
-}
-
-.recharge-form .recharge-method .method .bank-detail h5{
-    font-weight: 500;
+.content .vip-player .vip-label h5{
+    font-weight: 700;
     font-size: 16px;
-    color: rgba(101, 1, 7, 0.87);
+    line-height: 24px;
+    color: #FE616B;
 }
 
-.recharge-form .recharge-method .method .bank-detail p{
-    font-weight: normal;
+.content .vip-player .vip-label img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.content .vip-player .vip-button button{
+    padding: 13px 24px;
+    background: linear-gradient(180deg, #FE858D 0%, #FE616B 100%);
+    border-radius: 8px;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 600;
     font-size: 14px;
-    color: rgba(101, 1, 7, 0.6);
+    letter-spacing: 0.012em;
+    cursor: pointer;
 }
 
+.content .vip-player .vip-button button i{
+    margin-right: 6px;
+}
 
+.content .vip-player .vip-button button:hover i{
+    transform: rotate(180deg);
+    transition-duration: 0.5s;
+}
 
-/* rent form end */
+.content .rent-player .player-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content .rent-player .player-container .player-background{
+    max-width: 302px; 
+    width: 100%;
+    height: 211px;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 32px rgba(254, 97, 107, 0.04);
+    border-radius: 16px;
+    margin-top: 72px;
+    position: relative;
+}
+
+.content .rent-player .player-container .player{
+    text-align: center;
+    padding-top: 80px;
+}
+
+.content .rent-player .player-container .player h5{
+    font-weight: 600;
+    font-size: 16px;
+    color: #650107;
+}
+
+.content .rent-player .player-container .player .heart{
+    margin-bottom: 16.7px;
+}
+
+.content .rent-player .player-container .player .heart i{
+    color: #FE616B;
+}
+
+.content .rent-player .player-container .player .game img{
+    width: 28px;
+    height: 28px;
+    /* margin-right: 4px; */
+}
+
+.content .rent-player .player-container .player .game img:last-child{
+    margin-right: 8px;
+}
+
+.content .rent-player .player-container .player .game a{
+    text-decoration: none;
+    color: #650107;
+    font-size: 12px;
+}
+
+.content .rent-player .player-container .player .img-player{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: -58px;
+    left: 30%;
+    border-radius: 50%;
+    border: 4px solid #FFFFFF;
+}
+
+.content .rent-player .player-container .player .img-player img{
+    width: 100%;
+}
+
+.content .rent-player .player-container .player .player-price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .rent-player .player-container .player .player-price .price{
+    padding: 13px 16px;
+    background: rgb(255 246 246);
+    border-radius: 0px 16px;
+}
+
+.content .rent-player .player-container .player .player-price .price p{
+    font-weight: bold;
+    font-size: 14px;
+    color: #FE616B;
+}
+
+.content .rent-player .player-container .player .player-price .view{
+    display: flex;
+}

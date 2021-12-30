@@ -427,8 +427,25 @@
 <script src="libs/js/jquery.min.js"></script>
 <script src="libs/js/script.js"></script>    
 <script>
-    var moreBt = document.querySelector('.read-more');
-    var lessBt = document.querySelector('.read-less');
+    $('.read-more').click(function(){
+        $(this).next('.read-less').show();
+        $(this).hide();
+        $(this).parent('.description').children('.text').children('.content').show();
+        $(this).parent('.description').children('.text').children('.dot').hide();
+        $(this).prev('')
+    })
+
+    $('.read-less').click(function(){
+        $(this).prev('.read-more').show();
+        $(this).hide();
+        $(this).parent('.description').children('.text').children('.content').hide();
+        $(this).parent('.description').children('.text').children('.dot').show();
+    })
+
+
+
+    // var moreBt = document.querySelector('.read-more');
+    // var lessBt = document.querySelector('.read-less');
     var content = document.querySelector('.content');
     var dot = document.querySelector('.dot');
     var imgDetail = document.querySelector('.img-detail');
@@ -441,13 +458,15 @@
         imgDetail.classList.add('flex-content');
     });
 
-    lessBt.addEventListener('click',function(){
-        content.classList.remove('more-content');
-        dot.classList.remove('less-content');
-        moreBt.classList.remove('less-content');
-        lessBt.classList.remove('more-content');
-        imgDetail.classList.remove('flex-content');
-    });
+    // lessBt.addEventListener('click',function(){
+    //     content.classList.remove('more-content');
+    //     dot.classList.remove('less-content');
+    //     moreBt.classList.remove('less-content');
+    //     lessBt.classList.remove('more-content');
+    //     imgDetail.classList.remove('flex-content');
+    // });
+
+
 
 
 
