@@ -23,7 +23,7 @@
                 <div class="col-lg-5">
                     <div class="navbar">
                         <div class="navbar-nav">
-                            <a href="#">Trang chủ</a>
+                            <a href="newfeed.html">Trang chủ</a>
                         </div>
                         <!-- <div class="underline"></div> -->
                         <div class="navbar-nav">
@@ -58,6 +58,15 @@
                             <div>
                                 <h5>Hoang Lyn</h5>
                                 <p>15.000VND</p>
+                            </div>
+                            <div class="sub-menu">
+                                <ul>
+                                    <li><a href="#" alt="" class="recharge-button">Nạp tiền</a></li>
+                                    <li><a href="#" alt="">Rút tiền</a></li>
+                                    <li><a href="donate-history.html" alt="">Lịch sử giao dịch</a></li>
+                                    <li><a href="edit-account.html" alt="">Cài đặt tài khoản</a></li>
+                                    <li><a href="#" alt="">Thoát</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -122,7 +131,7 @@
                         <th>05/12/2020 - 08:40</th>
                         <td>
                             Nạp tiền
-                            <div class="img-detail">
+                            <div class="img-detail 1">
                                 <img src="img/user1.svg" alt="">
                                 <p>Lê Hoàng</p>
                             </div>
@@ -132,13 +141,13 @@
                         <td>120,000</td>
                         <td class="description">
                             <div class="text">
-                                Lorem ipsum dolor sit amet, consadq <span class="dot">...</span>
-                            <span class="content">
+                                Lorem ipsum dolor sit amet, consadq <span class="dot 1">...</span>
+                            <span class="content 1">
                                  lorem ipsum dolor sit amet
                             </span>
                             </div>
-                            <button class="read-more"><img src="img/readmore.png" alt=""></button>
-                            <button class="read-less"><img src="img/readless.png" alt=""></button> 
+                            <button class="read-more 1"><img src="img/readmore.png" alt=""></button>
+                            <button class="read-less 1"><img src="img/readless.png" alt=""></button> 
                         </td>
                     </tr>    
                     <tr>
@@ -304,9 +313,114 @@
                     </tr>
                     </tbody>
                 </table>
+                <div class="choose-page">
+                    <p><span>12</span>/ 40 người chơi</p>
+                    <div class="page-change">
+                        <div class="page">
+                            <a href="#" class="page-number"><i class="fas fa-chevron-left"></i></a>
+                        </div>
+                        <div class="page">
+                            <a href="#" class="page-number">1</a>
+                        </div>
+                        <div class="page">
+                            <a href="#" class="page-number">2</a>
+                        </div>
+                        ...
+                        <div class="page">
+                            <a href="#" class="page-number">8</a>
+                        </div>
+                        <div class="page">
+                            <a href="#" class="page-number"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+
+
+    <!-- Nạp tiền form start -->
+<div class="recharge-background">
+    <div class="recharge-form">
+        <div class="recharge">
+            <h5>Nạp Tiền Vào 5me.onl</h5>
+            <span class="recharge-close"><i class="fas fa-times"></i></span>
+        </div>
+        <div class="recharge-method">
+            <div class="method">
+                <div class="bank-img">
+                    <img src="img/bank1.png" alt="">
+                </div>
+                <div class="bank-detail">
+                    <h5>Chuyển khoản qua ngân hàng</h5>
+                    <p>Miễn phí. Hỗ trợ 8:30 - 22:00 hàng ngày (trừ chủ nhật và các ngày lễ)</p>
+                </div>
+            </div>
+            <div class="method">
+                <div class="bank-img">
+                    <img src="img/bank2.png" alt="">
+                </div>
+                <div class="bank-detail">
+                    <h5>Nạp tiền bằng thẻ cào Player Code</h5>
+                    <p>Player code</p>
+                </div>
+            </div>
+            <div class="method">
+                <div class="bank-img">
+                    <img src="img/bank3.png" alt="">
+                </div>
+                <div class="bank-detail">
+                    <h5>Nạp tiền bằng thẻ cào điện thoại</h5>
+                    <p>Mobile card</p>
+                </div>
+            </div>
+            <div class="method">
+                <div class="bank-img">
+                    <img src="img/bank4.png" alt="">
+                </div>
+                <div class="bank-detail">
+                    <h5>Thanh toán trực tiếp qua Internet Banking</h5>
+                    <p>Phí 1.760đ + 3% giá trị nạp</p>
+                </div>
+            </div>
+            <div class="method">
+                <div class="bank-img">
+                    <img src="img/bank5.png" alt="">
+                </div>
+                <div class="bank-detail">
+                    <h5>Thanh toán trực tiếp qua Visa / Master Card</h5>
+                    <p>Phí 5.000đ + 7% giá trị nạp</p>
+                </div>
+            </div>
+            <div class="method">
+                <div class="bank-img">
+                    <img src="img/bank6.png" alt="">
+                </div>
+                <div class="bank-detail">
+                    <h5>Thanh toán trực tiếp qua QR code</h5>
+                    <p>Phí 3% giá trị nạp</p>
+                </div>
+            </div>
+            <div class="method">
+                <div class="bank-img">
+                    <img src="img/bank7.png" alt="">
+                </div>
+                <div class="bank-detail">
+                    <h5>Thanh toán qua Paypal</h5>
+                    <p>Phí tùy vào đại lý</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+ <!-- Nạp tiền form end -->
 
 
 
@@ -337,10 +451,43 @@
 
 
 
+    var moreBt1 = document.querySelector('.read-more 1');
+    var lessBt1 = document.querySelector('.read-less 1');
+    var content1 = document.querySelector('.content 1');
+    var dot1 = document.querySelector('.dot 1');
+    var imgDetail1 = document.querySelector('.img-detail 1');
+
+    moreBt1.addEventListener('click',function(){
+        content1.classList.add('more-content');
+        dot1.classList.add('less-content');
+        moreBt1.classList.add('less-content');
+        lessBt1.classList.add('more-content');
+        imgDetail1.classList.add('flex-content');
+    });
+
+    lessBt1.addEventListener('click',function(){
+        content1.classList.remove('more-content');
+        dot1.classList.remove('less-content');
+        moreBt1.classList.remove('less-content');
+        lessBt1.classList.remove('more-content');
+        imgDetail1.classList.remove('flex-content');
+    });
+
+</script>
+
+<script>
+    var rechargebt = document.querySelector('.recharge-button');
+    var rechargebg = document.querySelector('.recharge-background');
+    var disrecharge = document.querySelector('.recharge-close');
 
 
+    rechargebt.addEventListener('click',function(){
+        rechargebg.classList.add('recharge-active');
+    });
 
-
+    disrecharge.addEventListener('click',function(){
+        rechargebg.classList.remove('recharge-active');
+    });
 </script>
 
 </body>

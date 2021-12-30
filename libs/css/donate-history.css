@@ -410,6 +410,7 @@ button:focus {outline:0;}
 /* donate-history css start */
 .donate-history{
     background: #f9f9f9;
+    padding-bottom: 60px;
 }
 
 .donate-history h2{
@@ -464,7 +465,7 @@ button:focus {outline:0;}
 }
 
 .donate-history .searching-bar form i{
-    width: 3.5%;
+
     padding: 14px;
     background: linear-gradient(180deg, #FE858D 0%, #FE616B 100%);
     box-shadow: 0px 6px 16px rgba(254, 97, 107, 0.16);
@@ -474,8 +475,19 @@ button:focus {outline:0;}
 
 
 
-.donate-history .donate-.table{
-    
+.donate-history .donate-table{
+    border-radius: 24px;
+    background: #FFFFFF; 
+}
+
+.table th{
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(101, 1, 7, 0.6);
+}
+
+.table td{
+    font-size: 16px;
 }
 
 .donate-history .donate-table .table{
@@ -560,8 +572,140 @@ button:focus {outline:0;}
 
 
 
+ .donate-table .choose-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    padding-bottom: 32px;
+ }
+
+.donate-table .choose-page p{
+    color: rgba(101, 1, 7, 0.6);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.donate-table .choose-page span{
+    color: #FE616B;
+    font-weight: 600;
+    font-size: 14px;
+}
 
 
+ .donate-table .page-change{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.donate-table .page-change .page{
+    text-align: center;
+    line-height: 33px;
+    margin: 0 8px;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.donate-table .page-change .page a{
+    padding: 12px;
+    color: rgba(101, 1, 7, 0.6);
+    text-decoration: none;
+}
+
+.donate-table .page-change .page:hover{
+    border: 1px solid #FE616B;
+}
+
+
+.donate-table .page-change .page a:hover{
+    color: #FE616B;
+}
 
 
 /* donate-history css end */
+
+
+/* rent form start */
+.recharge-background{
+    position: fixed;
+    top: -1000px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: 0.5s;
+}
+
+.recharge-active {
+    top: 0;
+}
+
+
+.recharge-form{
+    background: #fff;
+    max-width: 628px;
+    width: 100%;
+    position: relative;
+    border-radius: 24px;
+}
+
+.recharge-form .recharge{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #E2E2E2;
+    padding: 24px 24px 16px 24px;
+}
+
+.recharge-form .recharge h5{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.recharge-form .recharge i{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.recharge-form .recharge-method{
+    padding: 8px 24px;
+}
+
+.recharge-form .recharge-method .method{
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    border-top: 1px solid #E8E8E8;
+    cursor: pointer;
+}
+
+.recharge-form .recharge-method .method:first-child{
+    border-top: none; 
+}
+
+.recharge-form .recharge-method .method .bank-img{
+    margin-right: 12px;
+}
+
+.recharge-form .recharge-method .method .bank-detail h5{
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(101, 1, 7, 0.87);
+}
+
+.recharge-form .recharge-method .method .bank-detail p{
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(101, 1, 7, 0.6);
+}
+
+
+
+/* rent form end */

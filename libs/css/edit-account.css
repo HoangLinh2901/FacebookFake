@@ -568,23 +568,28 @@ button:focus {outline:0;}
 }
 
 
-.content .user-info .form-group .sex-choose .male{
-    padding: 15px 84px;   
-    border-radius: 8px; 
-    color: rgba(101, 1, 7, 0.32);
-    font-weight: normal;
-    font-size: 16px;
-    text-decoration: none;
+.sex-choose input[type="radio"]{
+	display: none;
 }
-
-.content .user-info .form-group .sex-choose .female{
-    padding: 15px 84px;   
-    background: rgba(254, 97, 107, 0.08);
-    border-radius: 8px; 
-    color: #FE616B;
-    font-weight: normal;
-    font-size: 16px;
-    text-decoration: none;
+.sex-choose label{
+	width: 100%;
+	max-width: 194px;
+	height: 48px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.012em;
+	color: rgba(101, 1, 7, 0.32);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.sex-choose input[type="radio"]:checked + label{
+	background: rgba(254, 97, 107, 0.08);
+	border-radius: 8px;
+	color: #FE616B;
 }
 
 .content .country{
@@ -806,19 +811,6 @@ button:focus {outline:0;}
     font-size: 14px;
     color: rgba(101, 1, 7, 0.6);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -248,10 +248,9 @@ wrapper{
 }
 
 .underline{
-    display: block;
-    width: 48px;
-    height: 4px;
-    color: #FE616B;
+    position: absolute;
+    top: 40px;
+    left: 14%;
 }
 
 .user-nav{
@@ -656,3 +655,83 @@ wrapper{
     font-size: 17px;
     transform: rotate(40deg);
 }
+
+/* rent form start */
+.recharge-background{
+    position: fixed;
+    top: -1000px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: 0.5s;
+}
+
+.recharge-active {
+    top: 0;
+}
+
+
+.recharge-form{
+    background: #fff;
+    max-width: 628px;
+    width: 100%;
+    position: relative;
+    border-radius: 24px;
+}
+
+.recharge-form .recharge{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #E2E2E2;
+    padding: 24px 24px 16px 24px;
+}
+
+.recharge-form .recharge h5{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.recharge-form .recharge i{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.recharge-form .recharge-method{
+    padding: 8px 24px;
+}
+
+.recharge-form .recharge-method .method{
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    border-top: 1px solid #E8E8E8;
+    cursor: pointer;
+}
+
+.recharge-form .recharge-method .method:first-child{
+    border-top: none; 
+}
+
+.recharge-form .recharge-method .method .bank-img{
+    margin-right: 12px;
+}
+
+.recharge-form .recharge-method .method .bank-detail h5{
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(101, 1, 7, 0.87);
+}
+
+.recharge-form .recharge-method .method .bank-detail p{
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(101, 1, 7, 0.6);
+}
+
+
+
+/* rent form end */

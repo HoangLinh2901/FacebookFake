@@ -64,9 +64,9 @@
                             </div>
                             <div class="sub-menu">
                                 <ul>
-                                    <li><a href="#" alt="">Nạp tiền</a></li>
+                                    <li><a href="#" alt="" class="recharge-button">Nạp tiền</a></li>
                                     <li><a href="#" alt="">Rút tiền</a></li>
-                                    <li><a href="#" alt="">Lịch sử giao dịch</a></li>
+                                    <li><a href="donate-history.html" alt="">Lịch sử giao dịch</a></li>
                                     <li><a href="edit-account.html" alt="">Cài đặt tài khoản</a></li>
                                     <li><a href="#" alt="">Thoát</a></li>
                                 </ul>
@@ -247,8 +247,105 @@
     </section>
 
 
+    <!-- Nạp tiền form start -->
+<div class="recharge-background">
+    <div class="recharge-form">
+        <div class="recharge">
+            <h5>Nạp Tiền Vào 5me.onl</h5>
+            <span class="recharge-close"><i class="fas fa-times"></i></span>
+        </div>
+        <div class="recharge-method">
+            <div class="method">
+                <div class="bank-img">
+                    <img src="img/bank1.png" alt="">
+                </div>
+                <div class="bank-detail">
+                    <h5>Chuyển khoản qua ngân hàng</h5>
+                    <p>Miễn phí. Hỗ trợ 8:30 - 22:00 hàng ngày (trừ chủ nhật và các ngày lễ)</p>
+                </div>
+            </div>
+            <div class="method">
+                <div class="bank-img">
+                    <img src="img/bank2.png" alt="">
+                </div>
+                <div class="bank-detail">
+                    <h5>Nạp tiền bằng thẻ cào Player Code</h5>
+                    <p>Player code</p>
+                </div>
+            </div>
+            <div class="method">
+                <div class="bank-img">
+                    <img src="img/bank3.png" alt="">
+                </div>
+                <div class="bank-detail">
+                    <h5>Nạp tiền bằng thẻ cào điện thoại</h5>
+                    <p>Mobile card</p>
+                </div>
+            </div>
+            <div class="method">
+                <div class="bank-img">
+                    <img src="img/bank4.png" alt="">
+                </div>
+                <div class="bank-detail">
+                    <h5>Thanh toán trực tiếp qua Internet Banking</h5>
+                    <p>Phí 1.760đ + 3% giá trị nạp</p>
+                </div>
+            </div>
+            <div class="method">
+                <div class="bank-img">
+                    <img src="img/bank5.png" alt="">
+                </div>
+                <div class="bank-detail">
+                    <h5>Thanh toán trực tiếp qua Visa / Master Card</h5>
+                    <p>Phí 5.000đ + 7% giá trị nạp</p>
+                </div>
+            </div>
+            <div class="method">
+                <div class="bank-img">
+                    <img src="img/bank6.png" alt="">
+                </div>
+                <div class="bank-detail">
+                    <h5>Thanh toán trực tiếp qua QR code</h5>
+                    <p>Phí 3% giá trị nạp</p>
+                </div>
+            </div>
+            <div class="method">
+                <div class="bank-img">
+                    <img src="img/bank7.png" alt="">
+                </div>
+                <div class="bank-detail">
+                    <h5>Thanh toán qua Paypal</h5>
+                    <p>Phí tùy vào đại lý</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+ <!-- Nạp tiền form end -->
+
+
 
 
     <script src="libs/js/jquery.min.js"></script>
     <script src="libs/js/script.js"></script>
+    <script>
+        var rechargebt = document.querySelector('.recharge-button');
+        var rechargebg = document.querySelector('.recharge-background');
+        var disrecharge = document.querySelector('.recharge-close');
+
+
+        rechargebt.addEventListener('click',function(){
+            rechargebg.classList.add('recharge-active');
+        });
+
+        disrecharge.addEventListener('click',function(){
+            rechargebg.classList.remove('recharge-active');
+        });
+    </script>
 </body>
