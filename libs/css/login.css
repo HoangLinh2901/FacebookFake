@@ -196,8 +196,9 @@ a{
 
 /* Main css */
 body{
-    background-image: url(../../img/Rectangle.png);
+    background: url(../../img/Rectangle.png) no-repeat center center;
     background-size: cover;
+    min-height: 100vh;
 }
 
 .custom-container{
@@ -374,6 +375,13 @@ wrapper{
     margin-right: 12px;
 }
 
+.save-pwd .remember-me input.save{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
 .save-pwd .remember-me label{
     line-height: 24px;
     margin: 0px;
@@ -418,6 +426,11 @@ wrapper{
     cursor: pointer;
 }
 
+.submit:hover{
+    box-shadow: 0px 6px 8px rgba(254, 97, 107, 0.16);
+    background: linear-gradient(180deg, #FE858D 0%, #ff4c58 100%);
+}
+
 .facebook-btn{
     background: #FFFFFF;
     cursor: pointer;
@@ -427,16 +440,21 @@ wrapper{
     box-shadow: 0 4px 5px 0 rgb(0 0 0 / 2%);
 }
 
+.facebook-btn:hover{
+    box-shadow: 0px 6px 8px rgba(254, 97, 107, 0.16);
+}
+
 
 .facebook-btn a{
-    display: flex;
     text-align: center;
     text-decoration: none;
+    position: relative;
 }
 
 .facebook-btn img{
-    width: 30px;
-    margin-right: 80px;
+    position: absolute;
+    top: 3px;
+    left: 0px;
 }
 
 .facebook-btn a p{
@@ -557,6 +575,10 @@ wrapper{
         font-size: 13px;
     }
 
+    .form-group ::placeholder{
+        font-size: 13px;
+    }
+
     .login-form p {
         font-size: 13px;
         margin-bottom: 13px;
@@ -607,10 +629,6 @@ wrapper{
         margin-bottom: 30px;
     }
     
-    .Form {
-        max-width: 485px;
-    }
-
     .logo img {
         width: 175px;
         height: 40px;
@@ -645,6 +663,10 @@ wrapper{
     }
 
     .form-group input {
+        font-size: 13px;
+    }
+
+    .form-group ::placeholder{
         font-size: 13px;
     }
 
@@ -702,10 +724,6 @@ wrapper{
         margin-bottom: 25px;
     }
     
-    .Form {
-        max-width: 405px;
-    }
-
     .logo img {
         width: 170px;
         height: 31px;
@@ -750,6 +768,10 @@ wrapper{
     }
 
     .form-group input {
+        font-size: 12px;
+    }
+
+    .form-group ::placeholder{
         font-size: 12px;
     }
 
@@ -852,9 +874,6 @@ wrapper{
         margin-bottom: 25px;
     }
     
-    .Form {
-        max-width: 300px;
-    }
 
     .logo img {
         width: 170px;
@@ -903,6 +922,10 @@ wrapper{
     .form-group input {
         font-size: 11px;
         padding: 8px 9px;
+    }
+
+    .form-group ::placeholder{
+        font-size: 11px;
     }
 
     .form-group {
