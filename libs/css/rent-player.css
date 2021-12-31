@@ -674,6 +674,14 @@ input:focus{
 }
 
 
+
+
+
+.content .rent-player{
+    margin-bottom: 72px;
+}
+
+
 .content .vip-player{
     display: flex;
     justify-content: space-between;
@@ -730,7 +738,7 @@ input:focus{
     background: #FFFFFF;
     box-shadow: 0px 12px 32px rgba(254, 97, 107, 0.04);
     border-radius: 16px;
-    margin-top: 72px;
+    margin-top: 84px;
     position: relative;
 }
 
@@ -802,4 +810,14 @@ input:focus{
 
 .content .rent-player .player-container .player .player-price .view{
     display: flex;
+    align-items: center;
+    padding-right: 16px;
+    color: rgba(101, 1, 7, 0.38);
+    font-size: 12px;
+}
+
+.content .rent-player .player-container .player .player-price .view p{
+    font-weight: normal;
+    font-size: 12px;
+    margin-left: 4px;
 }

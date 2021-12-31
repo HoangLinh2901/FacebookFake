@@ -106,7 +106,7 @@
                     <tbody>
                         <tr>
                             <th>05/12/2020 - 08:40</th>
-                            <td>
+                            <td class="recharge_money">
                                 Nạp tiền
                                 <div class="img-detail">
                                     <img src="img/user1.svg" alt="">
@@ -129,7 +129,7 @@
                         </tr>
                     <tr>
                         <th>05/12/2020 - 08:40</th>
-                        <td>
+                        <td class="recharge_money">
                             Nạp tiền
                             <div class="img-detail 1">
                                 <img src="img/user1.svg" alt="">
@@ -152,7 +152,7 @@
                     </tr>    
                     <tr>
                         <th>05/12/2020 - 08:40</th>
-                        <td>
+                        <td class="recharge_money">
                             Nạp tiền
                             <div class="img-detail">
                                 <img src="img/user1.svg" alt="">
@@ -175,7 +175,7 @@
                     </tr>
                     <tr>
                         <th>05/12/2020 - 08:40</th>
-                        <td>
+                        <td class="recharge_money">
                             Nạp tiền
                             <div class="img-detail">
                                 <img src="img/user1.svg" alt="">
@@ -198,7 +198,7 @@
                     </tr>
                     <tr>
                         <th>05/12/2020 - 08:40</th>
-                        <td>
+                        <td class="recharge_money">
                             Nạp tiền
                             <div class="img-detail">
                                 <img src="img/user1.svg" alt="">
@@ -221,7 +221,7 @@
                     </tr>
                     <tr>
                         <th>05/12/2020 - 08:40</th>
-                        <td>
+                        <td class="recharge_money">
                             Nạp tiền
                             <div class="img-detail">
                                 <img src="img/user1.svg" alt="">
@@ -244,7 +244,7 @@
                     </tr>
                     <tr>
                         <th>05/12/2020 - 08:40</th>
-                        <td>
+                        <td class="recharge_money">
                             Nạp tiền
                             <div class="img-detail">
                                 <img src="img/user1.svg" alt="">
@@ -267,7 +267,7 @@
                     </tr>
                     <tr>
                         <th>05/12/2020 - 08:40</th>
-                        <td>
+                        <td class="recharge_money">
                             Nạp tiền
                             <div class="img-detail">
                                 <img src="img/user1.svg" alt="">
@@ -290,7 +290,7 @@
                     </tr>
                     <tr>
                         <th>05/12/2020 - 08:40</th>
-                        <td>
+                        <td class="recharge_money">
                             Nạp tiền
                             <div class="img-detail">
                                 <img src="img/user1.svg" alt="">
@@ -432,7 +432,8 @@
         $(this).hide();
         $(this).parent('.description').children('.text').children('.content').show();
         $(this).parent('.description').children('.text').children('.dot').hide();
-        $(this).prev('')
+        $(this).parent('.description').prev('.recharge_money').children('.img-detail').show();
+        $('.recharge_money').children('.img-detail').show();
     })
 
     $('.read-less').click(function(){
@@ -440,23 +441,24 @@
         $(this).hide();
         $(this).parent('.description').children('.text').children('.content').hide();
         $(this).parent('.description').children('.text').children('.dot').show();
+        $('.recharge_money').children('.img-detail').hide();
     })
 
 
 
     // var moreBt = document.querySelector('.read-more');
     // var lessBt = document.querySelector('.read-less');
-    var content = document.querySelector('.content');
-    var dot = document.querySelector('.dot');
-    var imgDetail = document.querySelector('.img-detail');
+    // var content = document.querySelector('.content');
+    // var dot = document.querySelector('.dot');
+    // var imgDetail = document.querySelector('.img-detail');
 
-    moreBt.addEventListener('click',function(){
-        content.classList.add('more-content');
-        dot.classList.add('less-content');
-        moreBt.classList.add('less-content');
-        lessBt.classList.add('more-content');
-        imgDetail.classList.add('flex-content');
-    });
+    // moreBt.addEventListener('click',function(){
+    //     content.classList.add('more-content');
+    //     dot.classList.add('less-content');
+    //     moreBt.classList.add('less-content');
+    //     lessBt.classList.add('more-content');
+    //     imgDetail.classList.add('flex-content');
+    // });
 
     // lessBt.addEventListener('click',function(){
     //     content.classList.remove('more-content');
