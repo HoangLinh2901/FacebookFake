@@ -265,6 +265,10 @@ wrapper{
     line-height: 0;
 }
 
+.contact li a:hover{
+    background:#FE616B;
+}
+
 .contact li a img{
     line-height: 14px;
     width: 12px;
@@ -318,6 +322,7 @@ wrapper{
     padding: 40px 24px;
 }
 
+
 .login-form h1{
     font-size: 24px;
     font-weight: bold;
@@ -333,6 +338,10 @@ wrapper{
 .login-form p{
     font-size: 14px;
     margin-bottom: 14px;
+}
+
+.login-form p span {
+    margin-left: 10px;
 }
 
 .login-form a{
@@ -711,7 +720,7 @@ wrapper{
     }
 
     .footer p {
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
@@ -781,7 +790,7 @@ wrapper{
     }
 
     .login-form a {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .logo {
@@ -794,12 +803,12 @@ wrapper{
     }
 
     .submit{
-        font-size: 14px;
+        font-size: 13px;
         margin-top: 10px;
     }
 
     .save-pwd .remember-me input.save {
-        margin-right: 10px;
+        margin-right: 5px;
     }
 
     .save-pwd .remember-me label {
@@ -839,7 +848,7 @@ wrapper{
     }
 
     .footer p {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .contact {
@@ -944,7 +953,7 @@ wrapper{
     }
 
     .login-form a {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .logo {
@@ -964,11 +973,11 @@ wrapper{
     }
 
     .save-pwd .remember-me input.save {
-        margin-right: 10px;
+        margin-right: 6px;
     }
 
     .save-pwd .remember-me label {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .save-pwd .remember-me input.save {

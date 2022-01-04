@@ -194,14 +194,16 @@ a{
 
 /* Main css */
 body{
-    background-image: url(../../img/Rectangle.png);
+    background: url(../../img/Rectangle.png) no-repeat center center;
     background-size: cover;
+    min-height: 100vh;
 }
 
 .custom-container{
-    max-width: 1280px;
+    max-width: 1310px;
     margin: 0 auto;
     width: 100%;
+    padding: 0 15px;
 }
 
 wrapper{
@@ -260,6 +262,10 @@ wrapper{
     line-height: 0;
 }
 
+.contact li a:hover{
+    background:#FE616B;
+}
+
 .contact li a img{
     line-height: 14px;
     width: 12px;
@@ -282,6 +288,7 @@ wrapper{
 
 #login-section{
     justify-content: center;
+    padding: 0 15px;
 }
 
 .Form{
@@ -381,7 +388,7 @@ wrapper{
     display: flex;
 }
 
-.email p{
+.email a{
     margin-left: -72px;
     cursor: pointer;
     color: #FE616B;
@@ -425,6 +432,11 @@ wrapper{
     font-size: 16px;
     margin-top: 24px;
     cursor: pointer;
+}
+
+.submit:hover{
+    box-shadow: 0px 6px 8px rgba(254, 97, 107, 0.16);
+    background: linear-gradient(180deg, #FE858D 0%, #ff4c58 100%);
 }
 
 .footer {
@@ -555,6 +567,11 @@ wrapper{
         font-size: 13px;
     }
 
+    .email input {
+        height: 38px;
+    }
+
+
     .form-group ::placeholder{
         font-size: 14px;
     }
@@ -568,6 +585,11 @@ wrapper{
         margin-bottom: 13px;
     }
 
+    .email a {
+        margin-left: -61px;
+        padding-top: 12px;
+    }
+
     .login-form a {
         font-size: 13px;
     }
@@ -578,7 +600,7 @@ wrapper{
     }
 
     .submit{
-        font-size: 15px;
+        font-size: 14px;
         margin-top: 13px;
     }
 
@@ -614,9 +636,6 @@ wrapper{
         margin-bottom: 30px;
     }
     
-    .Form {
-        max-width: 485px;
-    }
 
     .logo img {
         width: 175px;
@@ -687,13 +706,18 @@ wrapper{
         font-size: 13px;
     }
 
+    .email a {
+        margin-left: -61px;
+        padding-top: 12px;
+    }
+
     .logo {
         text-align: center;
         padding: 15px 0px;
     }
 
     .submit{
-        font-size: 15px;
+        font-size: 13px;
         margin-top: 19px;
     }
 
@@ -737,9 +761,7 @@ wrapper{
         margin-bottom: 25px;
     }
     
-    .Form {
-        max-width: 405px;
-    }
+
 
     .logo img {
         width: 170px;
@@ -797,6 +819,10 @@ wrapper{
         font-size: 12px;
     }
 
+    .form-group input::placeholder{
+        font-size: 12px;
+    }
+
     .form-group input{
         height: 38px;
     }
@@ -819,6 +845,11 @@ wrapper{
         font-size: 11px;
     }
 
+    .email a {
+        margin-left: -54px;
+        padding-top: 11px;
+    }
+
     .logo {
         text-align: center;
         padding: 10px 0px
@@ -829,7 +860,7 @@ wrapper{
     }
 
     .submit{
-        font-size: 13px;
+        font-size: 12px;
         margin-top: 10px;
     }
 
@@ -909,9 +940,6 @@ wrapper{
         margin-bottom: 25px;
     }
     
-    .Form {
-        max-width: 300px;
-    }
 
     .logo img {
         width: 170px;
@@ -973,6 +1001,14 @@ wrapper{
         padding: 8px 9px;
     }
 
+    .email input {
+        height: 34.5px;
+    }
+
+    .form-group input::placeholder{
+        font-size: 11px;
+    }
+
     .form-group {
         margin-bottom: 10px;
     }
@@ -989,7 +1025,9 @@ wrapper{
     }
 
     .login-form a {
-        font-size: 12px;
+        font-size: 10px;
+        margin-left: -47px;
+        padding-top: 9px;
     }
 
     .logo {
@@ -1003,7 +1041,7 @@ wrapper{
     }
 
     .submit{
-        font-size: 12px;
+        font-size: 11px;
         margin-top: 5px;
         padding: 9px;
     }
