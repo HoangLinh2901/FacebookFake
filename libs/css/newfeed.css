@@ -1739,8 +1739,45 @@ h3{
     }
 
     .rent-responsive .rent-player .player-container .player .img-player {
-        width: 120px;
-        height: 120px;
+        width: 112px;
+        height: 112px;
         left: 16%;
+    }
+
+    .rent-responsive .rent-player .player-container .player-background {
+        margin-top: 73px;
+    }
+
+    .rent-responsive .rent-player .player-container .player {
+        padding-top: 75px;
+    }
+
+    .rent-responsive .rent-player .player-container .player .game img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .rent-responsive .rent-player .player-container .player h5 {
+        font-size: 12px;
+    }
+
+    .rent-responsive .rent-player .player-container .player .heart i {
+        font-size: 12px;
+    }
+
+    .rent-responsive .rent-player .player-container .player .player-price .price {
+        padding: 7px 5px;
+    }
+
+    .rent-responsive .rent-player .player-container .player .player-price .price p {
+        font-size: 11px;
+    }
+
+    .rent-responsive .rent-player .player-container .player .player-price .price span {
+        font-size: 11px;
+    }
+
+    .rent-responsive .rent-player .player-container .player .player-price .view {
+        display: none;
     }
 }
