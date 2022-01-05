@@ -172,7 +172,7 @@
 *{
     box-sizing: border-box;
     -webkit-box-sizing: border-box; 
-    transition: all .2s linear;
+    transition: all .5s linear;
     font-family: 'Montserrat';
 }
 
@@ -495,7 +495,7 @@ wrapper{
     top: 0;
     height: 100vh;
     z-index: 1000;
-    transition-duration: 0.5s;
+    transition-duration: 0.65s;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1736,5 +1736,11 @@ h3{
     .nav-tabs .nav-link {
         padding: 8px 35px;
         font-size: 12px;
+    }
+
+    .rent-responsive .rent-player .player-container .player .img-player {
+        width: 120px;
+        height: 120px;
+        left: 16%;
     }
 }
