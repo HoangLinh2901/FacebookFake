@@ -964,6 +964,174 @@ h3{
     font-size: 14px;
 }
 
+.rent-responsive{
+    padding: 16px 20px;
+    background: #FFFFFF;
+    margin-top: 24px;
+}
+
+.rent-responsive .vip-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rent-responsive .vip-player .vip-label{
+    position: relative;
+}
+
+.rent-responsive .vip-player .vip-label h5{
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(101, 1, 7, 0.38);
+}
+
+
+.rent-responsive .vip-player .vip-button button{
+    padding: 8px 16px;
+    background: linear-gradient(180deg, #FE858D 0%, #FE616B 100%);
+    border-radius: 8px;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.012em;
+    cursor: pointer;
+}
+
+.rent-responsive .vip-player .vip-button button i{
+    margin-right: 6px;
+}
+
+.rent-responsive .vip-player .vip-button button:hover i{
+    transform: rotate(180deg);
+    transition-duration: 0.5s;
+}
+
+.rent-responsive .rent-player .player-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -16px;
+}
+
+
+.rent-responsive .rent-player .player-container .player-background{
+    max-width: 276px;
+    width: 100%;
+    height: 195px;
+    background:#F8F8F8;;
+    box-shadow: 0px 12px 32px rgba(254, 97, 107, 0.04);
+    border-radius: 16px;
+    margin-top: 84px;
+    position: relative;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.game {
+    margin-bottom: 16px;
+}
+
+.rent-responsive .rent-player .player-container .player{
+    text-align: center;
+    padding-top: 65px;
+}
+
+.rent-responsive .rent-player .player-container .player h5{
+    font-weight: 600;
+    font-size: 14px;
+    color: #650107;
+    margin-bottom: 4.5px;
+
+}
+
+.rent-responsive .rent-player .player-container .player .heart{
+    margin-bottom: 16.7px;
+}
+
+.rent-responsive .rent-player .player-container .player .heart i{
+    color: #FE616B;
+    font-size: 13px;
+}
+
+.rent-responsive .rent-player .player-container .player .game img{
+    width: 28px;
+    height: 28px;
+    /* margin-right: 4px; */
+}
+
+.rent-responsive .rent-player .player-container .player .game img:last-child{
+    margin-right: 8px;
+}
+
+.rent-responsive .rent-player .player-container .player .game a{
+    text-decoration: none;
+    color: #650107;
+    font-size: 12px;
+}
+
+.rent-responsive .rent-player .player-container .player .img-player{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: -58px;
+    left: 30%;
+    border-radius: 50%;
+    border: 4px solid #FFFFFF;
+}
+
+.rent-responsive .rent-player .player-container .player .img-player img{
+    width: 100%;
+}
+
+.rent-responsive .rent-player .player-container .player .player-price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rent-responsive .rent-player .player-container .player .player-price .price{
+    padding: 7px 16px;
+    background: #FFFFFF;;
+    border-radius: 0px 16px;
+}
+
+.rent-responsive .rent-player .player-container .player .player-price .price p{
+    font-weight: bold;
+    font-size: 14px;
+    color: #FE616B;
+}
+
+.rent-responsive .rent-player .player-container .player .player-price .price span{
+    font-weight: 400;
+    font-size: 14px; 
+    color: rgba(101, 1, 7, 0.38);
+}
+
+.rent-responsive .rent-player .player-container .player .player-price .view{
+    display: flex;
+    align-items: center;
+    padding-right: 16px;
+    color: rgba(101, 1, 7, 0.38);
+    font-size: 12px;
+}
+
+.rent-responsive .rent-player .player-container .player .player-price .view p{
+    font-weight: normal;
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1317,7 +1485,6 @@ h3{
        
     }
 
-
     .user-nav .icon i{
         color: #faefef;
         background: rgba(255, 255, 255, 0.24);
@@ -1359,6 +1526,16 @@ h3{
 
     .content{
         display: none;
+    }
+
+    .rent-responsive .rent-player .player-container .player-background {
+        max-width: 254px;
+        width: 100%;
+        margin-top: 84px;
+    }
+
+    .rent-responsive .rent-player .player-container .player .heart i{
+        font-size: 12px;
     }
 }
 
@@ -1429,6 +1606,19 @@ h3{
     .content{
         display: none;
     }
+
+    .rent-responsive .rent-player .player-container .player .img-player{
+        left: 18%;
+    }
+
+    .rent-responsive .rent-player .player-container .player .player-price .view{
+        display: none;
+    }
+
+    .rent-responsive .rent-player .player-container .player .heart i{
+        font-size: 12px;
+    }
+}
 }
 
 @media (max-width: 430px) {
