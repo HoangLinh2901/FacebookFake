@@ -734,58 +734,43 @@
    
 
     <script src="libs/js/jquery.min.js"></script>
-    <script src="libs/js/script.js"></script>
+    <!-- <script src="libs/js/script.js"></script> -->
+        
     <script>
-        var modalBtn = document.querySelector('.modal-button');
-        var modalBg = document.querySelector('.rent-background');
-        var modalClose = document.querySelector('.modal-close');
-        var modalMessenger = document.querySelector('.modal-messenger');
-        var chatForm = document.querySelector('.chat-form');
-        var chatFormClose = document.querySelector('.close-messenger');
-
-        modalBtn.addEventListener('click',function(){
-        modalBg.classList.add('bg-active');
+        $('.modal-button').click(function(){
+            $('.rent-background').addClass('bg-active');
         });
 
-        modalClose.addEventListener('click',function(){
-        modalBg.classList.remove('bg-active');
+        $('.modal-close').click(function(){
+            $('.rent-background').removeClass('bg-active');
         });
 
-        modalMessenger.addEventListener('click',function(){
-        chatForm.classList.add('chat-active');
+        $('.modal-messenger').click(function(){
+            $('.chat-form').addClass('chat-active');
         });
 
-        chatFormClose.addEventListener('click',function(){
-        chatForm.classList.remove('chat-active');
+        $('.close-messenger').click(function(){
+            $('.chat-form').removeClass('chat-active');
         });
     </script>
 
     <script>
-        var modalBtn1 = document.querySelector('.modal-button1');
-        var modalBg1 = document.querySelector('.donate-background');
-        var modalClose1 = document.querySelector('.modal-close1');
-
-        modalBtn1.addEventListener('click',function(){
-        modalBg1.classList.add('bg-active1');
+        $('.modal-button1').click(function(){
+            $('.donate-background').addClass('bg-active1');
         });
 
-        modalClose1.addEventListener('click',function(){
-        modalBg1.classList.remove('bg-active1');
+        $('.modal-close1').click(function(){
+            $('.donate-background').removeClass('bg-active1');
         });
     </script>
 
 <script>
-    var rechargebt = document.querySelector('.recharge-button');
-    var rechargebg = document.querySelector('.recharge-background');
-    var disrecharge = document.querySelector('.recharge-close');
-
-
-    rechargebt.addEventListener('click',function(){
-        rechargebg.classList.add('recharge-active');
+    $('.recharge-button').click(function(){
+        $('.recharge-background').addClass('recharge-active');
     });
 
-    disrecharge.addEventListener('click',function(){
-        rechargebg.classList.remove('recharge-active');
+    $('.recharge-close').click(function(){
+        $('.recharge-background').removeClass('recharge-active');
     });
 </script>
 </body>
