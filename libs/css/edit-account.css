@@ -430,6 +430,7 @@ button:focus {outline:0;}
 
 .content .user-detail .user-img img{
     width: 100%;
+    border-radius: 50%;
 }
 
 .content .user-detail .user-img i{

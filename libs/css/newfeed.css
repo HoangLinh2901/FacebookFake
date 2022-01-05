@@ -202,9 +202,10 @@ input:focus{
 /* Main style */
 
 .custom-container{
-    max-width: 1280px;
+    max-width: 1310px;
     margin: 0 auto;
     width: 100%;
+    padding: 0 15px;
 }
 
 wrapper{
@@ -217,10 +218,21 @@ wrapper{
 }
 
 .logo {
+    display: block;
     padding: 14px 0px;
 }
 
 .logo img{
+    width: 167px;
+    height: 51px;
+}
+
+.logo1 {
+    display: none;
+    padding: 14px 0px;
+}
+
+.logo1 img{
     width: 167px;
     height: 51px;
 }
@@ -256,6 +268,7 @@ wrapper{
 .user-nav{
     display: flex;
     float: right;
+    align-items: center;
 }
 
 .user-nav .icon{
@@ -287,10 +300,16 @@ wrapper{
     text-align: center;
 }
 
+.nav-bar{
+    display: none;
+}
+
+
 .user-status{
     display: flex;
     margin-left: 16px;
     padding: 13px 0;
+    align-items: center;
     position: relative;
 }
 
@@ -401,6 +420,154 @@ wrapper{
 
 
 
+
+
+
+/* Sub-header start */
+
+.user-status1{
+    display: flex;
+    margin-left: 16px;
+    padding: 12px 16px;
+    align-items: center;
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin-bottom: 32px;
+}
+
+.user-status1 .img-user{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-right: 12px;
+    padding: 4px;
+    border-radius: 50%;
+    border: 1px solid #FE616B;
+    box-sizing: border-box;
+}
+
+.user-status1 .img-user img{
+    width: 100%;
+}
+
+.user-status1 .img-user span{
+    position: absolute;
+    top: 33px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.user-status1 .img-user span img{
+    width: 18px;
+    height: 18px;
+    color: #FE616B;
+}
+
+.user-status1 h5{
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.user-status1 p{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FE616B;
+}
+
+
+.sub-header {
+    position: fixed;
+    padding: 18px 16px;
+    background: linear-gradient(
+180deg, #FE858D 0%, #FE616B 100%);
+    width: 100%;
+    left: -1600px;
+    top: 0;
+    height: 100vh;
+    z-index: 1000;
+    transition-duration: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.close-nav {
+    text-align: right;
+    margin-bottom: 16px;
+}
+
+.close-nav i{
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.active-navbar{
+    left: 0;
+}
+
+nav {
+     
+}
+
+nav ul{
+    padding: 0;
+}
+
+nav ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+nav ul li:last-child{
+    border-bottom:none;
+}
+
+nav .page-choose{
+    padding: 16px 0;
+    
+}
+
+.header-down{
+    margin-bottom: 40px;
+}
+
+.header-down button{
+    width: 100%;
+    height: 36px;
+    background: linear-gradient(180deg, #FFF5F5 0%, #FFE1E2 100%);
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FE616B;
+
+}
+
+.header-down button:focus{
+    outline: none;
+}
+
+
+
+nav .page-choose a{
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0.012em;
+}
+
+
+/* Sub-header end */
+
+
+
+
 .content {
     background: #f9f9f9;
 }
@@ -424,9 +591,14 @@ wrapper{
 
 /* col-lg-3 custom */
 
+section.content {
+    padding-top: 30px;
+    padding-bottom: 48px;
+}
+
 .content .top-donate{
-    margin-top: 30px;
     width: 100%;
+    margin-bottom: 24px;
 }
 
 .content .donater h3{
@@ -482,10 +654,10 @@ wrapper{
 }
 
 .post {
-    margin-top: 40px;
     padding: 24px;
     background: #FFFFFF;
     border-radius: 24px;
+    margin-bottom: 32px;
 }
 
 .post .upload-time{
@@ -524,6 +696,7 @@ wrapper{
 .post .like{
     display: flex;
     margin-top: 15px;
+    align-items: center;
 }
 
 .post .like i{
@@ -537,7 +710,6 @@ wrapper{
 }
 
 .post .like p{
-    line-height: 20px;
     font-size: 14px;
     color: rgba(101, 1, 7, 0.6);
     
@@ -546,6 +718,7 @@ wrapper{
 .post .write-comment{
     display: flex;
     margin-top: 14px;
+    align-items: center;
 }
 
 .post .write-comment img{
@@ -568,18 +741,19 @@ wrapper{
     color: rgba(101, 1, 7, 0.38);
 }
 
+h3{
+    color: rgba(101, 1, 7, 0.24);
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
 .chat-box{
-    margin-top: 40px;
     background: #FEFEFE;
     border-radius: 0px 24px 24px 24px;
     padding: 32px 12px;
 }
 
-.chat-box h3{
-    color: rgba(101, 1, 7, 0.24);
-    font-weight: bold;
-    font-size: 16px;
-}
 
 .messenger-tab{
     display: flex;
@@ -655,6 +829,147 @@ wrapper{
     font-size: 17px;
     transform: rotate(40deg);
 }
+
+
+
+
+
+
+
+
+
+
+/* Sub-content start */
+
+.sub-content{
+    background: #f9f9f9;
+    padding-top: 24px;
+}
+
+.chat-box-responsive{
+    background: #FEFEFE;
+    border-radius: 24px;
+    padding: 16px 12px;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.nav-tabs .nav-item {
+    width: 50%;
+}
+
+.nav-tabs .nav-link{
+    padding: 8px 35px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: rgba(101, 1, 7, 0.2);
+    border-bottom:1px solid rgba(254, 97, 107, 0.16) ;
+}
+
+.nav-tabs .nav-link.active {
+    padding: 8px 35px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: #FE616B;
+    background-color: #fff;
+    border: none;
+    border-bottom:1px solid #FE616B ;
+}
+
+.tab-content{
+    margin-top: 16px;
+}
+
+.donate-responsive{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.donate-responsive .top-donate{
+    margin-bottom: 24px;
+}
+
+.donate-responsive .donater h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;   
+    color: rgba(101, 1, 7, 0.38);
+}
+
+.donate-responsive .donater .img-donater{
+    display: flex;
+    position: relative;
+    background: #FEFEFE;
+    border-radius: 24px;
+    padding: 8px 10px;
+}
+
+.donate-responsive .donater .img-donater img{
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.donate-responsive .donater .img-donater .donater2{
+    right: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.donate-responsive .donater .img-donater .donater3{
+    right: 10px;
+}
+
+.donate-responsive .donater .img-donater span{
+    padding: 10px 4px;
+    margin-right: 4px;
+    color: rgba(101, 1, 7, 0.38);
+    font-size: 14px;
+}
+
+.donate-responsive .donater .img-donater .sidebar{
+    background: rgba(254, 97, 107, 0.08);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 31px;
+    margin-top: 4px;
+}
+
+.donate-responsive .donater .img-donater .sidebar a{
+    color: #FE616B;
+}
+
+.tab-pane .chat-box {
+    padding: 0;
+}
+
+.tab-pane .chat-box .write-chat input {
+    width: 91%;
+    margin-right: 10px;
+    border: none;
+    color: rgba(101, 1, 7, 0.87);
+    font-size: 14px;
+}
+
+.tab-pane .write-chat ::placeholder{
+    color: rgba(101, 1, 7, 0.32);
+    font-size: 14px;
+}
+
+
+
+
+/* Sub-content end */
+
+
 
 /* rent form start */
 .recharge-background{
@@ -732,6 +1047,445 @@ wrapper{
     color: rgba(101, 1, 7, 0.6);
 }
 
-
-
 /* rent form end */
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive start */
+@media (min-width: 992px) and (max-width: 1200px){
+    .header {
+        
+    }
+
+    .navbar {
+        margin: 33px 0;
+    }
+
+    .navbar .navbar-nav a {
+        font-size: 14px;
+    }
+
+    .user-status h5 {
+        font-size: 13px;
+    }
+
+    .user-status p {
+        font-size: 13px;
+    }
+
+    .content .top-donate {
+        display: none;
+    }
+
+    .custom{
+        max-width: 0%;
+        flex: 0 0 0%;
+        padding: 0;
+    }
+    
+    .custom1{
+        max-width: 65%;
+        flex: 0 0 65%;
+    }
+    
+    .custom2{
+        max-width: 35%;
+        flex: 0 0 35%;
+    }
+
+    .post .status p{
+        font-size: 13px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    .chat-row .username h5 {
+        font-size: 12px;
+    }
+
+    .chat-box .messenger p {
+        font-size: 13px;
+    }
+
+    .write-chat ::placeholder{
+        font-size: 13px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 992px){
+    .header {
+        background: linear-gradient(
+    180deg, #FE858D 0%, #FE616B 100%);
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo1{
+        display: block;
+        padding: 7px 0px;
+    }
+    
+    .nav-bar{
+        display: block;
+       
+    }
+
+
+    .user-nav .icon i{
+        color: #faefef;
+        background: rgba(255, 255, 255, 0.24);
+    }
+
+    .icon span {
+        background: #FFFFFF;
+        top: 16px;
+        right: 2px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .user-nav .icon:last-child i{
+        color: #FFFFFF;
+        background: none;
+        font-size: 25px;
+    }
+
+    .user-nav .icon {
+        line-height: 20px;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .col-md-0{
+        display: none;
+    }
+
+    .user-status{
+        display: none;
+    }
+
+    .content .top-donate {
+        display: none;
+    }
+    .custom{
+        max-width: 0%;
+        flex: 0 0 0%;
+        padding: 0;
+    }
+    
+    .custom1{
+        max-width: 65%;
+        flex: 0 0 65%;
+    }
+    
+    .custom2{
+        max-width: 35%;
+        flex: 0 0 35%;
+    }
+
+    .post {
+        padding: 17px;
+    }
+
+    .post .status {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .post .status p{
+        font-size: 11px;
+    }
+
+    .post .like p {
+        font-size: 12px;
+    }
+
+    .post .like i{
+        margin-right: 6px;
+        font-size: 16px;
+    }
+
+    .post .upload-time .time h5 {
+        font-size: 12px;
+    }
+
+    .post .upload-time .time p {
+        font-size: 11px;
+    }
+
+    .post .write-comment img {
+        width: 32px;
+        height: 32px;
+        margin-right: 6px;
+    }
+
+    .post .write-comment input {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+
+    .write-comment ::placeholder{
+        font-size: 11px;
+    }
+
+    h3 {
+        font-size: 13px;
+    }
+
+    .user-img img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .chat-row .username h5 {
+        font-size: 11px;
+    }
+
+    .chat-row .username p {
+        font-size: 11px;
+    }
+
+    .chat-box {
+        border-radius: 0px 20px 20px 20px;
+        padding: 20px 12px;
+    }
+
+    .chat-box .messenger p {
+        font-size: 11px;
+    }
+
+    .chat-box .write-chat input {
+        font-size: 11px;
+    }
+    
+    .chat-box .write-chat ::placeholder{
+        font-size: 11px;
+    }
+
+    .chat-box .write-chat a {
+        width: 32px;
+        height: 32px;
+        line-height: 33px;
+    }
+
+    .chat-box .write-chat i {
+        font-size: 13px;
+    }
+
+    .write-chat ::placeholder{
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+    .header {
+        background: linear-gradient(
+    180deg, #FE858D 0%, #FE616B 100%);
+    }
+
+    .logo1 img {
+        width: 145px;
+        height: 40px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo1{
+        display: block;
+        padding: 7px 0px;
+    }
+    
+    .nav-bar{
+        display: block;
+       
+    }
+
+
+    .user-nav .icon i{
+        color: #faefef;
+        background: rgba(255, 255, 255, 0.24);
+        width: 35px;
+        height: 35px;
+        line-height: 34px;
+    }
+
+    .icon span {
+        background: #FFFFFF;
+        top: 12px;
+        right: 0px;
+        width: 9px;
+        height: 9px;
+    }
+
+    .user-nav .icon:last-child i{
+        color: #FFFFFF;
+        background: none;
+        font-size: 24px;
+    }
+
+    .user-nav .icon {
+        line-height: 20px;
+        padding: 11px 0;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .col-sm-0{
+        display: none;
+    }
+
+    .user-status{
+        display: none;
+    }
+
+    .content{
+        display: none;
+    }
+}
+
+@media (min-width: 430px) and (max-width: 576px){
+    .header {
+        background: linear-gradient(
+    180deg, #FE858D 0%, #FE616B 100%);
+    }
+
+    .logo1 img {
+        width: 100px;
+        height: 32px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo1{
+        display: block;
+        padding: 7px 0px;
+    }
+    
+    .nav-bar{
+        display: block;
+       
+    }
+
+
+    .user-nav .icon i{
+        color: #faefef;
+        background: rgba(255, 255, 255, 0.24);
+        width: 32px;
+        height: 32px;
+        line-height: 34px;
+        font-size: 13px;
+    }
+
+    .icon span {
+        background: #FFFFFF;
+        top: 8px;
+        right: 3px;
+    }
+
+    .user-nav .icon:last-child i{
+        color: #FFFFFF;
+        background: none;
+        font-size: 25px;
+    }
+
+    .user-nav .icon {
+        line-height: 0px;
+        padding: 8px 0;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .col-0{
+        display: none;
+    }
+
+    .user-status{
+        display: none;
+    }
+
+    .content{
+        display: none;
+    }
+}
+
+@media (max-width: 430px) {
+    .header {
+        background: linear-gradient(
+    180deg, #FE858D 0%, #FE616B 100%);
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo1{
+        display: block;
+        padding: 7px 0px;
+    }
+    
+    .nav-bar{
+        display: block;
+       
+    }
+
+
+    .user-nav .icon i{
+        color: #faefef;
+        background: rgba(255, 255, 255, 0.24);
+    }
+
+    .icon span {
+        background: #FFFFFF;
+        top: 19px;
+        right: 3px;
+    }
+
+    .user-nav .icon:last-child i{
+        color: #FFFFFF;
+        background: none;
+        font-size: 25px;
+    }
+
+    .user-nav .icon {
+        line-height: 20px;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .col-0{
+        display: none;
+    }
+
+    .user-status{
+        display: none;
+    }
+
+    .content{
+        display: none;
+    }
+}

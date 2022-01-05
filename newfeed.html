@@ -10,17 +10,21 @@
     <link rel="stylesheet" href="libs/css/all.min.css">
     <link rel="stylesheet" href="libs/css/newfeed.css">
     <script src="https://kit.fontawesome.com/dacb7735c1.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
+    <section class="header">
     <div class="custom-container">
-        <section class="header">
             <div class="row">
-                <div class="col-xl-3 col-lg-3">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                     <div class="logo">
                         <img src="img/logo2.svg" alt="">
                     </div>
+                    <div class="logo1">
+                        <img src="img/logo3.svg" alt="">
+                    </div>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5 col-lg-5 col-md-0 col-sm-0 col-0">
                     <div class="navbar">
                         <div class="navbar-nav">
                             <a href="newfeed.html" class="active">Trang chủ</a>
@@ -39,7 +43,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6">
                     <div class="user-nav">
                         <div class="icon">
                             <i class="fas fa-search"></i>
@@ -72,16 +76,62 @@
                                 </ul>
                             </div>
                         </div>
+                        <div class="icon nav-bar">
+                            <i class="fas fa-bars bar"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>  
-    </div>
+            <div class="sub-header">
+                <div class="header-up">
+                    <div class="close-nav">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <div class="user-status1">
+                                    <div class="img-user">
+                                        <img src="img/user1.svg" alt="">
+                                        <span>
+                                            <img src="img/crown.svg" alt="">
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <h5>Hoang Lyn</h5>
+                                        <p>15.000VND</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="page-choose">
+                                    <a href="newfeed.html">Trang chủ</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="page-choose">
+                                    <a href="user-profile.html">Thuê người chơi</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="page-choose">
+                                    <a href="#">Đang theo dõi</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-down">
+                    <button>Đăng xuất</button>
+                </div>
+            </div>
+        </div>
+    </section>  
 
     <section class="content">
         <div class="custom-container">
             <div class="row">
-                <div class="col-lg-3 custom">
+                <div class="col-xl-3 custom">
                     <div class="top-donate">
                         <div class="donater">
                             <h3>TOP ĐẠI GIA TUẦN</h3>
@@ -125,7 +175,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 custom1">
+                <div class="col-xl-6 custom1 col-lg-8">
                     <div class="post">
                         <div class="upload-time">
                             <div class="user-img">
@@ -177,9 +227,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 custom2">
+                <div class="col-xl-3 custom2 col-lg-4">
+                    <h3>TRÒ CHUYỆN</h3>
                     <div class="chat-box">
-                        <h3>TRÒ CHUYỆN</h3>
                         <div class="messenger-tab">
                             <div class="chat-user-img">
                                 <img src="img/donater1.svg" alt="">
@@ -245,6 +295,138 @@
             </div>
         </div>
     </section>
+
+
+    <!-- Content responsive start -->
+    <section class="sub-content">
+        <div class="custom-container">
+            <div class="chat-box-responsive">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">TOP Đại Gia</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Trò Chuyện</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="donate-responsive">
+                            <div class="top-donate">
+                                <div class="donater">
+                                    <h3>Đại gia Tuần</h3>
+                                    <div class="img-donater">
+                                        <img src="img/donater1.svg" alt="">
+                                        <img src="img/donater2.svg" alt="" class="donater2">
+                                        <span>+3</span>
+                                        <div class="sidebar">
+                                            <a href="#"><i class="fas fa-chevron-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-donate">
+                                <div class="donater">
+                                    <h3>Đại gia Tháng</h3>
+                                    <div class="img-donater">
+                                        <img src="img/donater4.svg" alt="">
+                                        <img src="img/donater3.svg" alt="" class="donater2">
+                                        <span>+3</span>
+                                        <div class="sidebar">
+                                            <a href="#"><i class="fas fa-chevron-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-donate">
+                                <div class="donater">
+                                    <h3>Đại gia</h3>
+                                    <div class="img-donater">
+                                        <img src="img/donater6.svg" alt="">
+                                        <img src="img/donater4.svg" alt="" class="donater2">
+                                        <span>+3</span>
+                                        <div class="sidebar">
+                                            <a href="#"><i class="fas fa-chevron-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="chat-box">
+                            <div class="messenger-tab">
+                                <div class="chat-user-img">
+                                    <img src="img/donater1.svg" alt="">
+                                </div>
+                                <div class="chat-row">
+                                    <div class="username">
+                                        <h5>Linh Trần Đặng</h5>
+                                        <p>12 phút trước</p>
+                                    </div>
+                                    <div class="messenger">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, iste? Beatae blanditiis dolorem dolor doloremque culpa hello guys?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="messenger-tab">
+                                <div class="chat-user-img">
+                                    <img src="img/donater9.svg" alt="">
+                                </div>
+                                <div class="chat-row">
+                                    <div class="username">
+                                        <h5>Linh Trần Đặng</h5>
+                                        <p>8 phút trước</p>
+                                    </div>
+                                    <div class="messenger">
+                                        <p>Có ai ở nhà không mấy con gà? aloooooooo</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="messenger-tab">
+                                <div class="chat-user-img">
+                                    <img src="img/donater10.svg" alt="">
+                                </div>
+                                <div class="chat-row">
+                                    <div class="username">
+                                        <h5>Linh Trần Đặng</h5>
+                                        <p>5 phút trước</p>
+                                    </div>
+                                    <div class="messenger">
+                                        <p>Đang đi chơi với người yêu rồi đừng gọi nữa!!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="messenger-tab">
+                                <div class="chat-user-img">
+                                    <img src="img/donater9.svg" alt="">
+                                </div>
+                                <div class="chat-row">
+                                    <div class="username">
+                                        <h5>Linh Trần Đặng</h5>
+                                        <p>3 phút trước</p>
+                                    </div>
+                                    <div class="messenger">
+                                        <p>Chán vậy đang đi sang gọi đi chém chế gọi thêm mấy chai sting với bát mỳ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="write-chat">
+                                <input type="text" placeholder="Nhập tin nhắn...">
+                                <a href="#"><i class="fas fa-location-arrow"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Content responsive end -->
 
 
     <!-- Nạp tiền form start -->
@@ -334,6 +516,7 @@
 
     <script src="libs/js/jquery.min.js"></script>
     <script src="libs/js/script.js"></script>
+    <script src="libs/js/bootstrap.min.js"></script>
     <script>
         var rechargebt = document.querySelector('.recharge-button');
         var rechargebg = document.querySelector('.recharge-background');
@@ -346,6 +529,16 @@
 
         disrecharge.addEventListener('click',function(){
             rechargebg.classList.remove('recharge-active');
+        });
+    </script>
+
+    <script>
+        $('.nav-bar').click(function() {
+            $('.sub-header').addClass('active-navbar');
+        });
+
+        $('.close-nav').click(function() {
+            $('.sub-header').removeClass('active-navbar');
         });
     </script>
 </body>
