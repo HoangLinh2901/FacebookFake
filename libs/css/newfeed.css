@@ -970,6 +970,10 @@ h3{
     margin-top: 24px;
 }
 
+.rent-player{
+    margin-bottom: 40px;
+}
+
 .rent-responsive .vip-player{
     display: flex;
     justify-content: space-between;
@@ -1121,7 +1125,29 @@ h3{
     margin-left: 4px;
 }
 
+.rent-responsive .page-change{
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.rent-responsive .page-change .page{
+    text-align: center;
+    line-height: 33px;
+    margin: 0 8px;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.rent-responsive .page-change .page a{
+    padding: 12px;
+    color: rgba(101, 1, 7, 0.6);
+    text-decoration: none;
+}
 
 
 
@@ -1529,7 +1555,7 @@ h3{
     }
 
     .rent-responsive .rent-player .player-container .player-background {
-        max-width: 254px;
+        max-width: 310px;
         width: 100%;
         margin-top: 84px;
     }
@@ -1618,7 +1644,6 @@ h3{
     .rent-responsive .rent-player .player-container .player .heart i{
         font-size: 12px;
     }
-}
 }
 
 @media (max-width: 430px) {
