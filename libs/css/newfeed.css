@@ -199,9 +199,9 @@ input:focus{
     outline: none;
 }
 
-.row{
+/* .row{
     align-items: center;
-}
+} */
 /* Main style */
 
 .custom-container{
@@ -1670,7 +1670,7 @@ h3{
 
     .logo1{
         display: block;
-        padding: 7px 0px;
+        padding: 15px 0px;
     }
 
     .logo1 img {
