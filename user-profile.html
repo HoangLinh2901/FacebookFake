@@ -155,7 +155,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
                             <div class="img-produce">
-                                <img src="img/img-produce.svg" alt="">
+                                <a href="#"><img src="img/img-produce.svg" alt=""></a>
                             </div>
                         </div>
 
@@ -406,10 +406,10 @@
                         <div class="post">
                             <div class="upload-time">
                                 <div class="user-img">
-                                    <img src="img/user1.svg" alt="">
+                                    <a href="#"><img src="img/user1.svg" alt=""></a>
                                 </div>
                                 <div class="time">
-                                    <h5>Hoang Lyn</h5>
+                                    <a href="#">Hoang Lyn</a>
                                     <p>19/01/2021 - 20:32</p>
                                 </div>
                             </div>
@@ -417,10 +417,10 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, provident.</p>
                             </div>
                             <div class="post-img">
-                                <img src="img/post-img1.png" alt="">
+                                <a href="#"><img src="img/post-img1.png" alt=""></a>
                             </div>
                             <div class="like">
-                                <a href="#"><i class="far fa-heart"></i></a>
+                                <i class="far fa-heart" id="toggleLike"></i>
                                 <p><span>15</span> người thích bài viết này</p>
                             </div>
                             <div class="write-comment1">
@@ -431,10 +431,10 @@
                         <div class="post">
                             <div class="upload-time">
                                 <div class="user-img">
-                                    <img src="img/user1.svg" alt="">
+                                    <a href="#"><img src="img/user1.svg" alt=""></a>
                                 </div>
                                 <div class="time">
-                                    <h5>Hoang Lyn</h5>
+                                    <a href="#">Hoang Lyn</a>
                                     <p>19/01/2021 - 20:32</p>
                                 </div>
                             </div>
@@ -442,10 +442,10 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, provident.</p>
                             </div>
                             <div class="post-img">
-                                <img src="img/post-img2.png" alt="">
+                                <a href="#"><img src="img/post-img2.png" alt=""></a>
                             </div>
                             <div class="like">
-                                <a href="#"><i class="far fa-heart"></i></a>
+                                <i class="far fa-heart" id="toggleLike"></i>
                                 <p><span>15</span> người thích bài viết này</p>
                             </div>
                             <div class="write-comment1">
@@ -456,10 +456,10 @@
                         <div class="post">
                             <div class="upload-time">
                                 <div class="user-img">
-                                    <img src="img/user1.svg" alt="">
+                                    <a href="#"><img src="img/user1.svg" alt=""></a>
                                 </div>
                                 <div class="time">
-                                    <h5>Hoang Lyn</h5>
+                                    <a href="#">Hoang Lyn</a>
                                     <p>19/01/2021 - 20:32</p>
                                 </div>
                             </div>
@@ -467,10 +467,10 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, provident.</p>
                             </div>
                             <div class="post-img">
-                                <img src="img/post-img3.png" alt="">
+                                <a href="#"><img src="img/post-img3.png" alt=""></a>
                             </div>
                             <div class="like">
-                                <a href="#"><i class="far fa-heart"></i></a>
+                                <i class="far fa-heart" id="toggleLike"></i>
                                 <p><span>15</span> người thích bài viết này</p>
                             </div>
                             <div class="write-comment1">
@@ -772,5 +772,12 @@
     $('.recharge-close').click(function(){
         $('.recharge-background').removeClass('recharge-active');
     });
+</script>
+<script>
+    const toggleLike = document.querySelector('#toggleLike');
+
+    toggleLike.addEventListener('click', function (e) {
+        this.classList.toggle('fas');
+});
 </script>
 </body>
