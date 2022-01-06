@@ -451,6 +451,10 @@ button:focus {outline:0;}
     color: rgba(101, 1, 7, 0.32);
 }
 
+.donate-history .searching-bar form input:focus{
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 10%);
+}
+
 .donate-history .searching-bar form select{
     width: 20.5%;
     padding: 0 16px;
@@ -458,10 +462,12 @@ button:focus {outline:0;}
     height: 43px;
     margin-right: 16px;
     font-size: 16px;
+    background: #fff url(../../img/readmore.png) no-repeat right 0.75rem center;
 }
 
 .donate-history .searching-bar form select:focus{
     outline: none;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 10%);
 }
 
 .donate-history .searching-bar form i{
@@ -471,6 +477,12 @@ button:focus {outline:0;}
     box-shadow: 0px 6px 16px rgba(254, 97, 107, 0.16);
     border-radius: 8px;
     color: #FFFFFF;
+}
+
+.donate-history .searching-bar button{
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 
@@ -508,6 +520,7 @@ button:focus {outline:0;}
     font-size: 14px;
     color: #FE616B;
     text-align: center;
+    border: none;
 }
 
 .donate-history .donate-table .table .thead th:last-child{
@@ -516,9 +529,18 @@ button:focus {outline:0;}
 
 .donate-history .donate-table .table .description{
     display: flex;
-    justify-content: space-between;
     font-size: 16px;
     line-height: 24px;
+}
+
+.donate-history .donate-table .table .description .text{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.donate-history .donate-table .table .description .text p{
+    font-size: 16px;
 }
 
 .img-detail{
@@ -527,12 +549,16 @@ button:focus {outline:0;}
     margin-top: 4px;
 }
 
-.donate-history .donate-table .table .img-detail img{
+.img-detail .img{
+    display: flex;
+}
+
+.donate-history .donate-table .table .img-detail .img img{
     width: 24px;
     height: 24px;
     margin-right: 8px;
 }
-.donate-history .donate-table .table .img-detail p{
+.donate-history .donate-table .table .img-detail .img p{
     font-weight: normal;
     font-size: 14px;
     color: rgba(101, 1, 7, 0.38)
@@ -624,6 +650,11 @@ button:focus {outline:0;}
 
 .donate-table .page-change .page a:hover{
     color: #FE616B;
+}
+
+.rotate img{
+	transform: rotate(180deg);
+	transition: all 0.3s;
 }
 
 

@@ -201,6 +201,11 @@ input:focus{
 
 button:focus {outline:0;}
 
+select {
+    border: 0px;
+    outline: 0px;
+}
+
  /* header css start */ 
 
 .custom-container{
@@ -446,6 +451,71 @@ button:focus {outline:0;}
     cursor: pointer;
 }
 
+
+.avatar-upload {
+    position: relative;
+    max-width: 205px;
+    margin: 24px auto;
+}
+
+.avatar-edit {
+    position: absolute;
+    right: 33px;
+    z-index: 1;
+    bottom: 6px;
+}
+
+.avatar-edit input {
+    display: none;
+}
+.avatar-edit label {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 6px solid #FAFAFA;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    text-align: center;
+}
+
+.avatar-edit label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+}
+
+.avatar-edit label i{
+    font-size: 20px;
+    color: #FE616B;
+    line-height: 44px;
+}
+
+
+.avatar-preview {
+    width: 160px;
+    height: 160px;
+    padding: 11px;
+    position: relative;
+    border-radius: 50%;
+    border: 1px solid #FE616B;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-preview #imagePreview{
+    width: 100%;
+    border-radius: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
 .content .user-detail h5{
     font-weight: bold;
     font-size: 20px;
@@ -564,6 +634,10 @@ button:focus {outline:0;}
     color: rgba(101, 1, 7, 0.87);
 }
 
+.content .user-info .form-group input:focus{
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 10%);
+}
+
 .content .user-info .form-group .sex-choose{
     display: flex;
 }
@@ -591,6 +665,7 @@ button:focus {outline:0;}
 	background: rgba(254, 97, 107, 0.08);
 	border-radius: 8px;
 	color: #FE616B;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 10%);
 }
 
 .content .country{
@@ -616,7 +691,6 @@ button:focus {outline:0;}
     margin: 40px;
     background: #ffff;
     color: rgba(101, 1, 7, 0.87);
-
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
 
@@ -663,6 +737,10 @@ button:focus {outline:0;}
 
 .password-form{
     display: flex;
+}
+
+.password-form input:focus{
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 10%);
 }
 
 

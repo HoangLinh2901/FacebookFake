@@ -774,10 +774,9 @@
     });
 </script>
 <script>
-    const toggleLike = document.querySelector('#toggleLike');
 
-    toggleLike.addEventListener('click', function (e) {
-        this.classList.toggle('fas');
-});
+    $('#toggleLike').click(function() {
+        $(this).toggleClass('fas');
+    });
 </script>
 </body>
