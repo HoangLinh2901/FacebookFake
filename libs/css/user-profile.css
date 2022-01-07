@@ -213,9 +213,10 @@ input:focus{
  /* header css start */ 
 
 .custom-container{
-    max-width: 1280px;
+    max-width: 1310px;
     margin: 0 auto;
     width: 100%;
+    padding: 0 15px;
 }
 
 .wrapper{
@@ -232,6 +233,16 @@ input:focus{
 }
 
 .logo img{
+    width: 167px;
+    height: 51px;
+}
+
+.logo1 {
+    display: none;
+    padding: 14px 0px;
+}
+
+.logo1 img{
     width: 167px;
     height: 51px;
 }
@@ -297,6 +308,10 @@ input:focus{
     line-height: 40px;
     text-align: center;
     cursor: pointer;
+}
+
+.nav-bar{
+    display: none;
 }
 
 .user-status{
@@ -434,10 +449,13 @@ input:focus{
 
 .wall-background{
     position: relative;
-    
 }
 
-.wall-background .user-info a{
+.wall-background img{
+    width: 100%;
+}
+
+.wall-background .user-info .line1 .follow a{
     height: 40px;
     border-radius: 10px;
     padding: 10px 24px;
@@ -458,15 +476,12 @@ input:focus{
     margin-right: 8px;
 }
 
-.wall-background .user-name{
-
-}
 
 .profile-detail{
     padding:0 32px;
     display: flex;
     width: 100%;
-    top: 172px;
+    top: 165px;
     position: absolute;
 }
 
@@ -493,11 +508,19 @@ input:focus{
     display: flex;
 }
 
+.wall-background .user-name{
+
+}
+
 .user-info .user-name h3{
     font-weight: 600;
     font-size: 24px;
     color: #fff;
     margin-bottom: 8px;
+}
+
+.user-info .user-name .star i{
+    color: #FFFFFF;
 }
 
 .user-info .user-cost{
@@ -518,6 +541,29 @@ input:focus{
 
 .user-info .line3{
     display: flex;
+    justify-content: space-between;
+}
+
+.user-info .line3 .buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-info .line3 .buttons a{
+    height: 40px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #FE616B;
+    border: 2px solid #FE616B;
+    padding: 10px 18px;
+    text-decoration: none;
+    display: flex;
+}
+
+.user-info .line3 .user-detail{
+    display: flex;
+    justify-content: space-between;
 }
 
 .user-info .line3 .rent{
@@ -547,7 +593,7 @@ input:focus{
 }
 
 .user-info .line3 .chat{
-    margin-right: 84px;
+    margin-right: 0px;
 }
 
 .user-info .line3 .chat a{
@@ -586,6 +632,7 @@ input:focus{
 
 .follower .devices a{
     padding: 0px;
+    border: none;
 }
 
 
@@ -596,8 +643,328 @@ input:focus{
     padding: 7px;
 }
 
+.line2-responsive{
+    display: none;
+}
+
+.line3-responsive{
+    display: block;
+}
+
 /* head css end */
 
+
+/* Sub-header start */
+
+.user-status1{
+    display: flex;
+    margin-left: 16px;
+    padding: 12px 16px;
+    align-items: center;
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin-bottom: 32px;
+}
+
+.user-status1 .img-user{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-right: 12px;
+    padding: 4px;
+    border-radius: 50%;
+    border: 1px solid #FE616B;
+    box-sizing: border-box;
+}
+
+.user-status1 .img-user img{
+    width: 100%;
+}
+
+.user-status1 .img-user span{
+    position: absolute;
+    top: 33px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.user-status1 .img-user span img{
+    width: 18px;
+    height: 18px;
+    color: #FE616B;
+}
+
+.user-status1 h5{
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.user-status1 p{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FE616B;
+}
+
+
+.sub-header {
+    position: fixed;
+    padding: 18px 16px;
+    background: linear-gradient(
+180deg, #FE858D 0%, #FE616B 100%);
+    width: 100%;
+    left: -1600px;
+    top: 0;
+    height: 100vh;
+    z-index: 1000;
+    transition-duration: 0.65s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.close-nav {
+    text-align: right;
+    margin-bottom: 16px;
+}
+
+.close-nav i{
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.active-navbar{
+    left: 0;
+}
+/* Content css end */
+
+
+
+
+
+
+
+/* Sub-header start */
+
+.user-status1{
+    display: flex;
+    margin-left: 16px;
+    padding: 12px 16px;
+    align-items: center;
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin-bottom: 32px;
+}
+
+.user-status1 .img-user{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-right: 12px;
+    padding: 4px;
+    border-radius: 50%;
+    border: 1px solid #FE616B;
+    box-sizing: border-box;
+}
+
+.user-status1 .img-user img{
+    width: 100%;
+}
+
+.user-status1 .img-user span{
+    position: absolute;
+    top: 33px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.user-status1 .img-user span img{
+    width: 18px;
+    height: 18px;
+    color: #FE616B;
+}
+
+.user-status1 h5{
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.user-status1 p{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FE616B;
+}
+
+
+.sub-header {
+    position: fixed;
+    padding: 18px 16px;
+    background: linear-gradient(
+180deg, #FE858D 0%, #FE616B 100%);
+    width: 100%;
+    left: -1600px;
+    top: 0;
+    height: 100vh;
+    z-index: 1000;
+    transition-duration: 0.65s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.close-nav {
+    text-align: right;
+    margin-bottom: 16px;
+}
+
+.close-nav i{
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.active-navbar{
+    left: 0;
+}
+
+nav {
+     
+}
+
+nav ul{
+    padding: 0;
+}
+
+nav ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+nav ul li:last-child{
+    border-bottom:none;
+}
+
+nav .page-choose{
+    padding: 16px 0;
+    
+}
+
+.header-down{
+    margin-bottom: 40px;
+}
+
+.header-down button{
+    width: 100%;
+    height: 36px;
+    background: linear-gradient(180deg, #FFF5F5 0%, #FFE1E2 100%);
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FE616B;
+
+}
+
+.header-down button:focus{
+    outline: none;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 30%);
+}
+
+
+
+nav .page-choose a{
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0.012em;
+}
+
+.scroll-navs{
+    width: 100%;
+}
+
+
+/* Sub-header end */
+
+/* Sub-content start */
+
+.sub-content{
+    background: #f9f9f9;
+    padding-top: 0px;
+    display: block;
+}
+
+.chat-box-responsive{
+    background: #FEFEFE;
+    border-radius: 24px;
+    padding: 16px 12px;
+    max-width: 780px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-tabs {
+    border-bottom: none;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.nav-tabs .nav-item {
+    width: 50%;
+}
+
+.nav-tabs .nav-link{
+    padding: 8px 35px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: rgba(101, 1, 7, 0.2);
+    border-bottom:1px solid rgba(254, 97, 107, 0.16) ;
+}
+
+.nav-tabs .nav-link.active {
+    padding: 8px 35px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: #FE616B;
+    background-color: #fff;
+    border: none;
+    border-bottom:1px solid #FE616B ;
+}
+
+.tab-content{
+    margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sub-content end */
 
 
 
@@ -612,8 +979,6 @@ input:focus{
 
 
 /* Rent Form start */
-
-
 .rent-background{
     position: fixed;
     top: 0;
@@ -1156,7 +1521,7 @@ input:focus{
     width: 1px;
     height: 32px;
     background: #F2F2F2;
-    margin: 6px 19px;
+    margin: 6px 15px;
 }
 
 .profile-feed{
@@ -1184,40 +1549,44 @@ input:focus{
     line-height: 24px;
 }
 
-.profile-feed .introduce .img-produce{
+.introduce .img-produce{
     margin-top: 16px;
 }
 
-.profile-feed .top-donate{
+.introduce .img-produce img{
+    width: 100%;
+}
+
+.top-donate{
     padding: 32px 24px 20px;
     background: #FFFFFF;
     border-radius: 24px;
     margin-top: 31px;
 }
 
-.profile-feed .top-donate h5{
+.top-donate h5{
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
     color: rgba(101, 1, 7, 0.24);
 }
 
-.profile-feed .top-donate .donater{
+.top-donate .donater{
     display: flex;
     justify-content: space-between;
     margin-bottom: 12px;
 }
 
-.profile-feed .top-donate .donater .donater-name{
+.top-donate .donater .donater-name{
     display: flex;
     position: relative;
 }
 
-.profile-feed .top-donate .donater .donater-name img{
+.top-donate .donater .donater-name img{
     margin-right: 12px;
 }
 
-.profile-feed .top-donate .donater .donater-name .crown{
+.top-donate .donater .donater-name .crown{
     position: absolute;
     top: 16px;
     left: 15px;
@@ -1225,33 +1594,33 @@ input:focus{
 }
 
 
-.profile-feed .top-donate .donater .donater-name p{
+.top-donate .donater .donater-name p{
     line-height: 30px;
     font-size: 16px;
     font-weight: 400;
 }
 
-.profile-feed .top-donate .donater .money p{
+.top-donate .donater .money p{
     font-weight: bold;
     font-size: 16px;
     color: rgba(101, 1, 7, 0.87);
     line-height: 30px;
 }
 
-.profile-feed .top-donate .donater .money span{
+.top-donate .donater .money span{
     font-weight: normal;
     font-size: 14px;
     color: rgba(101, 1, 7, 0.87);
 }
 
-.profile-feed .evaluate{
+.evaluate{
     padding: 32px 24px;
     background: #FFFFFF;
     border-radius: 24px;
     margin-top: 31px;
 }
 
-.profile-feed .evaluate h5{
+.evaluate h5{
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
@@ -1259,13 +1628,13 @@ input:focus{
     margin-bottom: 12px;
 }
 
-.profile-feed .evaluate .rate {
+.evaluate .rate {
     display: flex;
     border-bottom: 1px solid #E8E8E8;
     margin-top: 16px;
 }
 
-.profile-feed .evaluate .rate .img-eva {
+.evaluate .rate .img-eva {
     margin-right: 8px;
 }
 
@@ -1273,32 +1642,31 @@ input:focus{
     width: 100%;
 }
 
-.profile-feed .evaluate .rate .name-eva {
+.evaluate .rate .name-eva {
     display: flex;
     justify-content: space-between;
 }
 
-.profile-feed .evaluate .rate .name-eva p{
+.evaluate .rate .name-eva p{
     font-weight: 600;
     font-size: 14px;
 }
 
-.profile-feed .evaluate .rate .name-eva .heart i{
+.evaluate .rate .name-eva .heart i{
     font-size: 14px;
     color: #FE616B;
 }
 
-.profile-feed .evaluate .rate .date-time{
+.evaluate .rate .date-time{
     display: flex;
     justify-content: space-between;
 }
 
-.profile-feed .evaluate .rate .date-time p{
+.evaluate .rate .date-time p{
     font-size: 12px;
     color: rgba(101, 1, 7, 0.38);
 }
-
-.eva-content .rate-comment p{
+.rate-comment p{
     font-weight: normal;
     font-size: 16px;
     font-style: normal;
@@ -1308,12 +1676,12 @@ input:focus{
     color: rgba(101, 1, 7, 0.87);
 }
 
-.profile-feed .evaluate .rate1 {
+.evaluate .rate1 {
     display: flex;
     margin-top: 16px;
 }
 
-.profile-feed .evaluate .rate1 .img-eva {
+.evaluate .rate1 .img-eva {
     margin-right: 8px;
 }
 
@@ -1321,27 +1689,27 @@ input:focus{
     width: 100%;
 }
 
-.profile-feed .evaluate .rate1 .name-eva {
+.evaluate .rate1 .name-eva {
     display: flex;
     justify-content: space-between;
 }
 
-.profile-feed .evaluate .rate1 .name-eva p{
+.evaluate .rate1 .name-eva p{
     font-weight: 600;
     font-size: 14px;
 }
 
-.profile-feed .evaluate .rate1 .name-eva .heart i{
+.evaluate .rate1 .name-eva .heart i{
     font-size: 14px;
     color: #FE616B;
 }
 
-.profile-feed .evaluate .rate1 .date-time{
+.evaluate .rate1 .date-time{
     display: flex;
     justify-content: space-between;
 }
 
-.profile-feed .evaluate .rate1 .date-time p{
+.evaluate .rate1 .date-time p{
     font-size: 12px;
     color: rgba(101, 1, 7, 0.38);
 }
@@ -1356,14 +1724,14 @@ input:focus{
     color: rgba(101, 1, 7, 0.87);
 }
 
-.profile-feed .page-change{
+.page-change{
     margin-top: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.profile-feed .page-change .page{
+.page-change .page{
     text-align: center;
     line-height: 33px;
     margin: 0 8px;
@@ -1374,18 +1742,18 @@ input:focus{
     box-sizing: border-box;
 }
 
-.profile-feed .page-change .page a{
+.page-change .page a{
     padding: 12px;
     color: rgba(101, 1, 7, 0.6);
     text-decoration: none;
 }
 
-.profile-feed .page-change .page:hover{
+.page-change .page:hover{
     border: 1px solid #FE616B;
 }
 
 
-.profile-feed .page-change .page a:hover{
+.page-change .page a:hover{
     color: #FE616B;
 }
 
@@ -1770,6 +2138,580 @@ input:focus{
     color: rgba(101, 1, 7, 0.6);
 }
 
-
-
 /* rent form end */
+
+
+
+
+
+
+/* Responsive start */
+@media (min-width: 992px) and (max-width: 1200px){
+    .header {
+        
+    }
+    
+    .profile-feed {
+        display: none;
+    }
+
+    .navbar {
+        margin: 33px 0;
+    }
+
+    .navbar .navbar-nav a {
+        font-size: 14px;
+    }
+
+    .user-status h5 {
+        font-size: 13px;
+    }
+
+    .user-status p {
+        font-size: 13px;
+    }
+
+    .wall-profile {
+        padding-bottom: 0px;
+    }
+
+    .profile-detail {
+        padding-left: 245px;
+        padding-right: 32px;
+        display: flex;
+        width: 100%;
+        top: 0px;
+        position: relative;
+    }
+    
+    .user-detail{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .line {
+        display: none;
+    }
+
+
+    .profile-detail .user-img {
+        position: absolute;
+        top: -84px;
+        left: 50px;
+    }
+
+    .wall-background .user-info .line1 .follow a{
+        display: none;
+    }
+
+    .user-info .user-name h3 {
+        color: #650107;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .user-info .user-name .star i{
+        color: #FE616B;
+        font-size: 15px;
+    }
+
+    .line1 {
+        padding: 20px 0;
+    }
+
+    .line2-responsive{
+        display: inline-block;
+    }
+
+    .line3-responsive{
+        display: none;
+    }
+
+    .user-info .line3 .chat {
+        margin-right: 8px;
+    }
+
+    .user-info .user-cost {
+        margin-top: 0px;
+        margin-bottom: 12px;
+    }
+
+    .sub-content {
+        display: block;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .introduce p{
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 992px){
+    .header {
+        background: linear-gradient(
+    180deg, #FE858D 0%, #FE616B 100%);
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo1{
+        display: block;
+        padding: 7px 0px;
+    }
+    
+    
+    .nav-bar{
+        display: block;
+       
+    }
+
+
+    .user-nav .icon i{
+        color: #faefef;
+        background: rgba(255, 255, 255, 0.24);
+    }
+
+    .icon span {
+        background: #FFFFFF;
+        top: 16px;
+        right: 2px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .user-nav .icon:last-child i{
+        color: #FFFFFF;
+        background: none;
+        font-size: 25px;
+    }
+
+    .user-nav .icon {
+        line-height: 20px;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .col-md-0{
+        display: none;
+    }
+
+    .user-status{
+        display: none;
+    }
+
+    .content .top-donate {
+        display: none;
+    }
+    .custom{
+        max-width: 0%;
+        flex: 0 0 0%;
+        padding: 0;
+    }
+    
+    .custom1{
+        max-width: 65%;
+        flex: 0 0 65%;
+    }
+    
+    .custom2{
+        max-width: 35%;
+        flex: 0 0 35%;
+    }
+
+    .post {
+        padding: 17px;
+    }
+
+    .post .status {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .post .status p{
+        font-size: 11px;
+    }
+
+    .post .like p {
+        font-size: 12px;
+    }
+
+    .post .like i{
+        margin-right: 6px;
+        font-size: 16px;
+    }
+
+    .post .upload-time .time h5 {
+        font-size: 12px;
+    }
+
+    .post .upload-time .time p {
+        font-size: 11px;
+    }
+
+    .post .write-comment img {
+        width: 32px;
+        height: 32px;
+        margin-right: 6px;
+    }
+
+    .post .write-comment input {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+
+    .write-comment ::placeholder{
+        font-size: 11px;
+    }
+
+    h3 {
+        font-size: 13px;
+    }
+
+    .user-img img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .chat-row .username h5 {
+        font-size: 11px;
+    }
+
+    .chat-row .username p {
+        font-size: 11px;
+    }
+
+    .chat-box {
+        border-radius: 0px 20px 20px 20px;
+        padding: 20px 12px;
+    }
+
+    .chat-box .messenger p {
+        font-size: 11px;
+    }
+
+    .chat-box .write-chat input {
+        font-size: 11px;
+    }
+    
+    .chat-box .write-chat ::placeholder{
+        font-size: 11px;
+    }
+
+    .chat-box .write-chat a {
+        width: 32px;
+        height: 32px;
+        line-height: 33px;
+    }
+
+    .chat-box .write-chat i {
+        font-size: 13px;
+    }
+
+    .write-chat ::placeholder{
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+    .header {
+        background: linear-gradient(
+    180deg, #FE858D 0%, #FE616B 100%);
+    }
+
+    .logo1 img {
+        width: 145px;
+        height: 40px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo1{
+        display: block;
+        padding: 7px 0px;
+    }
+    
+    .nav-bar{
+        display: block;
+       
+    }
+
+    .user-nav .icon i{
+        color: #faefef;
+        background: rgba(255, 255, 255, 0.24);
+        width: 35px;
+        height: 35px;
+        line-height: 34px;
+    }
+
+    .icon span {
+        background: #FFFFFF;
+        top: 12px;
+        right: 0px;
+        width: 9px;
+        height: 9px;
+    }
+
+    .user-nav .icon:last-child i{
+        color: #FFFFFF;
+        background: none;
+        font-size: 24px;
+    }
+
+    .user-nav .icon {
+        line-height: 20px;
+        padding: 11px 0;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .col-sm-0{
+        display: none;
+    }
+
+    .user-status{
+        display: none;
+    }
+
+    .content{
+        display: none;
+    }
+
+    .sub-content{
+        display: block;
+    }
+
+    .rent-responsive .rent-player .player-container .player-background {
+        max-width: 310px;
+        width: 100%;
+        margin-top: 84px;
+    }
+
+    .rent-responsive .rent-player .player-container .player .heart i{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 430px) and (max-width: 576px){
+    .header {
+        background: linear-gradient(
+    180deg, #FE858D 0%, #FE616B 100%);
+    }
+
+    .logo1 img {
+        width: 100px;
+        height: 32px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo1{
+        display: block;
+        padding: 7px 0px;
+    }
+    
+    .nav-bar{
+        display: block;
+       
+    }
+
+
+    .user-nav .icon i{
+        color: #faefef;
+        background: rgba(255, 255, 255, 0.24);
+        width: 32px;
+        height: 32px;
+        line-height: 34px;
+        font-size: 13px;
+    }
+
+    .icon span {
+        background: #FFFFFF;
+        top: 8px;
+        right: 3px;
+    }
+
+    .user-nav .icon:last-child i{
+        color: #FFFFFF;
+        background: none;
+        font-size: 25px;
+    }
+
+    .user-nav .icon {
+        line-height: 0px;
+        padding: 8px 0;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .col-0{
+        display: none;
+    }
+
+    .user-status{
+        display: none;
+    }
+
+    .content{
+        display: none;
+    }
+
+    .sub-content{
+        display: block;
+    }
+
+    .rent-responsive .rent-player .player-container .player .img-player{
+        left: 18%;
+    }
+
+    .rent-responsive .rent-player .player-container .player .player-price .view{
+        display: none;
+    }
+
+    .rent-responsive .rent-player .player-container .player .heart i{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 430px) {
+    .header {
+        background: linear-gradient(
+    180deg, #FE858D 0%, #FE616B 100%);
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo1{
+        display: block;
+        padding: 15px 0px;
+    }
+
+    .logo1 img {
+        width: 100px;
+        height: 32px;
+    }
+    
+    .nav-bar{
+        display: block;
+       
+    }
+
+
+    .user-nav .icon i{
+        color: #faefef;
+        background: rgba(255, 255, 255, 0.24);
+        width: 32px;
+        height: 32px;
+        line-height: 34px;
+    }
+
+    .icon span {
+        background: #FFFFFF;
+        top: 19px;
+        right: 3px;
+    }
+
+    .user-nav .icon:last-child i{
+        color: #FFFFFF;
+        background: none;
+        font-size: 22px;
+    }
+
+    .user-nav .icon {
+        line-height: 20px;
+    }
+    
+
+    .navbar{
+        display: none;
+    }
+
+    .col-0{
+        display: none;
+    }
+
+    .user-status{
+        display: none;
+    }
+
+    .content{
+        display: none;
+    }
+
+    .sub-content{
+        display: block;
+    }
+
+    .nav-tabs .nav-link.active {
+        padding: 8px 35px;
+        font-size: 12px;
+    }
+
+    .nav-tabs .nav-link {
+        padding: 8px 35px;
+        font-size: 12px;
+    }
+
+    .rent-responsive .rent-player .player-container .player .img-player {
+        width: 112px;
+        height: 112px;
+        left: 16%;
+    }
+
+    .rent-responsive .rent-player .player-container .player-background {
+        margin-top: 73px;
+    }
+
+    .rent-responsive .rent-player .player-container .player {
+        padding-top: 75px;
+    }
+
+    .rent-responsive .rent-player .player-container .player .game img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .rent-responsive .rent-player .player-container .player h5 {
+        font-size: 12px;
+    }
+
+    .rent-responsive .rent-player .player-container .player .heart i {
+        font-size: 12px;
+    }
+
+    .rent-responsive .rent-player .player-container .player .player-price .price {
+        padding: 7px 5px;
+    }
+
+    .rent-responsive .rent-player .player-container .player .player-price .price p {
+        font-size: 11px;
+    }
+
+    .rent-responsive .rent-player .player-container .player .player-price .price span {
+        font-size: 11px;
+    }
+
+    .rent-responsive .rent-player .player-container .player .player-price .view {
+        display: none;
+    }
+}
