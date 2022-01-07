@@ -455,6 +455,15 @@ input:focus{
     width: 100%;
 }
 
+.wall-background .background1{
+    display: block;
+}
+
+.wall-background .background2{
+    display: none;
+}
+
+
 .wall-background .user-info .line1 .follow a{
     height: 40px;
     border-radius: 10px;
@@ -902,7 +911,7 @@ nav .page-choose a{
 .sub-content{
     background: #f9f9f9;
     padding-top: 0px;
-    display: block;
+    display: none;
 }
 
 .chat-box-responsive{
@@ -1759,7 +1768,7 @@ nav .page-choose a{
 
 
 
-.profile-feed .write-comment{
+.write-comment{
     display: flex;
     padding: 24px;
     background: #fff;
@@ -1767,13 +1776,13 @@ nav .page-choose a{
     margin-bottom: 32px;
 }
 
-.profile-feed .write-comment img{
+.write-comment img{
     width: 40px;
     height: 40px;
     margin-right: 12px;
 }
 
-.profile-feed .write-comment input{
+.write-comment input{
     width: 100%;
     background: #F5F5F5;
     border-radius: 8px;
@@ -1782,7 +1791,7 @@ nav .page-choose a{
     color: rgba(101, 1, 7, 0.87);
 }
 
-.profile-feed .write-comment input:focus{
+.write-comment input:focus{
     box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 10%);
 }
 
@@ -2152,7 +2161,7 @@ nav .page-choose a{
     }
     
     .profile-feed {
-        display: none;
+        
     }
 
     .navbar {
@@ -2176,7 +2185,7 @@ nav .page-choose a{
     }
 
     .profile-detail {
-        padding-left: 245px;
+        padding-left: 235px;
         padding-right: 32px;
         display: flex;
         width: 100%;
@@ -2237,7 +2246,7 @@ nav .page-choose a{
     }
 
     .sub-content {
-        display: block;
+        display: none;
     }
 
     .line {
@@ -2249,14 +2258,35 @@ nav .page-choose a{
         font-size: 15px;
     }
 
-    
 }
 
 
 @media (min-width: 768px) and (max-width: 992px){
     .header {
+        position: absolute;
+        width: 100%;
+        z-index: 2000;
+        top: 0;
         background: linear-gradient(
     180deg, #FE858D 0%, #FE616B 100%);
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .profile-feed {
+        display: none;
+    }
+
+    .sub-content{
+        display: block;
+        padding-top: 16px;
+        padding-bottom: 72px;
+    }
+
+    .plus{
+        padding:0;
     }
 
     .logo{
@@ -2268,16 +2298,31 @@ nav .page-choose a{
         padding: 7px 0px;
     }
     
+    .profile-detail .user-info {
+        text-align: center;
+    }
     
     .nav-bar{
         display: block;
-       
+    }
+
+    .wall-background .background1{
+        display: none;
+    }
+    
+    .wall-background .background2{
+        display: block;
     }
 
 
     .user-nav .icon i{
         color: #faefef;
         background: rgba(255, 255, 255, 0.24);
+    }
+
+    .top-donate {
+        padding: 0 16px;
+        margin-top: 0;
     }
 
     .icon span {
@@ -2300,6 +2345,7 @@ nav .page-choose a{
 
     .navbar{
         display: none;
+        margin: 33px 0;
     }
 
     .col-md-0{
@@ -2330,25 +2376,26 @@ nav .page-choose a{
     }
 
     .post {
-        padding: 17px;
+        padding: 16px;
+        border-radius: 0;
     }
 
     .post .status {
         margin-top: 5px;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
     }
 
     .post .status p{
-        font-size: 11px;
+        font-size: 14px;
     }
 
     .post .like p {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .post .like i{
         margin-right: 6px;
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .post .upload-time .time h5 {
@@ -2357,12 +2404,37 @@ nav .page-choose a{
 
     .post .upload-time .time p {
         font-size: 11px;
+        margin-top: 4px;
     }
 
     .post .write-comment img {
         width: 32px;
         height: 32px;
         margin-right: 6px;
+    }
+
+    .post .write-comment1 img {
+        width: 45px;
+        height: 45px;
+        margin-right: 12px;
+    }
+
+    .write-comment img {
+        width: 45px;
+        height: 45px;
+        margin-right: 12px;
+    }
+
+    .write-comment input {
+        font-size: 14px;
+    }
+
+    .write-comment input::placeholder {
+        font-size: 14px;
+    }
+
+    button, input {
+        overflow: visible;
     }
 
     .post .write-comment input {
@@ -2374,13 +2446,21 @@ nav .page-choose a{
         font-size: 11px;
     }
 
+    .write-comment {
+        margin: 16px 0;
+    }
+
     h3 {
         font-size: 13px;
     }
 
     .user-img img {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .post .upload-time .time a {
+        
     }
 
     .chat-row .username h5 {
@@ -2421,17 +2501,133 @@ nav .page-choose a{
     .write-chat ::placeholder{
         font-size: 13px;
     }
+
+    .navbar .navbar-nav a {
+        font-size: 14px;
+    }
+
+    .user-status h5 {
+        font-size: 13px;
+    }
+
+    .user-status p {
+        font-size: 13px;
+    }
+
+    .wall-profile {
+        padding-bottom: 0px;
+    }
+
+    .profile-detail {
+        padding:0 12px;
+        padding-top: 50px;
+        display: flex;
+        width: 100%;
+        top: 0px;
+        position: relative;
+    }
+    
+    .user-detail{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 16px;
+    }
+
+    
+
+    .profile-detail .user-img {
+        position: absolute;
+        top: -35px;
+        left: 41%;
+        transform: translate(0, -41%);
+    }
+
+    .wall-background .user-info .line1 .follow a{
+        display: none;
+    }
+
+    .user-info .user-name h3 {
+        color: #650107;
+        font-size: 22px;
+        margin-bottom: 5px;
+        font-weight: 700;
+        letter-spacing: 0.024em;
+    }
+
+    .user-info .user-name .star i{
+        color: #FE616B;
+        font-size: 15px;
+    }
+
+    .line1 {
+        padding: 20px 0;
+        display: block;
+    }
+
+    .line2-responsive{
+        display: inline-block;
+    }
+
+    .line3-responsive{
+        display: none;
+    }
+
+    .user-info .line3 .chat {
+        margin-right: 8px;
+    }
+
+    .user-info .user-cost {
+        display: none;
+    }
+
+    .introduce p{
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    .introduce .img-produce {
+        padding: 0;
+    }
+
+    .star{
+        margin-bottom: 18px;
+    }
+
+    .evaluate {
+        padding: 0 16px;
+    }
+
+    .introduce{
+        padding: 0 16px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 768px){
     .header {
+        position: absolute;
+        width: 100%;
+        z-index: 2000;
+        top: 0;
         background: linear-gradient(
     180deg, #FE858D 0%, #FE616B 100%);
     }
 
-    .logo1 img {
-        width: 145px;
-        height: 40px;
+    .content {
+        padding: 0;
+    }
+
+    .profile-feed {
+        display: none;
+    }
+
+    .sub-content{
+        display: block;
+        padding-top: 16px;
+        padding-bottom: 72px;
+    }
+
+    .plus{
+        padding:0;
     }
 
     .logo{
@@ -2443,43 +2639,57 @@ nav .page-choose a{
         padding: 7px 0px;
     }
     
+    .profile-detail .user-info {
+        text-align: center;
+    }
+    
     .nav-bar{
         display: block;
-       
     }
+
+    .wall-background .background1{
+        display: none;
+    }
+    
+    .wall-background .background2{
+        display: block;
+    }
+
 
     .user-nav .icon i{
         color: #faefef;
         background: rgba(255, 255, 255, 0.24);
-        width: 35px;
-        height: 35px;
-        line-height: 34px;
+    }
+
+    .top-donate {
+        padding: 0 16px;
+        margin-top: 0;
     }
 
     .icon span {
         background: #FFFFFF;
-        top: 12px;
-        right: 0px;
-        width: 9px;
-        height: 9px;
+        top: 16px;
+        right: 2px;
+        width: 10px;
+        height: 10px;
     }
 
     .user-nav .icon:last-child i{
         color: #FFFFFF;
         background: none;
-        font-size: 24px;
+        font-size: 25px;
     }
 
     .user-nav .icon {
         line-height: 20px;
-        padding: 11px 0;
     }
 
     .navbar{
         display: none;
+        margin: 33px 0;
     }
 
-    .col-sm-0{
+    .col-md-0{
         display: none;
     }
 
@@ -2487,22 +2697,249 @@ nav .page-choose a{
         display: none;
     }
 
-    .content{
+    .content .top-donate {
+        display: none;
+    }
+    .custom{
+        max-width: 0%;
+        flex: 0 0 0%;
+        padding: 0;
+    }
+    
+    .custom1{
+        max-width: 65%;
+        flex: 0 0 65%;
+    }
+    
+    .custom2{
+        max-width: 35%;
+        flex: 0 0 35%;
+    }
+
+    .post {
+        padding: 16px;
+        border-radius: 0;
+    }
+
+    .post .status {
+        margin-top: 5px;
+        margin-bottom: 12px;
+    }
+
+    .post .status p{
+        font-size: 14px;
+    }
+
+    .post .like p {
+        font-size: 13px;
+    }
+
+    .post .like i{
+        margin-right: 6px;
+        font-size: 20px;
+    }
+
+    .post .upload-time .time h5 {
+        font-size: 12px;
+    }
+
+    .post .upload-time .time p {
+        font-size: 11px;
+        margin-top: 4px;
+    }
+
+    .post .write-comment img {
+        width: 32px;
+        height: 32px;
+        margin-right: 6px;
+    }
+
+    .post .write-comment1 img {
+        width: 45px;
+        height: 45px;
+        margin-right: 12px;
+    }
+
+    .write-comment img {
+        width: 45px;
+        height: 45px;
+        margin-right: 12px;
+    }
+
+    .write-comment input {
+        font-size: 14px;
+    }
+
+    .write-comment input::placeholder {
+        font-size: 14px;
+    }
+
+    button, input {
+        overflow: visible;
+    }
+
+    .post .write-comment input {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+
+    .write-comment ::placeholder{
+        font-size: 11px;
+    }
+
+    .write-comment {
+        margin: 16px 0;
+    }
+
+    h3 {
+        font-size: 13px;
+    }
+
+    .user-img img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .post .upload-time .time a {
+        
+    }
+
+    .chat-row .username h5 {
+        font-size: 11px;
+    }
+
+    .chat-row .username p {
+        font-size: 11px;
+    }
+
+    .chat-box {
+        border-radius: 0px 20px 20px 20px;
+        padding: 20px 12px;
+    }
+
+    .chat-box .messenger p {
+        font-size: 11px;
+    }
+
+    .chat-box .write-chat input {
+        font-size: 11px;
+    }
+    
+    .chat-box .write-chat ::placeholder{
+        font-size: 11px;
+    }
+
+    .chat-box .write-chat a {
+        width: 32px;
+        height: 32px;
+        line-height: 33px;
+    }
+
+    .chat-box .write-chat i {
+        font-size: 13px;
+    }
+
+    .write-chat ::placeholder{
+        font-size: 13px;
+    }
+
+    .navbar .navbar-nav a {
+        font-size: 14px;
+    }
+
+    .user-status h5 {
+        font-size: 13px;
+    }
+
+    .user-status p {
+        font-size: 13px;
+    }
+
+    .wall-profile {
+        padding-bottom: 0px;
+    }
+
+    .profile-detail {
+        padding:0 12px;
+        padding-top: 50px;
+        display: flex;
+        width: 100%;
+        top: 0px;
+        position: relative;
+    }
+    
+    .user-detail{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 16px;
+    }
+
+    
+
+    .profile-detail .user-img {
+        position: absolute;
+        top: -35px;
+        left: 41%;
+        transform: translate(0, -41%);
+    }
+
+    .wall-background .user-info .line1 .follow a{
         display: none;
     }
 
-    .sub-content{
+    .user-info .user-name h3 {
+        color: #650107;
+        font-size: 22px;
+        margin-bottom: 5px;
+        font-weight: 700;
+        letter-spacing: 0.024em;
+    }
+
+    .user-info .user-name .star i{
+        color: #FE616B;
+        font-size: 15px;
+    }
+
+    .line1 {
+        padding: 20px 0;
         display: block;
     }
 
-    .rent-responsive .rent-player .player-container .player-background {
-        max-width: 310px;
-        width: 100%;
-        margin-top: 84px;
+    .line2-responsive{
+        display: inline-block;
     }
 
-    .rent-responsive .rent-player .player-container .player .heart i{
-        font-size: 12px;
+    .line3-responsive{
+        display: none;
+    }
+
+    .user-info .line3 .chat {
+        margin-right: 8px;
+    }
+
+    .user-info .user-cost {
+        display: none;
+    }
+
+    .introduce p{
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    .introduce .img-produce {
+        padding: 0;
+    }
+
+    .star{
+        margin-bottom: 18px;
+    }
+
+    .evaluate {
+        padding: 0 16px;
+    }
+
+    .introduce{
+        padding: 0 16px;
     }
 }
 
