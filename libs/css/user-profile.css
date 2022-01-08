@@ -2383,6 +2383,12 @@ nav .page-choose a{
         line-height: 20px;
     }
 
+    .donate-background .donate-submit {
+        padding: 13px 24px;
+        font-size: 16px;
+        margin: 24px;
+    }
+
 
 
     /* donate form responsive */
