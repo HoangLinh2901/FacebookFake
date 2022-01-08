@@ -2314,12 +2314,73 @@ nav .page-choose a{
 
 
     /* donate form responsive */
+    .donate-form{
+        max-width: 550px;
+    }
+
     .donate-form .donate {
         padding: 20px 20px 6px 20px;
     }
 
+    .donate-form .donate h5 {
+        font-size: 16px;
+    }
+
     .donate-form .donate-user{
         margin-bottom: 16px;
+        padding: 24px 15px;
+    }
+
+    .donate-form .donate-user .donate-user-img .user-img4 {
+        width: 80px;
+        height: 80px;
+        top: 8px;
+        left: 75px;
+    }
+
+    .donate-form .donate-user .donate-price h5 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .donate-form .donate-user .donate-price p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    .donate-background .donate-time h5 {
+        font-size: 15px;
+    }
+
+    .donate-background .donate-time .caculate-time p {
+        font-size: 15px;
+        line-height: 24px;
+        padding-left: 12px;
+    }
+
+    .donate-background .donate-time .time .money-account i {
+        width: 28px;
+        height: 28px;
+        font-size: 22px;
+        margin-left: 8px;
+        line-height: 26px;
+    }
+
+    .donate-background .donate-time .time .money-account h5 {
+        font-size: 13px;
+        line-height: 20px;
+        margin-right: 16px;
+    }
+
+    .donate-background .donate-form .description {
+        margin-top: 12px;
+        padding: 0 24px;
+    }
+
+    .donate-background .donate-form .description TextArea {
+        padding: 10px 12px;
+        font-size: 13px;
+        line-height: 20px;
     }
 
 
