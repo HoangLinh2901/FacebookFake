@@ -2238,6 +2238,10 @@ nav .page-choose a{
         font-size: 15px;
     }
 
+    .chat-form{
+        right: 15px;
+    }
+
 }
 
 
@@ -2708,6 +2712,11 @@ nav .page-choose a{
     .introduce{
         padding: 0 16px;
     }
+
+    .chat-form{
+        right: 15px;
+    }
+
 }
 
 @media (min-width: 576px) and (max-width: 768px){
@@ -3396,7 +3405,7 @@ nav .page-choose a{
     .header {
         position: absolute;
         width: 100%;
-        z-index: 2000;
+        z-index: 1;
         top: 0;
         background: linear-gradient(
     180deg, #FE858D 0%, #FE616B 100%);
@@ -3583,6 +3592,10 @@ nav .page-choose a{
 
     h3 {
         font-size: 13px;
+    }
+
+    .chat-form{
+        right: 15px;
     }
 
     .user-img img { 
@@ -4111,12 +4124,38 @@ nav .page-choose a{
     .introduce{
         padding: 0 16px;
     }
+
+    .chat-form{
+        right: 15px;
+    }
 }
 
 @media (max-width: 430px) {
     .header {
+        position: absolute;
+        width: 100%;
+        z-index: 2000;
+        top: 0;
         background: linear-gradient(
     180deg, #FE858D 0%, #FE616B 100%);
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .profile-feed {
+        display: none;
+    }
+
+    .sub-content{
+        display: block;
+        padding-top: 16px;
+        padding-bottom: 72px;
+    }
+
+    .plus{
+        padding:0;
     }
 
     .logo{
@@ -4125,50 +4164,60 @@ nav .page-choose a{
 
     .logo1{
         display: block;
-        padding: 15px 0px;
+        padding: 7px 0px;
     }
-
-    .logo1 img {
-        width: 100px;
-        height: 32px;
+    
+    .profile-detail .user-info {
+        text-align: center;
     }
     
     .nav-bar{
         display: block;
-       
+    }
+
+    .wall-background .background1{
+        display: none;
+    }
+    
+    .wall-background .background2{
+        display: block;
     }
 
 
     .user-nav .icon i{
         color: #faefef;
         background: rgba(255, 255, 255, 0.24);
-        width: 32px;
-        height: 32px;
-        line-height: 34px;
+    }
+
+    .top-donate {
+        padding: 0 16px;
+        margin-top: 0;
     }
 
     .icon span {
         background: #FFFFFF;
-        top: 19px;
-        right: 3px;
+        top: 16px;
+        right: 2px;
+        width: 10px;
+        height: 10px;
     }
 
     .user-nav .icon:last-child i{
         color: #FFFFFF;
         background: none;
-        font-size: 22px;
+        font-size: 25px;
     }
 
     .user-nav .icon {
         line-height: 20px;
     }
-    
 
     .navbar{
         display: none;
+        margin: 33px 0;
     }
 
-    .col-0{
+    .col-md-0{
         display: none;
     }
 
@@ -4176,64 +4225,281 @@ nav .page-choose a{
         display: none;
     }
 
-    .content{
+    .content .top-donate {
+        display: none;
+    }
+    .custom{
+        max-width: 0%;
+        flex: 0 0 0%;
+        padding: 0;
+    }
+    
+    .custom1{
+        max-width: 65%;
+        flex: 0 0 65%;
+    }
+    
+    .custom2{
+        max-width: 35%;
+        flex: 0 0 35%;
+    }
+
+    .post {
+        padding: 16px;
+        border-radius: 0;
+    }
+
+    .post .status {
+        margin-top: 5px;
+        margin-bottom: 12px;
+    }
+
+    .post .status p{
+        font-size: 14px;
+    }
+
+    .post .like p {
+        font-size: 13px;
+    }
+
+    .post .like i{
+        margin-right: 6px;
+        font-size: 20px;
+    }
+
+    .post .upload-time .time h5 {
+        font-size: 12px;
+    }
+
+    .post .upload-time .time p {
+        font-size: 11px;
+        margin-top: 4px;
+    }
+
+    .post .write-comment img {
+        width: 32px;
+        height: 32px;
+        margin-right: 6px;
+    }
+
+    .post .write-comment1 img {
+        width: 36px;
+        height: 36px;
+        margin-right: 12px;
+    }
+
+    .write-comment img {
+        width: 32px;
+        height: 32px;
+        margin-right: 12px;
+    }
+
+    .write-comment input {
+        font-size: 14px;
+    }
+
+    .write-comment input::placeholder {
+        font-size: 14px;
+    }
+
+    button, input {
+        overflow: visible;
+    }
+
+    .post .write-comment input {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+
+    .write-comment ::placeholder{
+        font-size: 11px;
+    }
+
+    .write-comment {
+        margin: 16px 0;
+    }
+
+    h3 {
+        font-size: 13px;
+    }
+
+    .user-img img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .profile-detail .user-img img{
+        width: 125px;
+        height: 125px
+    }
+
+    .post .upload-time .time a {
+        
+    }
+
+    .chat-row .username h5 {
+        font-size: 11px;
+    }
+
+    .chat-row .username p {
+        font-size: 11px;
+    }
+
+    .chat-box {
+        border-radius: 0px 20px 20px 20px;
+        padding: 20px 12px;
+    }
+
+    .chat-box .messenger p {
+        font-size: 11px;
+    }
+
+    .chat-box .write-chat input {
+        font-size: 11px;
+    }
+    
+    .chat-box .write-chat ::placeholder{
+        font-size: 11px;
+    }
+
+    .write-comment input{
+        font-size: 11px;
+    }
+
+    .write-comment input::placeholder{
+        font-size: 11px;
+    }
+
+    .chat-box .write-chat a {
+        width: 32px;
+        height: 32px;
+        line-height: 33px;
+    }
+
+    .chat-box .write-chat i {
+        font-size: 13px;
+    }
+
+    .write-chat ::placeholder{
+        font-size: 13px;
+    }
+
+    .navbar .navbar-nav a {
+        font-size: 14px;
+    }
+
+    .user-status h5 {
+        font-size: 13px;
+    }
+
+    .user-status p {
+        font-size: 13px;
+    }
+
+    .wall-profile {
+        padding-bottom: 0px;
+    }
+
+    .profile-detail {
+        padding:0 12px;
+        padding-top: 50px;
+        display: flex;
+        width: 100%;
+        top: 0px;
+        position: relative;
+    }
+    
+    .user-detail{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 16px;
+        flex-wrap: wrap;
+    }
+
+    .user-detail .follower{
+        margin-bottom: 15px;
+        margin-right: 6px;
+    }
+
+    .user-detail .follower:last-child{
+        margin-right: 77px;
+    }
+
+    .profile-detail .user-img {
+        position: absolute;
+        top: -35px;
+        left: 34%;
+        transform: translate(0, -34%);
+    }
+
+    .wall-background .user-info .line1 .follow a{
         display: none;
     }
 
-    .sub-content{
+    .user-info .user-name h3 {
+        color: #650107;
+        font-size: 22px;
+        margin-bottom: 5px;
+        font-weight: 700;
+        letter-spacing: 0.024em;
+    }
+
+    .user-info .user-name .star i{
+        color: #FE616B;
+        font-size: 15px;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .line1 {
+        padding: 20px 0;
         display: block;
     }
 
-    .nav-tabs .nav-link.active {
-        padding: 8px 35px;
-        font-size: 12px;
+    .line2-responsive{
+        display: inline-block;
     }
 
-    .nav-tabs .nav-link {
-        padding: 8px 35px;
-        font-size: 12px;
-    }
-
-    .rent-responsive .rent-player .player-container .player .img-player {
-        width: 112px;
-        height: 112px;
-        left: 16%;
-    }
-
-    .rent-responsive .rent-player .player-container .player-background {
-        margin-top: 73px;
-    }
-
-    .rent-responsive .rent-player .player-container .player {
-        padding-top: 75px;
-    }
-
-    .rent-responsive .rent-player .player-container .player .game img {
-        width: 20px;
-        height: 20px;
-    }
-
-    .rent-responsive .rent-player .player-container .player h5 {
-        font-size: 12px;
-    }
-
-    .rent-responsive .rent-player .player-container .player .heart i {
-        font-size: 12px;
-    }
-
-    .rent-responsive .rent-player .player-container .player .player-price .price {
-        padding: 7px 5px;
-    }
-
-    .rent-responsive .rent-player .player-container .player .player-price .price p {
-        font-size: 11px;
-    }
-
-    .rent-responsive .rent-player .player-container .player .player-price .price span {
-        font-size: 11px;
-    }
-
-    .rent-responsive .rent-player .player-container .player .player-price .view {
+    .line3-responsive{
         display: none;
+    }
+
+    .user-info .line3 .chat {
+        margin-right: 8px;
+    }
+
+    .user-info .line3 .buttons .follow1{
+        display: none;
+    }
+
+    .user-info .user-cost {
+        display: none;
+    }
+
+    .introduce p{
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    .introduce .img-produce {
+        padding: 0;
+    }
+
+    .star{
+        margin-bottom: 18px;
+    }
+
+    .evaluate {
+        padding: 0 16px;
+    }
+
+    .introduce{
+        padding: 0 16px;
+    }
+
+    .chat-form{
+        right: 15px;
     }
 }

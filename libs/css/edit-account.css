@@ -209,9 +209,10 @@ select {
  /* header css start */ 
 
 .custom-container{
-    max-width: 1280px;
+    max-width: 1310px;
     margin: 0 auto;
     width: 100%;
+    padding: 0 15px;
 }
 
 .wrapper{
@@ -228,6 +229,16 @@ select {
 }
 
 .logo img{
+    width: 167px;
+    height: 51px;
+}
+
+.logo1 {
+    display: none;
+    padding: 14px 0px;
+}
+
+.logo1 img{
     width: 167px;
     height: 51px;
 }
@@ -293,6 +304,10 @@ select {
     line-height: 40px;
     text-align: center;
     cursor: pointer;
+}
+
+.nav-bar{
+    display: none;
 }
 
 .user-status{
@@ -407,7 +422,328 @@ select {
     color: #FE616B;
     font-weight: 600;
 }
+
+
 /* header css end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sub-header start */
+
+.user-status1{
+    display: flex;
+    margin-left: 16px;
+    padding: 12px 16px;
+    align-items: center;
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin-bottom: 32px;
+}
+
+.user-status1 .img-user{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-right: 12px;
+    padding: 4px;
+    border-radius: 50%;
+    border: 1px solid #FE616B;
+    box-sizing: border-box;
+}
+
+.user-status1 .img-user img{
+    width: 100%;
+}
+
+.user-status1 .img-user span{
+    position: absolute;
+    top: 33px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.user-status1 .img-user span img{
+    width: 18px;
+    height: 18px;
+    color: #FE616B;
+}
+
+.user-status1 h5{
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.user-status1 p{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FE616B;
+}
+
+
+.sub-header {
+    position: fixed;
+    padding: 18px 16px;
+    background: linear-gradient(
+180deg, #FE858D 0%, #FE616B 100%);
+    width: 100%;
+    left: -1600px;
+    top: 0;
+    height: 100vh;
+    z-index: 1000;
+    transition-duration: 0.65s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.close-nav {
+    text-align: right;
+    margin-bottom: 16px;
+}
+
+.close-nav i{
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.active-navbar{
+    left: 0;
+}
+/* Content css end */
+
+
+
+
+
+
+
+/* Sub-header start */
+
+.user-status1{
+    display: flex;
+    margin-left: 16px;
+    padding: 12px 16px;
+    align-items: center;
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin-bottom: 32px;
+}
+
+.user-status1 .img-user{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-right: 12px;
+    padding: 4px;
+    border-radius: 50%;
+    border: 1px solid #FE616B;
+    box-sizing: border-box;
+}
+
+.user-status1 .img-user img{
+    width: 100%;
+}
+
+.user-status1 .img-user span{
+    position: absolute;
+    top: 33px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.user-status1 .img-user span img{
+    width: 18px;
+    height: 18px;
+    color: #FE616B;
+}
+
+.user-status1 h5{
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.user-status1 p{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FE616B;
+}
+
+
+.sub-header {
+    position: fixed;
+    padding: 18px 16px;
+    background: linear-gradient(
+180deg, #FE858D 0%, #FE616B 100%);
+    width: 100%;
+    left: -1600px;
+    top: 0;
+    height: 100vh;
+    z-index: 1000;
+    transition-duration: 0.65s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.close-nav {
+    text-align: right;
+    margin-bottom: 16px;
+}
+
+.close-nav i{
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.active-navbar{
+    left: 0;
+}
+
+nav {
+     
+}
+
+nav ul{
+    padding: 0;
+}
+
+nav ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+nav ul li:last-child{
+    border-bottom:none;
+}
+
+nav .page-choose{
+    padding: 16px 0;
+    
+}
+
+.header-down{
+    margin-bottom: 40px;
+}
+
+.header-down button{
+    width: 100%;
+    height: 36px;
+    background: linear-gradient(180deg, #FFF5F5 0%, #FFE1E2 100%);
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FE616B;
+
+}
+
+.header-down button:focus{
+    outline: none;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 30%);
+}
+
+
+
+nav .page-choose a{
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0.012em;
+}
+
+.scroll-navs{
+    width: 100%;
+}
+
+
+/* Sub-header end */
+
+/* Sub-content start */
+
+.sub-content{
+    background: #f9f9f9;
+    padding-top: 0px;
+    display: none;
+}
+
+.chat-box-responsive{
+    background: #FEFEFE;
+    border-radius: 24px;
+    padding: 16px 12px;
+    max-width: 780px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-tabs {
+    border-bottom: none;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.nav-tabs .nav-item {
+    width: 50%;
+}
+
+.nav-tabs .nav-link{
+    padding: 8px 35px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: rgba(101, 1, 7, 0.2);
+    border-bottom:1px solid rgba(254, 97, 107, 0.16) ;
+}
+
+.nav-tabs .nav-link.active {
+    padding: 8px 35px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: #FE616B;
+    background-color: #fff;
+    border: none;
+    border-bottom:1px solid #FE616B ;
+}
+
+.tab-content{
+    margin-top: 25px;
+}
+
+/* Sub-content end */
+
+
+
+
+
+
 
 
 
@@ -416,10 +752,10 @@ select {
 /* content css start */
 .content{
     background: #f9f9f9;
+    padding-top: 40px;
 }
 
 .content .user-detail{
-    margin-top: 40px;
     text-align: center;
 }
 
@@ -451,11 +787,15 @@ select {
     cursor: pointer;
 }
 
+.rank {
+    max-width: 171px;
+    margin: 0 auto;
+}
 
 .avatar-upload {
     position: relative;
     max-width: 205px;
-    margin: 24px auto;
+    margin: 0px auto;
 }
 
 .avatar-edit {
@@ -494,6 +834,7 @@ select {
 
 
 .avatar-preview {
+    margin: 0 auto;
     width: 160px;
     height: 160px;
     padding: 11px;
@@ -548,7 +889,6 @@ select {
 .content .user-detail .money{
     display: flex;
     align-items: center;
-    padding-left: 117px;
 }
 
 .content .user-detail .money img{
@@ -573,20 +913,18 @@ select {
 
 
 .content .edit-bubble{
-    margin-top: 40px;
     margin-bottom: 32px;
     display: flex;
 }
 
 .content .edit-bubble .bg-bubble{
     position: relative;
-    margin-right:24px;
 }
 
 .content .edit-bubble .bubble-detail{
-    position: absolute;
-    top: 16px;
-    left: 24px;
+    padding: 16px 24px;
+    background: #FE616B;
+    border-radius: 24px;
 }
 
 .content .edit-bubble .bubble-detail h5{
@@ -905,17 +1243,738 @@ select {
     color: rgba(101, 1, 7, 0.6);
 }
 
-
-
 /* rent form end */
 
 
 
-@keyframes fadeIn {
-    0%{
-        opacity: 0;
+
+
+
+
+
+
+
+
+/* Responsive start */
+@media (min-width: 992px) and (max-width: 1200px){
+    .header {
+        
     }
-    100%{
-        opacity: 1;
+    
+    .profile-feed {
+        
     }
-};
+
+    .navbar {
+        margin: 33px 0;
+    }
+
+    .navbar .navbar-nav a {
+        font-size: 14px;
+    }
+
+    .user-status h5 {
+        font-size: 13px;
+    }
+
+    .user-status p {
+        font-size: 13px;
+    }
+
+    .wall-profile {
+        padding-bottom: 0px;
+    }
+
+    .profile-detail {
+        padding-left: 235px;
+        padding-right: 32px;
+        display: flex;
+        width: 100%;
+        top: 0px;
+        position: relative;
+    }
+
+    .line {
+        display: none;
+    }
+
+
+    .profile-detail .user-img {
+        position: absolute;
+        top: -84px;
+        left: 50px;
+    }
+
+    .wall-background .user-info .line1 .follow a{
+        display: none;
+    }
+
+    .user-info .user-name h3 {
+        color: #650107;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .user-info .user-name .star i{
+        color: #FE616B;
+        font-size: 15px;
+    }
+
+    .line1 {
+        padding: 20px 0;
+    }
+
+    .line2-responsive{
+        display: inline-block;
+    }
+
+    .line3-responsive{
+        display: none;
+    }
+
+    .user-info .line3 .chat {
+        margin-right: 8px;
+    }
+
+    .user-info .user-cost {
+        margin-top: 0px;
+        margin-bottom: 12px;
+    }
+
+    .sub-content {
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .introduce p{
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    .chat-form{
+        right: 15px;
+    }
+
+    .avatar-upload {
+        position: relative;
+        margin: 0px auto;
+    }
+
+    .avatar-edit {
+        right: 13px;
+        bottom: 0px;
+    }
+
+    .content .user-detail .money {
+        
+    }
+
+    .content .edit-bubble .bubble-detail h4 {
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 992px){
+    .header {
+        background: linear-gradient(
+    180deg, #FE858D 0%, #FE616B 100%);
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .profile-feed {
+        display: none;
+    }
+
+    .sub-content{
+        display: block;
+        padding-top: 16px;
+        padding-bottom: 72px;
+    }
+
+    .plus{
+        padding:0;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo1{
+        display: block;
+    }
+    
+    .logo1 h4{
+        margin: 0;
+        padding: 9px 0;
+        font-weight: 600;
+        font-size: 21px;
+        color: #FFFFFF;
+    }
+
+    .profile-detail .user-info {
+        text-align: center;
+    }
+    
+    .nav-bar{
+        display: block;
+    }
+
+    .wall-background .background1{
+        display: none;
+    }
+    
+    .wall-background .background2{
+        display: block;
+    }
+
+
+    .user-nav .icon i{
+        color: #faefef;
+        background: rgba(255, 255, 255, 0.24);
+    }
+
+    .top-donate {
+        padding: 0 16px;
+        margin-top: 0;
+    }
+
+    .icon span {
+        background: #FFFFFF;
+        top: 16px;
+        right: 2px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .user-nav .icon:last-child i{
+        color: #FFFFFF;
+        background: none;
+        font-size: 25px;
+    }
+
+    .user-nav .icon {
+        line-height: 20px;
+    }
+
+    .navbar{
+        display: none;
+        margin: 33px 0;
+    }
+
+    .col-md-0{
+        display: none;
+    }
+
+    .user-status{
+        display: none;
+    }
+
+    .user-detail{
+        display: flex;
+        padding: 0 16px;
+    }
+
+    .content .edit-bubble {
+        margin-top: 16px;
+    }
+
+    .content .user-detail {
+        text-align: left;
+        align-items: center;
+        margin: 0 -16px;
+        background: #FFFFFF;
+        padding: 12px 16px;
+    }
+
+    .content .user-detail .master {
+        margin-bottom: 0px;
+        margin-right: 32px;
+    }
+
+    .content .user-detail h5 {
+        font-weight: 600;
+        font-size: 20px;
+        margin-top: 0px;
+        margin-bottom: 12px;
+    }
+
+    .user-name{
+        display: block;
+        width: 100%;
+        margin-left: 12px;
+    }
+    
+
+    .rank {
+        max-width: 100%;
+        margin: 0;
+        display: flex;
+    }
+
+    .avatar-upload {
+        max-width: 205px;
+        margin: 0px;
+    }
+
+    .avatar-preview {
+        margin: 0 auto;
+        width: 120px;
+        height: 120px;
+        padding: 11px;
+    }
+    .avatar-edit {
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        bottom: 0px;
+    }
+
+    .avatar-edit label {
+        width: 40px;
+        height: 40px;
+    }
+
+    .avatar-edit label i {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .save {
+        border-radius: 40px 40px 0 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 576px) and (max-width: 768px){
+    .header {
+        background: linear-gradient(
+    180deg, #FE858D 0%, #FE616B 100%);
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .profile-feed {
+        display: none;
+    }
+
+    .sub-content{
+        display: block;
+        padding-top: 16px;
+        padding-bottom: 72px;
+    }
+
+    .plus{
+        padding:0;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo1{
+        display: block;
+    }
+
+    .logo1 h4{
+        margin: 0;
+        padding: 9px 0;
+        font-weight: 600;
+        font-size: 19px;
+        color: #FFFFFF;
+    }
+    
+    .profile-detail .user-info {
+        text-align: center;
+    }
+    
+    .nav-bar{
+        display: block;
+    }
+
+    .wall-background .background1{
+        display: none;
+    }
+    
+    .wall-background .background2{
+        display: block;
+    }
+
+
+    .user-nav .icon i{
+        color: #faefef;
+        background: rgba(255, 255, 255, 0.24);
+    }
+
+    .top-donate {
+        padding: 0 16px;
+        margin-top: 0;
+    }
+
+    .icon span {
+        background: #FFFFFF;
+        top: 16px;
+        right: 2px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .user-nav .icon:last-child i{
+        color: #FFFFFF;
+        background: none;
+        font-size: 25px;
+    }
+
+    .user-nav .icon {
+        line-height: 20px;
+    }
+
+    .navbar{
+        display: none;
+        margin: 33px 0;
+    }
+
+    .col-md-0{
+        display: none;
+    }
+
+    .user-status{
+        display: none;
+    }
+
+    .user-detail{
+        display: flex;
+        padding: 0 16px;
+    }
+
+    .content .edit-bubble {
+        margin-top: 12px;
+    }
+
+    .content .user-detail {
+        text-align: left;
+        align-items: center;
+        margin: 0 -16px;
+        background: #FFFFFF;
+        padding: 12px 16px;
+    }
+
+    .content .user-detail .master {
+        margin-bottom: 0px;
+        margin-right: 32px;
+    }
+
+    .content .user-detail h5 {
+        font-weight: 600;
+        font-size: 18px;
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+
+    .user-name{
+        display: block;
+        width: 100%;
+        margin-left: 12px;
+    }
+    
+
+    .rank {
+        max-width: 100%;
+        margin: 0;
+        display: flex;
+    }
+
+    .avatar-upload {
+        max-width: 205px;
+        margin: 0px;
+    }
+
+    .avatar-preview {
+        margin: 0 auto;
+        width: 90px;
+        height: 90px;
+        padding: 6px;
+    }
+    .avatar-edit {
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        bottom: 0px;
+    }
+
+    .avatar-edit label {
+        width: 35px;
+        height: 35px;
+        border: 3px solid #FAFAFA;
+    }
+
+    .avatar-edit label i {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .content .edit-bubble .bg-bubble {
+        margin-bottom: 12px;
+    }
+
+    .bg-custom1{
+        padding: 0 6px 0 16px;
+    }
+
+    .bg-custom2{
+        padding: 0 16px 0 6px;
+    }
+
+    .sex-choose label {
+        max-width: 345px;
+    }
+
+    .content .country .form-group {
+        margin-bottom: 12px;
+    }
+
+    .content .country .form-group:last-child{
+        margin-bottom: 0;
+    }
+
+    .save .save-button {
+        padding: 0px 15px;
+    }
+}
+
+@media (min-width: 430px) and (max-width: 576px){
+    .header {
+        background: linear-gradient(
+    180deg, #FE858D 0%, #FE616B 100%);
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .profile-feed {
+        display: none;
+    }
+
+    .sub-content{
+        display: block;
+        padding-top: 16px;
+        padding-bottom: 72px;
+    }
+
+    .plus{
+        padding:0;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo1{
+        display: block;
+    }
+
+    .logo1 h4{
+        margin: 0;
+        padding: 12px 0;
+        font-weight: 600;
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+    
+    .profile-detail .user-info {
+        text-align: center;
+    }
+    
+    .nav-bar{
+        display: block;
+    }
+
+    .wall-background .background1{
+        display: none;
+    }
+    
+    .wall-background .background2{
+        display: block;
+    }
+
+
+    .user-nav .icon i{
+        color: #faefef;
+        background: rgba(255, 255, 255, 0.24);
+        width: 32px;
+        height: 32px;
+        font-size: 12px;
+        line-height: 34px;
+    }
+
+    .top-donate {
+        padding: 0 16px;
+        margin-top: 0;
+    }
+
+    .icon span {
+        background: #FFFFFF;
+        top: 16px;
+        right: 2px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .user-nav .icon:last-child i{
+        color: #FFFFFF;
+        background: none;
+        font-size: 25px;
+    }
+
+    .user-nav .icon {
+        line-height: 20px;
+        padding: 18px 0;
+    }
+
+    .navbar{
+        display: none;
+        margin: 33px 0;
+    }
+
+    .col-md-0{
+        display: none;
+    }
+
+    .user-status{
+        display: none;
+    }
+
+    .user-detail{
+        display: flex;
+        padding: 0 16px;
+    }
+
+    .content .edit-bubble {
+        margin-top: 12px;
+    }
+
+    .content .user-detail {
+        text-align: left;
+        align-items: center;
+        margin: 0 -16px;
+        background: #FFFFFF;
+        padding: 12px 16px;
+    }
+
+    .content .user-detail .master {
+        margin-bottom: 0px;
+        margin-right: 32px;
+    }
+
+    .content .user-detail h5 {
+        font-weight: 600;
+        font-size: 20px;
+        margin-top: 0px;
+        margin-bottom: 12px;
+    }
+
+    .user-name{
+        display: block;
+        width: 100%;
+        margin-left: 12px;
+    }
+    
+
+    .rank {
+        max-width: 100%;
+        margin: 0;
+        display: flex;
+    }
+
+    .avatar-upload {
+        max-width: 205px;
+        margin: 0px;
+    }
+
+    .avatar-preview {
+        margin: 0 auto;
+        width: 120px;
+        height: 120px;
+        padding: 11px;
+    }
+    .avatar-edit {
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        bottom: 0px;
+    }
+
+    .avatar-edit label {
+        width: 40px;
+        height: 40px;
+    }
+
+    .avatar-edit label i {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .content .edit-bubble .bg-bubble {
+        margin-bottom: 12px;
+    }
+
+    .bg-custom1{
+        padding: 0 6px 0 16px;
+    }
+
+    .bg-custom2{
+        padding: 0 16px 0 6px;
+    }
+
+    .sex-choose label {
+        max-width: 345px;
+    }
+
+    .content .country .form-group {
+        margin-bottom: 12px;
+    }
+
+    .content .country .form-group:last-child{
+        margin-bottom: 0;
+    }
+
+    .save .save-button {
+        padding: 0px 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Responsive start */
