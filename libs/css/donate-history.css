@@ -1203,6 +1203,44 @@ nav .page-choose a{
     .content .edit-bubble .bubble-detail h4 {
         font-size: 25px;
     }
+
+    .donate-history .donate-table .table .description .text p {
+        font-size: 12px;
+    }
+
+    .donate-history h2 {
+        padding-top: 40px;
+        padding-bottom: 24px;
+        font-size: 23px;
+    }
+
+    .donate-history .searching-bar form input {
+        font-size: 15px;
+    }
+
+    .donate-history .searching-bar form select {
+        font-size: 15px;
+    }
+
+    span.dot {
+        font-size: 11px;
+    }
+
+    .donate-history .donate-table .table .thead th {
+        font-size: 13px;
+    }
+
+    .table th {
+        font-size: 15px;
+    }
+
+    .table td {
+        font-size: 15px;
+    }
+
+    .donate-table .choose-page p {
+        font-size: 13px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 992px){
@@ -1308,10 +1346,19 @@ nav .page-choose a{
         padding: 0 16px;
     }
 
+    .donate-history {
+        padding-top: 29px;
+    }
+
+    .donate-history h2 {
+        display: none;
+    }
+
+    
     .donate-history .searching-bar form input {
         width: 70%;
         padding: 12px 16px;
-        font-size: 16px;
+        font-size: 14px;
         margin-right: 8px;
     }
 
@@ -1321,7 +1368,523 @@ nav .page-choose a{
         color: rgba(101, 1, 7, 0.32);
         height: 43px;
         margin-right: 8px;
-        font-size: 16px;
+        font-size: 15px;
     }
 
+    span.dot {
+        font-size: 11px;
+    }
+
+    .donate-history .donate-table .table .thead th {
+        font-size: 13px;
+    }
+
+    .table th {
+        font-size: 15px;
+    }
+
+    .table td {
+        font-size: 15px;
+    }
+
+    .donate-table .choose-page p {
+        font-size: 13px;
+    }
+    
+}
+
+
+
+
+@media (min-width: 576px) and (max-width: 768px){
+    .header {
+        background: linear-gradient(
+    180deg, #FE858D 0%, #FE616B 100%);
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .profile-feed {
+        display: none;
+    }
+
+    .sub-content{
+        display: block;
+        padding-top: 16px;
+        padding-bottom: 72px;
+    }
+
+    .plus{
+        padding:0;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo1{
+        display: block;
+    }
+    
+    .logo1 h4{
+        margin: 0;
+        padding: 9px 0;
+        font-weight: 600;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+
+    .profile-detail .user-info {
+        text-align: center;
+    }
+    
+    .nav-bar{
+        display: block;
+    }
+
+    .wall-background .background1{
+        display: none;
+    }
+    
+    .wall-background .background2{
+        display: block;
+    }
+
+
+    .user-nav .icon i{
+        color: #faefef;
+        background: rgba(255, 255, 255, 0.24);
+    }
+
+    .top-donate {
+        padding: 0 16px;
+        margin-top: 0;
+    }
+
+    .icon span {
+        background: #FFFFFF;
+        top: 16px;
+        right: 2px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .user-nav .icon:last-child i{
+        color: #FFFFFF;
+        background: none;
+        font-size: 25px;
+    }
+
+    .user-nav .icon {
+        line-height: 20px;
+        padding: 15px 0;
+    }
+
+    .navbar{
+        display: none;
+        margin: 33px 0;
+    }
+
+    .col-md-0{
+        display: none;
+    }
+
+    .user-status{
+        display: none;
+    }
+
+    .user-detail{
+        display: flex;
+        padding: 0 16px;
+    }
+
+    .donate-history {
+        padding-top: 29px;
+    }
+
+    .donate-history h2 {
+        display: none;
+    }
+
+
+    .donate-history .searching-bar form {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .donate-history .searching-bar form input {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: 15px;
+        margin-right: 0px;
+        margin-bottom: 8px;
+    }
+
+    .donate-history .searching-bar form select {
+        width: 91%;
+        padding: 0 16px;
+        color: rgba(101, 1, 7, 0.32);
+        height: 43px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+
+    .donate-history .searching-bar button {
+        width: 7%;
+    }
+
+    span.dot {
+        font-size: 11px;
+    }
+
+    .donate-history .donate-table .table .thead th {
+        font-size: 13px;
+    }
+
+    .table th {
+        font-size: 15px;
+    }
+
+    .table td {
+        font-size: 15px;
+    }
+
+    .donate-table .choose-page p {
+        font-size: 13px;
+    }
+}
+
+
+
+
+@media (min-width: 430px) and (max-width: 576px){
+    .header {
+        background: linear-gradient(
+    180deg, #FE858D 0%, #FE616B 100%);
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .profile-feed {
+        display: none;
+    }
+
+    .sub-content{
+        display: block;
+        padding-top: 16px;
+        padding-bottom: 72px;
+    }
+
+    .plus{
+        padding:0;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo1{
+        display: block;
+    }
+    
+    .logo1 h4{
+        margin: 0;
+        padding: 9px 0;
+        font-weight: 600;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+
+    .profile-detail .user-info {
+        text-align: center;
+    }
+    
+    .nav-bar{
+        display: block;
+    }
+
+    .wall-background .background1{
+        display: none;
+    }
+    
+    .wall-background .background2{
+        display: block;
+    }
+
+
+    .user-nav .icon i{
+        color: #faefef;
+        background: rgba(255, 255, 255, 0.24);
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .top-donate {
+        padding: 0 16px;
+        margin-top: 0;
+    }
+
+    .icon span {
+        background: #FFFFFF;
+        top: 16px;
+        right: 2px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .user-nav .icon:last-child i{
+        color: #FFFFFF;
+        background: none;
+        font-size: 25px;
+    }
+
+    .user-nav .icon {
+        line-height: 20px;
+        padding: 15px 0;
+    }
+
+    .navbar{
+        display: none;
+        margin: 33px 0;
+    }
+
+    .col-md-0{
+        display: none;
+    }
+
+    .user-status{
+        display: none;
+    }
+
+    .user-detail{
+        display: flex;
+        padding: 0 16px;
+    }
+
+    .donate-history {
+        padding-top: 29px;
+    }
+
+    .donate-history h2 {
+        display: none;
+    }
+
+
+    .donate-history .searching-bar form {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .donate-history .searching-bar form input {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: 14px;
+        margin-right: 0px;
+        margin-bottom: 8px;
+    }
+
+    .donate-history .searching-bar form select {
+        width: 88%;
+        padding: 0 16px;
+        color: rgba(101, 1, 7, 0.32);
+        height: 43px;
+        margin-right: 8px;
+        font-size: 14px;
+    }
+
+    .donate-history .searching-bar button {
+        width: 7%;
+    }
+
+    span.dot {
+        font-size: 11px;
+    }
+
+    .donate-history .donate-table .table .thead th {
+        font-size: 13px;
+    }
+
+    .table th {
+        font-size: 15px;
+    }
+
+    .table td {
+        font-size: 15px;
+    }
+
+    .donate-table .choose-page p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 430px){
+    .header {
+        background: linear-gradient(
+    180deg, #FE858D 0%, #FE616B 100%);
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .profile-feed {
+        display: none;
+    }
+
+    .sub-content{
+        display: block;
+        padding-top: 16px;
+        padding-bottom: 72px;
+    }
+
+    .plus{
+        padding:0;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo1{
+        display: block;
+    }
+    
+    .logo1 h4{
+        margin: 0;
+        padding: 9px 0;
+        font-weight: 600;
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+
+    .profile-detail .user-info {
+        text-align: center;
+    }
+    
+    .nav-bar{
+        display: block;
+    }
+
+    .wall-background .background1{
+        display: none;
+    }
+    
+    .wall-background .background2{
+        display: block;
+    }
+
+
+    .user-nav .icon i{
+        color: #faefef;
+        background: rgba(255, 255, 255, 0.24);
+        width: 32px;
+        height: 32px;
+        line-height: 33px;
+        font-size: 12px;
+    }
+
+    .top-donate {
+        padding: 0 16px;
+        margin-top: 0;
+    }
+
+    .icon span {
+        background: #FFFFFF;
+        top: 16px;
+        right: 2px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .user-nav .icon:last-child i{
+        color: #FFFFFF;
+        background: none;
+        font-size: 22px;
+    }
+
+    .user-nav .icon {
+        line-height: 20px;
+        padding: 15px 0;
+    }
+
+    .navbar{
+        display: none;
+        margin: 33px 0;
+    }
+
+    .col-md-0{
+        display: none;
+    }
+
+    .user-status{
+        display: none;
+    }
+
+    .user-detail{
+        display: flex;
+        padding: 0 16px;
+    }
+
+    .donate-history {
+        padding-top: 29px;
+    }
+
+    .donate-history h2 {
+        display: none;
+    }
+
+
+    .donate-history .searching-bar form {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .donate-history .searching-bar form input {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: 14px;
+        margin-right: 0px;
+        margin-bottom: 8px;
+    }
+
+    .donate-history .searching-bar form select {
+        width: 88%;
+        padding: 0 16px;
+        color: rgba(101, 1, 7, 0.32);
+        height: 43px;
+        margin-right: 8px;
+        font-size: 14px;
+    }
+
+    .donate-history .searching-bar button {
+        width: 7%;
+    }
+
+    span.dot {
+        font-size: 11px;
+    }
+
+    .donate-history .donate-table .table .thead th {
+        font-size: 13px;
+    }
+
+    .table th {
+        font-size: 15px;
+    }
+
+    .table td {
+        font-size: 15px;
+    }
+
+    .donate-table .choose-page p {
+        display: none;
+    }
 }
