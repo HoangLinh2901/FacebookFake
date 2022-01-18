@@ -433,17 +433,6 @@ select {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* Sub-header start */
 
 .user-status1{
@@ -509,103 +498,7 @@ select {
     background: linear-gradient(
 180deg, #FE858D 0%, #FE616B 100%);
     width: 100%;
-    left: -1600px;
-    top: 0;
-    height: 100vh;
-    z-index: 1000;
-    transition-duration: 0.65s;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.close-nav {
-    text-align: right;
-    margin-bottom: 16px;
-}
-
-.close-nav i{
-    font-size: 30px;
-    color: #FFFFFF;
-}
-
-.active-navbar{
-    left: 0;
-}
-/* Content css end */
-
-
-
-
-
-
-
-/* Sub-header start */
-
-.user-status1{
-    display: flex;
-    margin-left: 16px;
-    padding: 12px 16px;
-    align-items: center;
-    position: relative;
-    background: #FFFFFF;
-    border-radius: 24px;
-    margin-bottom: 32px;
-}
-
-.user-status1 .img-user{
-    width: 50px;
-    height: 50px;
-    position: relative;
-    margin-right: 12px;
-    padding: 4px;
-    border-radius: 50%;
-    border: 1px solid #FE616B;
-    box-sizing: border-box;
-}
-
-.user-status1 .img-user img{
-    width: 100%;
-}
-
-.user-status1 .img-user span{
-    position: absolute;
-    top: 33px;
-    right: 0px;
-    width: 20px;
-    height: 20px;
-    box-sizing: border-box;
-    border-radius: 50%;
-    text-align: center;
-}
-
-.user-status1 .img-user span img{
-    width: 18px;
-    height: 18px;
-    color: #FE616B;
-}
-
-.user-status1 h5{
-    font-weight: 500;
-    font-size: 14px;
-    margin-bottom: 6px;
-}
-
-.user-status1 p{
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 20px;
-    color: #FE616B;
-}
-
-
-.sub-header {
-    position: fixed;
-    padding: 18px 16px;
-    background: linear-gradient(
-180deg, #FE858D 0%, #FE616B 100%);
-    width: 100%;
-    left: -1600px;
+    left: -100%;
     top: 0;
     height: 100vh;
     z-index: 1000;
@@ -1077,6 +970,7 @@ nav .page-choose a{
 
 
 
+
 .password-form{
     display: flex;
 }
@@ -1451,11 +1345,6 @@ nav .page-choose a{
     .user-nav .icon i{
         color: #faefef;
         background: rgba(255, 255, 255, 0.24);
-    }
-
-    .top-donate {
-        padding: 0 16px;
-        margin-top: 0;
     }
 
     .icon span {

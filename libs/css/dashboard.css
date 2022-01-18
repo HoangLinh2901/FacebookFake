@@ -260,7 +260,6 @@ button:focus {outline:0;}
     color: rgba(101, 1, 7, 0.6);
 }
 
-.navbar .navbar-nav a.active,
 .navbar .navbar-nav a:hover{
     color: #FE616B;
     font-weight: 600;
@@ -605,7 +604,7 @@ button:focus {outline:0;}
     background: linear-gradient(
 180deg, #FE858D 0%, #FE616B 100%);
     width: 100%;
-    left: -1600px;
+    left: -100%;
     top: 0;
     height: 100vh;
     z-index: 1000;
@@ -684,61 +683,477 @@ nav .page-choose a{
     width: 100%;
 }
 
-
 /* Sub-header end */
 
-/* Sub-content start */
 
-.sub-content{
+
+
+
+
+/* Content css start */
+.content{
+    padding: 40px 0;
     background: #f9f9f9;
-    padding-top: 0px;
-    display: none;
 }
 
-.chat-box-responsive{
-    background: #FEFEFE;
-    border-radius: 24px;
-    padding: 16px 12px;
-    max-width: 780px;
+.content .menu-tab{
+    padding: 34px 24px;
+    background: #FFFFFF;
+    border-radius: 24px 0px 0px 24px;
     width: 100%;
-    margin: 0 auto;
+    height: 864px;
 }
 
-.nav-tabs {
-    border-bottom: none;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
+
+.content .menu-tab a{
+    color: rgba(101, 1, 7, 0.87);
+    font-weight: normal;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-bottom: 16px;
 }
 
-.nav-tabs .nav-item {
-    width: 50%;
-}
-
-.nav-tabs .nav-link{
-    padding: 8px 35px;
-    border: none;
-    font-weight: 600;
-    font-size: 14px;
-    text-align: center;
-    color: rgba(101, 1, 7, 0.2);
-    border-bottom:1px solid rgba(254, 97, 107, 0.16) ;
-}
-
-.nav-tabs .nav-link.active {
-    padding: 8px 35px;
-    font-weight: 600;
-    font-size: 14px;
-    text-align: center;
+.content .menu-tab a:hover{
     color: #FE616B;
-    background-color: #fff;
-    border: none;
-    border-bottom:1px solid #FE616B ;
 }
 
-.tab-content{
-    margin-top: 25px;
+
+.content .menu-tab a i{
+    margin-right: 16px;
 }
 
-/* Sub-content end */
+
+
+
+
+
+
+/* dashboard css start */
+.content .bubble{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.content .bubble .bubble-bg{
+    background: #FE616B;
+    border-radius: 24px;
+    padding: 16px 24px;
+    max-width: 266px;
+    width: 100%;
+}
+
+.content .bubble .bubble-bg h5{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.72);
+    margin-bottom: 8px;
+}
+
+.content .bubble .bubble-bg h4{
+    font-size: 28px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+
+.content .bubble .bubble-bg h4 span{
+    font-size: 14px;
+}
+
+.content .bubble .bubble-bg1{
+    display: flex;
+    background: #FFFFFF;
+    align-items: center;
+    border-radius: 24px;
+    width: 41%;
+}
+
+.content .bubble .bubble-bg2{
+    padding-left: 17px;
+    max-width: 127px;
+    width: 100%;
+}
+
+.content .bubble .bubble-bg2 h5{
+    font-size: 14px;
+    font-weight: 600;
+    color: #FE616B;
+    margin-bottom: 8px;
+}
+
+.content .bubble .bubble-bg2 h4{
+    font-size: 28px;
+    font-weight: 600;
+    color: #FE616B;
+    margin-bottom: 0px;
+}
+
+.content .dashboard{
+    padding: 32px 78px;
+    background: #FFFFFF;
+    border-radius: 0px 24px 24px 0px;
+    margin-top: 32px;
+}
+
+.content .dashboard h4{
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.content .dashboard .dashboard-table{
+
+}
+
+.content .dashboard .dashboard-table .dashboard-tab{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    align-items: center;
+}
+
+ul#pills-tab{
+    border-radius: 8px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    padding: 10px 40px;
+    background: linear-gradient(180deg, #FE858D 0%, #FE616B 100%);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.nav-pills .nav-link {
+    padding: 10px 40px;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(101, 1, 7, 0.32);
+}
+
+.tab-content .tab-pane img{
+    width: 100%;
+}
+
+
+.nav-pills .nav-link1.active, .nav-pills .show>.nav-link1{
+    font-weight: 500;
+    font-size: 17px;
+    color: #FE616B;
+}
+/* dashboard css end */
+
+
+
+
+
+
+/* Content css end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive start */
+@media (min-width: 992px) and (max-width: 1200px){
+    .header {
+        
+    }
+    
+    .profile-feed {
+        
+    }
+
+    .navbar {
+        margin: 33px 0;
+    }
+
+    .navbar .navbar-nav a {
+        font-size: 14px;
+    }
+
+    .user-status h5 {
+        font-size: 13px;
+    }
+
+    .user-status p {
+        font-size: 13px;
+    }
+
+    .nav-pills .nav-link1.active, .nav-pills .show>.nav-link1 {
+        font-size: 15px;
+    }
+
+    .content .menu-tab a {
+        font-size: 15px;
+        padding-bottom: 16px;
+    }
+
+    .content .bubble .bubble-bg h5 {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .content .bubble .bubble-bg h4 {
+        font-size: 26px;
+    }
+
+    .content .bubble .bubble-bg2 h5 {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .content .bubble .bubble-bg2 h4 {
+        font-size: 26px;
+        margin-bottom: 0px;
+    }
+
+    .content .bubble .bubble-bg {
+        background: #FE616B;
+        border-radius: 24px;
+        padding: 16px 24px;
+        max-width: 266px;
+        width: 62%;
+        margin-right: 12px;
+    }
+
+    .content .bubble .bubble-bg2 {
+        padding-left: 0px;
+        padding-right: 19px;
+        max-width: 127px;
+        width: 100%;
+    }
+
+    .content .dashboard h4 {
+        font-weight: bold;
+        font-size: 22px;
+        margin-bottom: 24px;
+    }
+
+    .dashboard-tab h5{
+        font-size: 17px;
+    }
+
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        padding: 10px 35px;
+        font-size: 13px;
+    }
+
+    .nav-pills .nav-link {
+        padding: 10px 35px;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    .header {
+        background: linear-gradient(
+    180deg, #FE858D 0%, #FE616B 100%);
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .profile-feed {
+        display: none;
+    }
+
+    .sub-content{
+        display: block;
+        padding-top: 16px;
+        padding-bottom: 72px;
+    }
+
+    .plus{
+        padding:0;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo1{
+        display: block;
+    }
+    
+    .logo1 h4{
+        margin: 0;
+        padding: 9px 0;
+        font-weight: 600;
+        font-size: 21px;
+        color: #FFFFFF;
+    }
+
+    .profile-detail .user-info {
+        text-align: center;
+    }
+    
+    .nav-bar{
+        display: block;
+    }
+
+    .wall-background .background1{
+        display: none;
+    }
+    
+    .wall-background .background2{
+        display: block;
+    }
+
+
+    .user-nav .icon i{
+        color: #faefef;
+        background: rgba(255, 255, 255, 0.24);
+    }
+
+    .icon span {
+        background: #FFFFFF;
+        top: 16px;
+        right: 2px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .user-nav .icon:last-child i{
+        color: #FFFFFF;
+        background: none;
+        font-size: 25px;
+    }
+
+    .user-nav .icon {
+        line-height: 20px;
+    }
+
+    .navbar{
+        display: none;
+        margin: 33px 0;
+    }
+
+    .col-md-0{
+        display: none;
+    }
+
+    .user-status{
+        display: none;
+    }
+
+    .nav-pills .nav-link1.active, .nav-pills .show>.nav-link1 {
+        font-size: 15px;
+    }
+
+    .content .menu-tab a {
+        font-size: 15px;
+        padding-bottom: 16px;
+    }
+
+    .content .bubble .bubble-bg h5 {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .content .bubble .bubble-bg h4 {
+        font-size: 26px;
+    }
+
+    .content .bubble .bubble-bg2 h5 {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .content .bubble .bubble-bg2 h4 {
+        font-size: 26px;
+        margin-bottom: 0px;
+    }
+
+    .content .bubble .bubble-bg {
+        background: #FE616B;
+        border-radius: 24px;
+        padding: 16px 24px;
+        max-width: 266px;
+        width: 62%;
+        margin-right: 12px;
+    }
+
+    .content .bubble .bubble-bg2 {
+        padding-left: 0px;
+        padding-right: 19px;
+        max-width: 127px;
+        width: 100%;
+    }
+
+    .content .dashboard h4 {
+        font-weight: bold;
+        font-size: 22px;
+        margin-bottom: 24px;
+    }
+
+    .dashboard-tab h5{
+        font-size: 17px;
+    }
+
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        padding: 10px 35px;
+        font-size: 13px;
+    }
+
+    .nav-pills .nav-link {
+        padding: 10px 35px;
+        font-size: 13px;
+    }
+
+    .nav-pills {
+        flex-direction: initial !important;
+        align-items: center;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+    }
+
+    .content .menu-tab {
+        padding: 0;
+        background: #FFFFFF;
+        border-radius: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .content .menu-tab a {
+        font-size: 15px;
+        padding: 15px 18px;
+    }
+
+    .content .menu-tab a i {
+        display: none;
+    }
+
+    .custom{
+        padding: 0;
+    }
+
+    .tab-content{
+        padding-top: 16px;
+    }
+
+    .content .dashboard {
+        padding: 32px 16px;
+        border-radius: 0;
+        margin-top: 32px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
