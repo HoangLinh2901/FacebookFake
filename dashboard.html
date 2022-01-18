@@ -195,7 +195,33 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">meo</div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <div class="user-detail">
+                                <div class="avatar-upload">
+                                    <div class="avatar-edit">
+                                        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                        <label for="imageUpload"><i class="fas fa-camera"></i></label>
+                                    </div>
+                                    <div class="avatar-preview">
+                                        <div id="imagePreview" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTG8hC7Zhglom_wSW7GZBiZn1Qdl4aRZYZfw&usqp=CAU);">
+                                        </div>
+                                    </div>
+                                    <div class="user-name">
+                                        <h4>Nguyễn Đình Trần Thiện</h4>
+                                        <p>ThienNguyen0324</p>
+                                    </div>
+                                </div> 
+                                <div class="link-button">
+                                    <a href="#"><img src="img/facebook-link.png" alt=""></a>
+                                    <a href="#"><img src="img/insta-link.png" alt=""></a>
+                                    <a href="#"><img src="img/tiktok-link.png" alt=""></a>
+                                </div>
+                            </div>
+
+                            <div class="user-form">
+                                
+                            </div>
+                        </div>
                         <div class="tab-pane fade" id="v-pills-withdraw" role="tabpanel" aria-labelledby="v-pills-withdraw-tab">min</div>
                         <div class="tab-pane fade" id="v-pills-history" role="tabpanel" aria-labelledby="v-pills-history-tab">max</div>
                         <div class="tab-pane fade" id="v-pills-like" role="tabpanel" aria-labelledby="v-pills-like-tab">u l troi</div>
@@ -229,6 +255,23 @@
     $('.close-nav').click(function() {
         $('.sub-header').removeClass('active-navbar');
     });
+</script>
+
+<script>
+    function readURL(input) {
+if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    reader.onload = function(e) {
+        $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+        $('#imagePreview').hide();
+        $('#imagePreview').fadeIn(650);
+    }
+    reader.readAsDataURL(input.files[0]);
+}
+}
+$("#imageUpload").change(function() {
+readURL(this);
+});
 </script>
 
 </body>
