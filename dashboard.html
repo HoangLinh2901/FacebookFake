@@ -203,7 +203,7 @@
                                         <label for="imageUpload"><i class="fas fa-camera"></i></label>
                                     </div>
                                     <div class="avatar-preview">
-                                        <div id="imagePreview" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTG8hC7Zhglom_wSW7GZBiZn1Qdl4aRZYZfw&usqp=CAU);">
+                                        <div id="imagePreview" style="background-image: url(https://c.tenor.com/bsCVomxWcG8AAAAM/rem.gif);">
                                         </div>
                                     </div>
                                     <div class="user-name">
@@ -249,10 +249,16 @@
                                         </div>
                                     </div>
                                     <div class="url-link">
-                                        <input type="checkbox" name="url-link" value="link1" checked>
-                                        <label for="vehicle1">https://www.google.com/?gws_rd=ssl</label><br>
-                                        <input type="checkbox" name="url-link" value="link2" >
-                                        <label for="vehicle1">https://vnexpress.net/</label><br>
+                                        <label class="inf-check">
+                                            <p>https://www.google.com/?gws_rd=ssl</p>
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="inf-check">
+                                            <p>https://www.google.com/?gws_rd=ssl</p>
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                          </label>
                                     </div>
                                 </form>
                             </div>
@@ -303,6 +309,9 @@
                                     </div>
                                 </form>
                             </div>
+
+
+
                             <div class="introduce">
                                 <form action="">
                                     <h5>Giới thiệu ngắn</h5>
@@ -328,17 +337,185 @@
                                         </div>
                                         <div class="img">
                                             <a href="#"><img src="img/addimg6.png" alt=""></a>
+                                            <p>+ 4</p>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form action="">
+                                    <h5>Video</h5>
+                                    <div class="add-img">
+                                        <div class="img">
+                                            <a href="#"><img src="img/addvideo1.png" alt=""></a>
+                                        </div>
+                                        <div class="img">
+                                            <img src="img/addvideo2.png" alt="">
+                                        </div>
+                                        <div class="img">
+                                            <img src="img/addvideo3.png" alt="">
+                                        </div>
+                                    </div>
+                                </form>
+                                <form action="">
+                                    <h5>Giới thiệu Chi tiết</h5>
+                                    <div class="word">
+                                        <img src="img/word.svg" alt="">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-withdraw" role="tabpanel" aria-labelledby="v-pills-withdraw-tab">
+                            <div class="withdraw-method">
+                                <h5>Chọn hình thức rút tiền</h5>
+                                <div class="method">
+                                    <div class="choose-method">
+                                        <div class="check-button">
+                                            <input type="radio" name="gioi_tinh" id="chuyenkhoan">
+                                            <label for="chuyenkhoan"></label>
+                                        </div>
+                                        <p>Chuyển khoản</p>
+                                    </div>
+                                    <div class="money-exchange">
+                                        <form action="">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="name">Họ & Tên</label>
+                                                    <input type="name" class="form-control" id="inputEmail4" placeholder="Nguyễn Đình Trần Thiện">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="name">Biệt danh</label>
+                                                    <input type="name" class="form-control" id="inputPassword4" placeholder="Thiện Kathy">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="method">
+                                    <div class="choose-method">
+                                        <div class="check-button">
+                                            <input type="radio" name="gioi_tinh" id="thecao">
+                                            <label for="thecao"></label>
+                                        </div>
+                                        <p>Thẻ cào</p>
+                                    </div>
+                                    <div class="card-pay">
+                                        <form action="">
+                                            <h5>Chọn loại thẻ</h5>
+                                            <div class="card1">
+                                                <input type="radio" name="card" id="viettel">
+                                                <label for="viettel">
+                                                    <img src="img/viettel.svg" alt="">
+                                                </label>
+                                                <input type="radio" name="card" id="mobilephone" checked="checked">
+                                                <label for="mobilephone">
+                                                    <img src="img/mobiphone.svg" alt="">
+                                                </label>
+                                                <input type="radio" name="card" id="vinaphone">
+                                                <label for="vinaphone">
+                                                    <img src="img/vinaphone.svg" alt="">
+                                                </label>
+                                                <input type="radio" name="card" id="vietnammoibile" checked="checked">
+                                                <label for="vietnammoibile">
+                                                    <img src="img/vietnammobile.svg" alt="">
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="card-price">
+                                        <form action="">
+                                            <h5>Mệnh giá</h5>
+                                            <div class="price">
+                                                <input type="radio" name="time" id="10">
+                                                <label for="10">10,000 <span>đ</span></label>
+                                                <input type="radio" name="time" id="20" checked="checked">
+                                                <label for="20">20,000 <span>đ</span></label>
+                                                <input type="radio" name="time" id="50">
+                                                <label for="50">50,000 <span>đ</span></label>
+                                                <input type="radio" name="time" id="100" checked="checked">
+                                                <label for="100">100,000 <span>đ</span></label>
+                                                <input type="radio" name="time" id="200">
+                                                <label for="200">200,000 <span>đ</span></label>
+                                                <input type="radio" name="time" id="500">
+                                                <label for="500">500,000 <span>đ</span></label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="send-to">
+                                        <form action="">
                                             
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-history" role="tabpanel" aria-labelledby="v-pills-history-tab">max</div>
+                        <div class="tab-pane fade" id="v-pills-like" role="tabpanel" aria-labelledby="v-pills-like-tab">u l troi</div>
+                        <div class="tab-pane fade" id="v-pills-tutorial" role="tabpanel" aria-labelledby="v-pills-tutorial-tab">oke</div>
+                        <div class="tab-pane fade" id="v-pills-tool" role="tabpanel" aria-labelledby="v-pills-tool-tab">
+                            <div class="setting">
+                                <form action="">
+                                    <div class="rent-time">
+                                        <h5>Thời gian thuê tối đa</h5>
+                                        <div class="plus-button">
+                                            <button class="plus"><i class="fas fa-minus"></i></button>
+                                            <button class="plus"><i class="fas fa-plus"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="rent-hour">
+                                        <input type="number" class="form-control" value="8">
+                                        <p>Giờ</p>
+                                    </div>
+                                    <div class="online-time">
+                                        <h5>Bật online khi</h5>
+                                        <div class="time">
+                                            <input type="checkbox" name="time" id="8am">
+                                            <label for="8am">08:00</label>
+                                            <input type="checkbox" name="time" id="10am" checked="checked">
+                                            <label for="10am">10:00</label>
+                                            <input type="checkbox" name="time" id="12am">
+                                            <label for="12am">12:00</label>
+                                            <input type="checkbox" name="time" id="2pm" checked="checked">
+                                            <label for="2pm">14:00</label>
+                                            <input type="checkbox" name="time" id="4pm">
+                                            <label for="4pm">16:00</label>
+                                            <input type="checkbox" name="time" id="6pm">
+                                            <label for="6pm">18:00</label>
+                                            <input type="checkbox" name="time" id="8pm" checked="checked">
+                                            <label for="8pm">20:00</label>
+                                            <input type="checkbox" name="time" id="10pm" checked="checked">
+                                            <label for="10pm">22:00</label>
+                                        </div>
+                                    </div>
+                                    <div class="choose-service">
+                                        <div class="form-group">
+                                            <label for="name">Các loại dịch vụ thuê</label>
+                                            <select class="custom-select1">
+                                                <option selected>Nhập / Chọn loại dịch vụ thuê</option>
+                                                <option value="1">Kỹ Thương Việt Nam - Techcombank</option>
+                                                <option value="2">Ngân hàng Á Châu - ACB</option>
+                                                <option value="3">Đầu tư và Phát triển Việt Nam - BIDV</option>
+                                                <option value="4">Công Thương Việt Nam - VietinBank</option>
+                                                <option value="5">Việt Nam Thịnh Vượng - VPBank</option>
+                                                <option value="6">Ngân hàng TMCP Nam Á - Nam A Bank</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="tag-detail">
+                                        <div class="tag">
+                                            <p>Chơi game chung</p>
+                                            <i class="fas fa-times"></i>
+                                        </div>
+                                        <div class="tag">
+                                            <p>Tán gẫu qua voice chat</p>
+                                            <i class="fas fa-times"></i>
+                                        </div>
+                                        <div class="tag">
+                                            <p>Xem phim online chung</p>
+                                            <i class="fas fa-times"></i>
                                         </div>
                                     </div>
                                 </form>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="v-pills-withdraw" role="tabpanel" aria-labelledby="v-pills-withdraw-tab">min</div>
-                        <div class="tab-pane fade" id="v-pills-history" role="tabpanel" aria-labelledby="v-pills-history-tab">max</div>
-                        <div class="tab-pane fade" id="v-pills-like" role="tabpanel" aria-labelledby="v-pills-like-tab">u l troi</div>
-                        <div class="tab-pane fade" id="v-pills-tutorial" role="tabpanel" aria-labelledby="v-pills-tutorial-tab">oke</div>
-                        <div class="tab-pane fade" id="v-pills-tool" role="tabpanel" aria-labelledby="v-pills-tool-tab">go go</div>
                     </div>
                 </div>
             </div>

@@ -428,170 +428,6 @@ button:focus {outline:0;}
 }
 
 
-
-
-
-
-.content .user-form{
-    padding: 32px 79px;
-    background: #FFFFFF;
-    border-radius: 24px;
-    margin-bottom: 32px;
-}
-
-.content .user-form .form-group input{
-    border-radius: 8px;
-    font-weight: normal;
-    font-size: 16px;
-    color: rgba(101, 1, 7, 0.87);
-    padding: 12px 16px;
-    border: 1px solid #E8E8E8;
-}
-
-.form-group label{
-    font-weight: 600;
-    font-size: 14px;
-    text-transform: capitalize;
-}
-
-.content .user-form .form-group input::placeholder{
-    color: rgba(101, 1, 7, 0.87);
-}
-
-.content .user-form .form-group input:focus{
-    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 10%);
-}
-
-.custom-select{
-    height: 48px;
-    border-radius: 8px;
-    font-size: 16px;
-    background: #fff url(../../img/readmore.png) no-repeat right 0.75rem center;
-    color: rgba(101, 1, 7, 0.87);
-}
-
-.custom-select option{
-    margin: 40px;
-    background: #ffff;
-    color: rgba(101, 1, 7, 0.87);
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-}
-
-.content .game-choice{
-    padding: 32px 79px;
-    background: #FFFFFF;
-    border-radius: 24px;
-    margin-bottom: 32px;
-    border-radius: 0px 24px 24px 0px;
-}
-
-.content .game-choice h5{
-    font-weight: 600;
-    font-size: 14px;
-}
-
-.content .game-choice .game-box{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
-
-.content .game-choice .game-box .game{
-    margin-left: 11px;
-    margin-bottom: 24px;
-    cursor: pointer;
-}
-
-.content .game-choice .game-box .game p{
-    font-weight: normal;
-    font-size: 16px;
-}
-
-.content .game-choice .game-box .game .game-img{
-    width: 187px;
-    height: 128px;
-    margin-bottom: 8px;
-}
-
-.content .game-choice .game-box .game .game-img img{
-    width: 100%;
-}
-
-.content .game-choice .nickname{
-    
-}
-
-.content .game-choice .nickname label{
-    font-weight: 600;
-    font-size: 14px;   
-    color: rgba(101, 1, 7, 0.87); 
-}
-
-.content .game-choice .nickname input{
-    width: 50%;
-    height: 48px;
-    background: #FFFFFF;
-    border: 1px solid #E8E8E8;
-    box-sizing: border-box;
-    border-radius: 8px;
-    font-size: 16px;
-}
-
-.content .game-choice .nickname input:focus-visible{
-    outline: #E8E8E8;
-    box-shadow: 0px 8px 8px 0px rgb(0 0 0 / 10%);
-}
-
-
-
-.content .introduce{
-    padding: 32px 78px;
-    background: #FFFFFF;
-    border-radius: 24px;
-    margin-bottom: 32px;
-    border-radius: 0px 24px 24px 0px;
-}
-
-.content .introduce h5{
-    font-weight: 600;
-    font-size: 14px;
-}
-
-.content .introduce textarea{
-    width: 100%;
-    padding: 12px 16px;
-    resize: none;
-    font-size: 16px;
-    color: rgba(101, 1, 7, 0.32);
-    border: 1px solid #E8E8E8;
-    box-sizing: border-box;
-    border-radius: 8px;
-}
-
-.content .introduce textarea:focus-visible{
-    outline: none;
-    box-shadow: 0px 8px 8px 0px rgb(0 0 0 / 10%);
-}
-
-
-.content .introduce .add-img{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.content .introduce .add-img .img{
-    width: 126px;
-    height: 120px;
-    margin-right: 8px;
-}
-
-.content .introduce .add-img .img:last-child{
-    margin-right: 0px;
-}
-
-
-
 /* header css end */
 
 
@@ -1116,6 +952,660 @@ ul#pills-tab{
     width: 40px;
     height: 40px;
 }
+
+.content .user-form{
+    padding: 32px 79px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin-bottom: 32px;
+}
+
+.content .user-form .form-group input{
+    border-radius: 8px;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(101, 1, 7, 0.87);
+    padding: 12px 16px;
+    border: 1px solid #E8E8E8;
+}
+
+.form-group label{
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.content .user-form .form-group input::placeholder{
+    color: rgba(101, 1, 7, 0.87);
+}
+
+.content .user-form .form-group input:focus{
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 10%);
+}
+
+.custom-select{
+    height: 48px;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #fff url(../../img/readmore.png) no-repeat right 0.75rem center;
+    color: rgba(101, 1, 7, 0.87);
+}
+
+.custom-select:focus{
+    outline: none;
+    border: 1px solid #ced4da;
+}
+
+.custom-select option{
+    margin: 40px;
+    background: #ffff;
+    color: rgba(101, 1, 7, 0.87);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.link-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.inf-check{
+    display: flex;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.inf-check input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.inf-check:hover input ~ .checkmark {
+    background-color: #FFFFFF;
+}
+.inf-check input:checked ~ .checkmark {
+    background-color: #FE616B;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.inf-check input:checked ~ .checkmark:after {
+    display: block;
+}
+.inf-check .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.inf-check p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.012em;
+    color: rgba(101, 1, 7, 0.87);
+}
+  
+input[type="checkbox"][id^="myCheckbox"] {
+    display: none;
+  }
+
+
+
+.content .game-choice{
+    padding: 32px 79px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin-bottom: 32px;
+    border-radius: 0px 24px 24px 0px;
+}
+
+.content .game-choice h5{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.content .game-choice .game-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.content .game-choice .game-box .game{
+    margin-left: 11px;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.content .game-choice .game-box .game p{
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.content .game-choice .game-box .game .game-img{
+    width: 187px;
+    height: 128px;
+    margin-bottom: 8px;
+}
+
+.content .game-choice .game-box .game .game-img img{
+    width: 100%;
+}
+
+.content .game-choice .nickname{
+    
+}
+
+.content .game-choice .nickname label{
+    font-weight: 600;
+    font-size: 14px;   
+    color: rgba(101, 1, 7, 0.87); 
+}
+
+.content .game-choice .nickname input{
+    width: 50%;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.content .game-choice .nickname input:focus-visible{
+    outline: #E8E8E8;
+    box-shadow: 0px 8px 8px 0px rgb(0 0 0 / 10%);
+}
+
+
+
+.content .introduce{
+    padding: 32px 78px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin-bottom: 32px;
+    border-radius: 0px 24px 24px 0px;
+}
+
+.content .introduce form{
+    margin-bottom: 16px;
+}
+
+.content .introduce h5{
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.content .introduce textarea{
+    width: 100%;
+    padding: 12px 16px;
+    resize: none;
+    font-size: 16px;
+    color: rgba(101, 1, 7, 0.32);
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.content .introduce textarea:focus-visible{
+    outline: none;
+    box-shadow: 0px 8px 8px 0px rgb(0 0 0 / 10%);
+}
+
+
+.content .introduce .add-img{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content .introduce .add-img .img{
+    width: 126px;
+    height: 120px;
+    margin-right: 8px;
+    position: relative;
+}
+
+.content .introduce .add-img .img:last-child{
+    margin-right: 0px;
+}
+
+.content .introduce .add-img .img p{
+    position: absolute;
+    top: 50%;
+    right: 37%;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.content .introduce .word{
+
+}
+
+.content .introduce .word img{
+    width: 100%;
+}
+
+/* user-detail css end */
+
+
+
+
+
+
+
+/* setting css start */
+.setting{
+    padding: 32px 79px;
+    background: #FFFFFF;
+    border-radius: 0px 24px 24px 0px;
+    margin-bottom: 32px;
+}
+
+.setting .rent-time{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.setting .rent-time h5{
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(101, 1, 7, 0.87);
+    margin-bottom: 8px;
+}
+
+.setting .rent-time .plus-button{
+    
+}
+
+.setting .rent-time .plus-button button{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #FE616B;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.setting .rent-time .plus-button button:hover{
+    width: 25px;
+    height: 25px;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 10%);
+}
+
+.setting .rent-time .plus-button i{
+    font-size: 12px;
+    color: #FE616B;
+}
+
+
+.setting .rent-hour{
+    position: relative;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.setting .rent-hour input{
+    width: 50%;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #ced4da;
+    outline: 0;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 10%);
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.setting .rent-hour p{
+    position: absolute;
+    left: 346px;
+    top: 8px;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(101, 1, 7, 0.6);
+}
+
+.setting .online-time{
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.setting .online-time h5{
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(101, 1, 7, 0.87);
+    margin-bottom: 8px;
+}
+
+
+.time {
+    display: flex;
+}
+
+.time input[type="checkbox"]{
+	display: none;
+}
+.time label{
+	width: 100%;
+	max-width: 89px;
+	height: 48px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.012em;
+	color: rgba(101, 1, 7, 0.87);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.time input[type="checkbox"]:checked + label{
+	background: rgba(254, 97, 107, 0.08);
+	border: 1px solid #FE616B;
+	color: #FE616B;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 10%);
+}
+
+.setting .choose-service{
+    width: 50%;
+    margin-bottom: 16px;
+}
+
+.setting .choose-service h5{
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(101, 1, 7, 0.87);
+    margin-bottom: 8px;
+}
+
+.custom-select1{
+    height: 48px;
+    font-size: 16px;
+    background: #fff url(../../img/readmore.png) no-repeat right 0.75rem center;
+    color: rgba(101, 1, 7, 0.32);
+    display: inline-block;
+    padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+    vertical-align: middle;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+    border-radius: 8px; 
+}
+
+.custom-select1:focus{
+    border: 1px solid #ced4da;
+    outline: none;
+}
+
+.custom-select1 option{
+    margin: 40px;
+    background: #ffff;
+    color: rgba(101, 1, 7, 0.32);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.setting .tag-detail{
+    display: flex;
+}
+
+.setting .tag-detail .tag{
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    background: rgba(254, 97, 107, 0.08);
+    border-radius: 1000px;
+    margin-right: 8px;
+}
+
+.setting .tag-detail .tag p{
+    font-weight: normal;
+    font-size: 14px;
+    color: #FE616B;
+    margin-right: 16px;
+}
+
+.setting .tag-detail .tag i{
+    font-size: 14px;
+    color: #FE616B;
+    cursor: pointer;
+}
+/* setting css end */
+
+
+
+
+
+
+/* withdraw-method css start */
+.withdraw-method  {
+    padding: 32px 78px;
+    background: #FFFFFF;
+    border-radius: 0px 24px 24px 0px;
+}
+
+.withdraw-method .method .choose-method{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.withdraw-method .method .check-button{
+    position: relative;
+}
+
+.choose-method .check-button input[type="radio"]{
+	display: none;
+}
+.choose-method .check-button label{
+    border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	letter-spacing: 0.012em;
+	color: #FFFFFF;
+    margin-right: 16px;
+    border: 1px solid #E8E8E8;
+    margin-bottom: 0;
+}
+.choose-method .check-button input[type="radio"]:checked + label{
+	background: rgba(254, 97, 107, 0.08);
+	border-radius: 50%;
+    padding: 4px;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 10%);
+    border: 1px solid #FE616B;
+}
+
+.choose-method .check-button input[type="radio"]:checked + label::after{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    position: absolute;
+    background-color: #FE616B;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+.withdraw-method .method .choose-method p{
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(101, 1, 7, 0.87);
+}
+
+.money-exchange .form-group input{
+    border-radius: 8px;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(101, 1, 7, 0.87);
+    padding: 12px 16px;
+    border: 1px solid #E8E8E8;
+}
+
+.money-exchange .form-group label{
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.card-pay{
+    margin-bottom: 16px;
+}
+
+.card-pay h5{
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(101, 1, 7, 0.87);
+    margin-bottom: 8px;
+}
+
+.card1 {
+    display: flex;
+}
+
+.card1 input[type="radio"]{
+	display: none;
+}
+.card1 label{
+	width: 100%;
+	max-width: 123px;
+	height: 48px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.012em;
+	color: rgba(101, 1, 7, 0.87);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.card1 label img{
+    width: 96px;
+    height: 40px;
+}
+
+
+
+.card1 input[type="radio"]:checked + label{
+	background: #ffff;
+	border: 1px solid #FE616B;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 10%);
+}
+
+.card-price{
+
+}
+
+.card-price h5{
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(101, 1, 7, 0.87);
+    margin-bottom: 8px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price input[type="radio"]{
+	display: none;
+}
+.price label{
+	width: 100%;
+	max-width: 123px;
+	height: 48px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.012em;
+	color: rgba(101, 1, 7, 0.87);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.price input[type="radio"]:checked + label{
+	background: rgba(254, 97, 107, 0.08);
+	border: 1px solid #FE616B;
+	color: #FE616B;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 10%);
+}
+
+.price label span{
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+
+
+
+/* withdraw-method css end */
 
 /* Content css end */
 
