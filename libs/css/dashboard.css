@@ -1457,6 +1457,7 @@ input::-webkit-inner-spin-button {
     margin-right: 16px;
     border: 1px solid #E8E8E8;
     margin-bottom: 0;
+    cursor: pointer;
 }
 .choose-method .check-button input[type="radio"]:checked + label{
 	background: rgba(254, 97, 107, 0.08);
@@ -1483,6 +1484,10 @@ input::-webkit-inner-spin-button {
     font-weight: normal;
     font-size: 16px;
     color: rgba(101, 1, 7, 0.87);
+}
+
+.money-exchange{
+    display: none;
 }
 
 .money-exchange .form-group input{
@@ -1602,10 +1607,293 @@ input::-webkit-inner-spin-button {
     margin-left: 20px;
 }
 
+.send-to{
+    margin-bottom: 16px;
+    width: 50%;
+}
 
+.send-to h5{
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
 
+.send-to .choose-method input{
+    height: 48px;
+    margin-left: 12px;
+    border-radius: 8px;
+}
 
+.small{
+    width: 60%;
+}
 /* withdraw-method css end */
+
+
+
+
+
+
+
+
+
+
+/* donate-history css start */
+.donate-history{
+    background: #f9f9f9;
+    padding-bottom: 60px;
+}
+
+.donate-history h2{
+    padding-top: 40px;
+    padding-bottom: 24px;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0.024em;
+    color: #650107;
+}
+
+.donate-history .searching-bar{
+    padding: 24px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin-bottom: 24px;
+}
+
+.donate-history .searching-bar form{
+    display: flex;
+    align-items: center;
+}
+
+.donate-history .searching-bar form input{
+    width: 76%;
+    padding: 12px 16px;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(101, 1, 7, 0.32);
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-right: 12px;
+}
+
+.donate-history .searching-bar form input::placeholder{
+    color: rgba(101, 1, 7, 0.32);
+}
+
+.donate-history .searching-bar form input:focus{
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 10%);
+}
+
+.donate-history .searching-bar form select{
+    width: 20.5%;
+    padding: 0 16px;
+    color: rgba(101, 1, 7, 0.32);
+    height: 43px;
+    margin-right: 16px;
+    font-size: 16px;
+    background: #fff url(../../img/readmore.png) no-repeat right 0.75rem center;
+}
+
+.donate-history .searching-bar form select:focus{
+    outline: none;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 10%);
+}
+
+.donate-history .searching-bar form i{
+
+    padding: 14px;
+    background: linear-gradient(180deg, #FE858D 0%, #FE616B 100%);
+    box-shadow: 0px 6px 16px rgba(254, 97, 107, 0.16);
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+
+.donate-history .searching-bar button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+
+
+.donate-history .donate-table{
+    border-radius: 24px;
+    background: #FFFFFF; 
+}
+
+.table-scroll{
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.table th{
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(101, 1, 7, 0.6);
+}
+
+.table td{
+    font-size: 16px;
+}
+
+.donate-history .donate-table .table{
+    border-radius: 24px;
+    background: #FFFFFF;
+}
+
+.donate-history .donate-table .table .thead{
+    background: rgba(254, 97, 107, 0.06);
+    border-radius: 24px 24px 0px 0px;
+}
+
+.donate-history .donate-table .table .thead th{
+    font-weight: 600;
+    font-size: 14px;
+    color: #FE616B;
+    text-align: center;
+    border: none;
+}
+
+.donate-history .donate-table .table .thead th:last-child{
+    text-align: left;
+}
+
+.donate-history .donate-table .table .description{
+    display: flex;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.donate-history .donate-table .table .description .text{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.donate-history .donate-table .table .description .text p{
+    font-size: 16px;
+}
+
+.img-detail{
+    display: none;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.img-detail .img{
+    display: flex;
+}
+
+.donate-history .donate-table .table .img-detail .img img{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+.donate-history .donate-table .table .img-detail .img p{
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(101, 1, 7, 0.38)
+}
+
+.read-more{
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: block;
+}
+
+.read-less{
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+
+
+.content1{
+    display: none;
+}
+
+.more-content{
+    display: block;
+ }
+
+ .less-content{
+    display: none;
+ }
+
+ .flex-content{
+     display: flex;
+ }
+
+
+
+
+ .donate-table .choose-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    padding-bottom: 32px;
+ }
+
+.donate-table .choose-page p{
+    color: rgba(101, 1, 7, 0.6);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.donate-table .choose-page span{
+    color: #FE616B;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+ .donate-table .page-change{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.donate-table .page-change .page{
+    text-align: center;
+    line-height: 33px;
+    margin: 0 8px;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.donate-table .page-change .page a{
+    padding: 12px;
+    color: rgba(101, 1, 7, 0.6);
+    text-decoration: none;
+}
+
+.donate-table .page-change .page:hover{
+    border: 1px solid #FE616B;
+}
+
+
+.donate-table .page-change .page a:hover{
+    color: #FE616B;
+}
+
+.rotate img{
+	transform: rotate(180deg);
+	transition: all 0.3s;
+}
+
+
+/* donate-history css end */
 
 /* Content css end */
 

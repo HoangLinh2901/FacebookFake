@@ -605,7 +605,7 @@ button:focus {outline:0;}
     background: linear-gradient(
 180deg, #FE858D 0%, #FE616B 100%);
     width: 100%;
-    left: -1600px;
+    left: -100%;
     top: 0;
     height: 100vh;
     z-index: 1000;
@@ -830,6 +830,9 @@ nav .page-choose a{
 .donate-history .donate-table{
     border-radius: 24px;
     background: #FFFFFF; 
+}
+
+.table-scroll{
     overflow-x: scroll;
     white-space: nowrap;
     width: 100%;

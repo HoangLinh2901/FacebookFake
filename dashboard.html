@@ -397,57 +397,310 @@
                                         </div>
                                         <p>Thẻ cào</p>
                                     </div>
-                                    <div class="card-pay">
-                                        <form action="">
-                                            <h5>Chọn loại thẻ</h5>
-                                            <div class="card1">
-                                                <input type="radio" name="card" id="viettel">
-                                                <label for="viettel">
-                                                    <img src="img/viettel.svg" alt="">
-                                                </label>
-                                                <input type="radio" name="card" id="mobilephone" checked="checked">
-                                                <label for="mobilephone">
-                                                    <img src="img/mobiphone.svg" alt="">
-                                                </label>
-                                                <input type="radio" name="card" id="vinaphone">
-                                                <label for="vinaphone">
-                                                    <img src="img/vinaphone.svg" alt="">
-                                                </label>
-                                                <input type="radio" name="card" id="vietnammoibile" checked="checked">
-                                                <label for="vietnammoibile">
-                                                    <img src="img/vietnammobile.svg" alt="">
-                                                </label>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="card-price">
-                                        <form action="">
-                                            <h5>Mệnh giá</h5>
-                                            <div class="price">
-                                                <input type="radio" name="time" id="10">
-                                                <label for="10">10,000 <span>đ</span></label>
-                                                <input type="radio" name="time" id="20" checked="checked">
-                                                <label for="20">20,000 <span>đ</span></label>
-                                                <input type="radio" name="time" id="50">
-                                                <label for="50">50,000 <span>đ</span></label>
-                                                <input type="radio" name="time" id="100" checked="checked">
-                                                <label for="100">100,000 <span>đ</span></label>
-                                                <input type="radio" name="time" id="200">
-                                                <label for="200">200,000 <span>đ</span></label>
-                                                <input type="radio" name="time" id="500">
-                                                <label for="500">500,000 <span>đ</span></label>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="send-to">
-                                        <form action="">
-                                            
-                                        </form>
+                                    <div class="money-exchange">
+                                        <div class="card-pay">
+                                            <form action="">
+                                                <h5>Chọn loại thẻ</h5>
+                                                <div class="card1">
+                                                    <input type="radio" name="card" id="viettel">
+                                                    <label for="viettel">
+                                                        <img src="img/viettel.svg" alt="">
+                                                    </label>
+                                                    <input type="radio" name="card" id="mobilephone" checked="checked">
+                                                    <label for="mobilephone">
+                                                        <img src="img/mobiphone.svg" alt="">
+                                                    </label>
+                                                    <input type="radio" name="card" id="vinaphone">
+                                                    <label for="vinaphone">
+                                                        <img src="img/vinaphone.svg" alt="">
+                                                    </label>
+                                                    <input type="radio" name="card" id="vietnammoibile" checked="checked">
+                                                    <label for="vietnammoibile">
+                                                        <img src="img/vietnammobile.svg" alt="">
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="card-price">
+                                            <form action="">
+                                                <h5>Mệnh giá</h5>
+                                                <div class="price">
+                                                    <input type="radio" name="time" id="10">
+                                                    <label for="10">10,000 <span>đ</span></label>
+                                                    <input type="radio" name="time" id="20" checked="checked">
+                                                    <label for="20">20,000 <span>đ</span></label>
+                                                    <input type="radio" name="time" id="50">
+                                                    <label for="50">50,000 <span>đ</span></label>
+                                                    <input type="radio" name="time" id="100" checked="checked">
+                                                    <label for="100">100,000 <span>đ</span></label>
+                                                    <input type="radio" name="time" id="200">
+                                                    <label for="200">200,000 <span>đ</span></label>
+                                                    <input type="radio" name="time" id="500">
+                                                    <label for="500">500,000 <span>đ</span></label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="send-to">
+                                            <h5>Nhận qua</h5>
+                                            <form action="">
+                                                <div class="choose-method">
+                                                    <div class="check-button">
+                                                        <input type="radio" name="gioi_tinh" id="email">
+                                                        <label for="email"></label>
+                                                    </div>
+                                                    <p>Email</p>
+                                                    <input type="name" class="form-control" id="inputEmail4" placeholder="Nguyễn Đình Trần Thiện">
+                                                </div>
+                                                <div class="choose-method">
+                                                    <div class="check-button">
+                                                        <input type="radio" name="gioi_tinh" id="sdt">
+                                                        <label for="sdt"></label>
+                                                    </div>
+                                                    <p>Số điện thoại</p>
+                                                    <input type="number" class="form-control small" id="inputPhone">  
+                                                </div>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="v-pills-history" role="tabpanel" aria-labelledby="v-pills-history-tab">max</div>
+                        <div class="tab-pane fade" id="v-pills-history" role="tabpanel" aria-labelledby="v-pills-history-tab">
+                            <section class="donate-history">
+                                <div class="custom-container">
+                                    <h2>Lịch Sử Giao Dịch</h2>
+                                    <div class="searching-bar">
+                                        <form action="">
+                                            <input type="text" placeholder="Từ khóa tìm kiếm" name="search">
+                                            <select class="custom-select">
+                                                <option selected>Loại giao dịch</option>
+                                                <option value="1">Nạp tiền</option>
+                                                <option value="2">Donate</option>
+                                                <option value="3">Rút tiền</option>
+                                            </select>
+                                            <button><i class="fas fa-search"></i></button>
+                                        </form>
+                                    </div>
+                                    <div class="donate-table">
+                                        <div class="table-scroll">
+                                            <table class="table">
+                                                <thead class="thead">
+                                                  <tr>
+                                                    <th >Ngày / Giờ</th>
+                                                    <th >Loại giao dịch</th>
+                                                    <th >Số dư trước giao dịch</th>
+                                                    <th >Số tiền giao dịch</th>
+                                                    <th >Số dư sau giao dịch</th>
+                                                    <th >Lời nhắn</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>05/12/2020 - 08:40</th>
+                                                        <td class="recharge_money">
+                                                            Nạp tiền                             
+                                                        </td>
+                                                        <td>160,000</td>
+                                                        <td>120,000</td>
+                                                        <td>120,000</td>
+                                                        <td class="description">
+                                                            <div class="text">
+                                                                <p>Lorem ipsum dolor sit amet, consadq</p> <span class="dot">...</span>
+                                                            <p class="content1">lorem ipsum dolor sit amet</p>
+                                                            </div>
+                                                            <button class="read-more"><img src="img/readmore.png" alt=""></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>05/12/2020 - 08:40</th>
+                                                        <td class="recharge_money">
+                                                            Nạp tiền
+                                                        </td>
+                                                        <td>160,000</td>
+                                                        <td>120,000</td>
+                                                        <td>120,000</td>
+                                                        <td class="description">
+                                                            <div class="text">
+                                                                <p>Lorem ipsum dolor sit amet, consadq</p> <span class="dot">...</span>
+                                                            <p class="content1">lorem ipsum dolor sit amet</p>
+                                                            </div>
+                                                            <button class="read-more"><img src="img/readmore.png" alt=""></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>05/12/2020 - 08:40</th>
+                                                        <td class="recharge_money">
+                                                            Donate
+                                                            <div class="img-detail">
+                                                                <div class="img">
+                                                                    <img src="img/user1.svg" alt="">
+                                                                    <p>Lê Hoàng</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>160,000</td>
+                                                        <td>120,000</td>
+                                                        <td>120,000</td>
+                                                        <td class="description">
+                                                            <div class="text">
+                                                                <p>Lorem ipsum dolor sit amet, consadq</p> <span class="dot">...</span>
+                                                            <p class="content1">lorem ipsum dolor sit amet</p>
+                                                            </div>
+                                                            <button class="read-more"><img src="img/readmore.png" alt=""></button> 
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>05/12/2020 - 08:40</th>
+                                                        <td class="recharge_money">
+                                                            Nạp tiền
+                                                        </td>
+                                                        <td>160,000</td>
+                                                        <td>120,000</td>
+                                                        <td>120,000</td>
+                                                        <td class="description">
+                                                            <div class="text">
+                                                                <p>Lorem ipsum dolor sit amet, consadq</p> <span class="dot">...</span>
+                                                                <p class="content1">lorem ipsum dolor sit amet</p>
+                                                            </div>
+                                                            <button class="read-more"><img src="img/readmore.png" alt=""></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>05/12/2020 - 08:40</th>
+                                                        <td class="recharge_money">
+                                                            Nạp tiền
+                                                        </td>
+                                                        <td>160,000</td>
+                                                        <td>120,000</td>
+                                                        <td>120,000</td>
+                                                        <td class="description">
+                                                            <div class="text">
+                                                                <p>Lorem ipsum dolor sit amet, consadq</p> <span class="dot">...</span>
+                                                                <p class="content1">lorem ipsum dolor sit amet</p>
+                                                            </div>
+                                                            <button class="read-more"><img src="img/readmore.png" alt=""></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>05/12/2020 - 08:40</th>
+                                                        <td class="recharge_money">
+                                                            Donate
+                                                            <div class="img-detail">
+                                                                <div class="img">
+                                                                    <img src="img/user1.svg" alt="">
+                                                                    <p>Lê Hoàng</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>160,000</td>
+                                                        <td>120,000</td>
+                                                        <td>120,000</td>
+                                                        <td class="description">
+                                                            <div class="text">
+                                                                <p>Lorem ipsum dolor sit amet, consadq</p> <span class="dot">...</span>
+                                                                <p class="content1">lorem ipsum dolor sit amet</p>
+                                                            </div>
+                                                            <button class="read-more"><img src="img/readmore.png" alt=""></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>05/12/2020 - 08:40</th>
+                                                        <td class="recharge_money">
+                                                            Nạp tiền
+                                                        </td>
+                                                        <td>160,000</td>
+                                                        <td>120,000</td>
+                                                        <td>120,000</td>
+                                                        <td class="description">
+                                                            <div class="text">
+                                                                <p>Lorem ipsum dolor sit amet, consadq</p> <span class="dot">...</span>
+                                                                <p class="content1">lorem ipsum dolor sit amet</p>
+                                                            </div>
+                                                            <button class="read-more"><img src="img/readmore.png" alt=""></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>05/12/2020 - 08:40</th>
+                                                        <td class="recharge_money">
+                                                            Nạp tiền
+                                                        </td>
+                                                        <td>160,000</td>
+                                                        <td>120,000</td>
+                                                        <td>120,000</td>
+                                                        <td class="description">
+                                                            <div class="text">
+                                                                <p>Lorem ipsum dolor sit amet, consadq</p> <span class="dot">...</span>
+                                                                <p class="content1">lorem ipsum dolor sit amet</p>
+                                                            </div>
+                                                            <button class="read-more"><img src="img/readmore.png" alt=""></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>05/12/2020 - 08:40</th>
+                                                        <td class="recharge_money">
+                                                            Nạp tiền
+                                                        </td>
+                                                        <td>160,000</td>
+                                                        <td>120,000</td>
+                                                        <td>120,000</td>
+                                                        <td class="description">
+                                                            <div class="text">
+                                                                <p>Lorem ipsum dolor sit amet, consadq</p> <span class="dot">...</span>
+                                                                <p class="content1"> lorem ipsum dolor sit amet</p>
+                                                            </div>
+                                                            <button class="read-more"><img src="img/readmore.png" alt=""></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>05/12/2020 - 08:40</th>
+                                                        <td class="recharge_money">
+                                                            Donate
+                                                            <div class="img-detail">
+                                                                <div class="img">
+                                                                    <img src="img/user1.svg" alt="">
+                                                                    <p>Lê Hoàng</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>160,000</td>
+                                                        <td>120,000</td>
+                                                        <td>120,000</td>
+                                                        <td class="description">
+                                                            <div class="text">
+                                                                <p>Lorem ipsum dolor sit amet, consadq</p> <span class="dot">...</span>
+                                                                <p class="content1">lorem ipsum dolor sit amet</p>
+                                                            </div>
+                                                            <button class="read-more"><img src="img/readmore.png" alt=""></button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="choose-page">
+                                            <p><span>12</span>/ 40 người chơi</p>
+                                            <div class="page-change">
+                                                <div class="page">
+                                                    <a href="#" class="page-number"><i class="fas fa-chevron-left"></i></a>
+                                                </div>
+                                                <div class="page">
+                                                    <a href="#" class="page-number">1</a>
+                                                </div>
+                                                <div class="page">
+                                                    <a href="#" class="page-number">2</a>
+                                                </div>
+                                                ...
+                                                <div class="page">
+                                                    <a href="#" class="page-number">8</a>
+                                                </div>
+                                                <div class="page">
+                                                    <a href="#" class="page-number"><i class="fas fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
                         <div class="tab-pane fade" id="v-pills-like" role="tabpanel" aria-labelledby="v-pills-like-tab">u l troi</div>
                         <div class="tab-pane fade" id="v-pills-tutorial" role="tabpanel" aria-labelledby="v-pills-tutorial-tab">oke</div>
                         <div class="tab-pane fade" id="v-pills-tool" role="tabpanel" aria-labelledby="v-pills-tool-tab">
@@ -561,6 +814,37 @@ if (input.files && input.files[0]) {
 $("#imageUpload").change(function() {
 readURL(this);
 });
+</script>
+
+<script>
+
+    $('.check-button > input').click(function(){
+        $('.money-exchange').stop().slideDown(300);
+
+        // $(this).parent(".method").next(".method").children(".money-exchange").stop().slideDown(300);
+    })
+</script>
+<script>
+    $(document).ready(function(){
+        $('.content1').hide();
+
+			//b2
+			$('.read-more').click(function(){
+				//trượt xuống
+				$('.read-more').removeClass('rotate');
+				// b3
+				$('.content').slideUp();
+                $('.img-detail').slideUp();
+                $('.dot').show();
+				// nêm thằng tiếp theo của thằng vừa bấm chưa hiển thị
+				if( !$(this).prev('.text').children('.content').is(':visible')){
+                    $(this).prev('.text').children('.dot').hide();
+					$(this).prev('.text').children('.content').slideDown();
+                    $(this).parent('.description').prev('td').prev('td').prev('td').prev('.recharge_money').children('.img-detail').slideDown();
+				    $(this).addClass('rotate');
+				}
+			})
+    });
 </script>
 
 </body>

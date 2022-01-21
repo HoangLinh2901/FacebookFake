@@ -490,7 +490,7 @@ wrapper{
     background: linear-gradient(
 180deg, #FE858D 0%, #FE616B 100%);
     width: 100%;
-    left: -1600px;
+    left: -100%;
     top: 0;
     height: 100vh;
     z-index: 1000;
