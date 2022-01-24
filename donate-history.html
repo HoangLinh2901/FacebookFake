@@ -167,8 +167,8 @@
                                 <td>120,000</td>
                                 <td class="description">
                                     <div class="text">
-                                        <p>Lorem ipsum dolor sit amet, consadq</p> <span class="dot">...</span>
-                                    <p class="content">lorem ipsum dolor sit amet</p>
+                                        <p>Lorem ipsum dolor sit amet, consadq lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, nobis!</p> 
+                                    
                                     </div>
                                     <button class="read-more"><img src="img/readmore.png" alt=""></button>
                                 </td>
@@ -183,8 +183,8 @@
                                 <td>120,000</td>
                                 <td class="description">
                                     <div class="text">
-                                        <p>Lorem ipsum dolor sit amet, consadq</p> <span class="dot">...</span>
-                                    <p class="content">lorem ipsum dolor sit amet</p>
+                                        <p>Lorem ipsum dolor sit amet, consadq lorem ipsum dolor sit amet</p> 
+                                    
                                     </div>
                                     <button class="read-more"><img src="img/readmore.png" alt=""></button>
                                 </td>
@@ -205,8 +205,8 @@
                                 <td>120,000</td>
                                 <td class="description">
                                     <div class="text">
-                                        <p>Lorem ipsum dolor sit amet, consadq</p> <span class="dot">...</span>
-                                    <p class="content">lorem ipsum dolor sit amet</p>
+                                        <p>Lorem ipsum dolor sit amet, consadq lorem ipsum dolor sit amet</p> 
+                                    
                                     </div>
                                     <button class="read-more"><img src="img/readmore.png" alt=""></button> 
                                 </td>
@@ -221,8 +221,8 @@
                                 <td>120,000</td>
                                 <td class="description">
                                     <div class="text">
-                                        <p>Lorem ipsum dolor sit amet, consadq</p> <span class="dot">...</span>
-                                        <p class="content">lorem ipsum dolor sit amet</p>
+                                        <p>Lorem ipsum dolor sit amet, consadq lorem ipsum dolor sit amet</p> 
+                                        
                                     </div>
                                     <button class="read-more"><img src="img/readmore.png" alt=""></button>
                                 </td>
@@ -237,8 +237,8 @@
                                 <td>120,000</td>
                                 <td class="description">
                                     <div class="text">
-                                        <p>Lorem ipsum dolor sit amet, consadq</p> <span class="dot">...</span>
-                                        <p class="content">lorem ipsum dolor sit amet</p>
+                                        <p>Lorem ipsum dolor sit amet, consadq lorem ipsum dolor sit amet</p> 
+                                        
                                     </div>
                                     <button class="read-more"><img src="img/readmore.png" alt=""></button>
                                 </td>
@@ -259,8 +259,8 @@
                                 <td>120,000</td>
                                 <td class="description">
                                     <div class="text">
-                                        <p>Lorem ipsum dolor sit amet, consadq</p> <span class="dot">...</span>
-                                        <p class="content">lorem ipsum dolor sit amet</p>
+                                        <p>Lorem ipsum dolor sit amet, consadq lorem ipsum dolor sit amet</p> 
+                                        
                                     </div>
                                     <button class="read-more"><img src="img/readmore.png" alt=""></button>
                                 </td>
@@ -275,8 +275,8 @@
                                 <td>120,000</td>
                                 <td class="description">
                                     <div class="text">
-                                        <p>Lorem ipsum dolor sit amet, consadq</p> <span class="dot">...</span>
-                                        <p class="content">lorem ipsum dolor sit amet</p>
+                                        <p>Lorem ipsum dolor sit amet, consadq lorem ipsum dolor sit amet</p> 
+                                        
                                     </div>
                                     <button class="read-more"><img src="img/readmore.png" alt=""></button>
                                 </td>
@@ -291,8 +291,8 @@
                                 <td>120,000</td>
                                 <td class="description">
                                     <div class="text">
-                                        <p>Lorem ipsum dolor sit amet, consadq</p> <span class="dot">...</span>
-                                        <p class="content">lorem ipsum dolor sit amet</p>
+                                        <p>Lorem ipsum dolor sit amet, consadq lorem ipsum dolor sit amet</p> 
+                                        
                                     </div>
                                     <button class="read-more"><img src="img/readmore.png" alt=""></button>
                                 </td>
@@ -307,8 +307,7 @@
                                 <td>120,000</td>
                                 <td class="description">
                                     <div class="text">
-                                        <p>Lorem ipsum dolor sit amet, consadq</p> <span class="dot">...</span>
-                                        <p class="content"> lorem ipsum dolor sit amet</p>
+                                        <p>Lorem ipsum dolor sit amet, consadq lorem ipsum dolor sit amet</p> 
                                     </div>
                                     <button class="read-more"><img src="img/readmore.png" alt=""></button>
                                 </td>
@@ -329,8 +328,8 @@
                                 <td>120,000</td>
                                 <td class="description">
                                     <div class="text">
-                                        <p>Lorem ipsum dolor sit amet, consadq</p> <span class="dot">...</span>
-                                        <p class="content">lorem ipsum dolor sit amet</p>
+                                        <p>Lorem ipsum dolor sit amet, consadq lorem ipsum dolor sit amet</p> 
+                                        
                                     </div>
                                     <button class="read-more"><img src="img/readmore.png" alt=""></button>
                                 </td>
@@ -472,26 +471,26 @@
 </script>
 
 <script>
-    $(document).ready(function(){
-        $('.content').hide();
+    // $(document).ready(function(){
+    //     $('.content').hide();
 
-			//b2
-			$('.read-more').click(function(){
-				//trượt xuống
-				$('.read-more').removeClass('rotate');
-				// b3
-				$('.content').slideUp();
-                $('.img-detail').slideUp();
-                $('.dot').show();
-				// nêm thằng tiếp theo của thằng vừa bấm chưa hiển thị
-				if( !$(this).prev('.text').children('.content').is(':visible')){
-                    $(this).prev('.text').children('.dot').hide();
-					$(this).prev('.text').children('.content').slideDown();
-                    $(this).parent('.description').prev('td').prev('td').prev('td').prev('.recharge_money').children('.img-detail').slideDown();
-				    $(this).addClass('rotate');
-				}
-			})
-    });
+	// 		//b2
+	// 		$('.read-more').click(function(){
+	// 			//trượt xuống
+	// 			$('.read-more').removeClass('rotate');
+	// 			// b3
+	// 			$('.content').slideUp();
+    //             $('.img-detail').slideUp();
+    //             $('.dot').show();
+	// 			// nêm thằng tiếp theo của thằng vừa bấm chưa hiển thị
+	// 			if( !$(this).prev('.text').children('.content').is(':visible')){
+    //                 $(this).prev('.text').children('.dot').hide();
+	// 				$(this).prev('.text').children('.content').slideDown();
+    //                 $(this).parent('.description').prev('td').prev('td').prev('td').prev('.recharge_money').children('.img-detail').slideDown();
+	// 			    $(this).addClass('rotate');
+	// 			}
+	// 		})
+    // });
 </script>
 
 <script>

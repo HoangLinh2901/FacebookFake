@@ -1645,7 +1645,6 @@ input::-webkit-inner-spin-button {
 }
 
 .donate-history h2{
-    padding-top: 40px;
     padding-bottom: 24px;
     font-weight: bold;
     font-size: 24px;
@@ -1892,8 +1891,157 @@ input::-webkit-inner-spin-button {
 	transition: all 0.3s;
 }
 
-
 /* donate-history css end */
+
+
+
+
+
+
+
+/* love-me css start  */
+.love-me{
+    padding: 32px 78px;
+    background: #FFFFFF;
+    border-radius: 0px 24px 24px 0px;
+}
+
+.nav-tabs {
+    border-bottom: 0;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: rgba(101, 1, 7, 0.87);
+    background-color: #fff;
+    border-bottom: 2px solid #FE616B;
+}
+
+.nav-tabs .nav-link {
+    font-weight: 600;
+    font-size: 18px;
+    padding: 12px;
+    color: rgba(101, 1, 7, 0.32);
+    border: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom: 2px solid  rgba(254, 97, 107, 0.12);
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: none;
+}
+
+.tab-content{
+    margin-top: 20px;
+}
+
+.rent-player {
+    margin-bottom: 40px;
+}
+
+.rent-player .player{
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.rent-player .player img{
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.rent-player .player .player-name {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.rent-player .player .player-name .name{
+    width: 50%;
+    font-size: 16px;
+    color: rgba(101, 1, 7, 0.87);
+
+}
+
+.rent-player .player .player-name .rent{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.rent-player .player .player-name .rent p{
+    font-size: 16px;
+}
+
+
+
+.choose-page1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    padding-bottom: 32px;
+ }
+
+.choose-page1 p{
+    color: rgba(101, 1, 7, 0.6);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.choose-page1 span{
+    color: #FE616B;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+ .page-change1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.page-change1 .page{
+    text-align: center;
+    line-height: 33px;
+    margin: 0 8px;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.page-change1 .page a{
+    padding: 12px;
+    color: rgba(101, 1, 7, 0.6);
+    text-decoration: none;
+}
+
+.page-change1 .page:hover{
+    border: 1px solid #FE616B;
+}
+
+
+.page-change1 .page a:hover{
+    color: #FE616B;
+}
+
+
+
+
+
+
+
+
+
+/* love-me css end  */
 
 /* Content css end */
 

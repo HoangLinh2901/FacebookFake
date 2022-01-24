@@ -878,12 +878,15 @@ nav .page-choose a{
 
 .donate-history .donate-table .table .description .text{
     width: 95%;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .donate-history .donate-table .table .description .text p{
     font-size: 16px;
+    text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .img-detail{
@@ -922,9 +925,9 @@ nav .page-choose a{
 }
 
 
-.content{
+/* .content{
     display: none;
-}
+} */
 
 .more-content{
     display: block;
