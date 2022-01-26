@@ -846,6 +846,17 @@ ul#pills-tab{
     font-size: 17px;
     color: #FE616B;
 }
+
+.nav-pills .nav-link1.active::after{
+    content: '';
+	position: absolute;
+	left: 15px;
+	width: 4px;
+    height: 24px;
+    background: #FE616B;
+    border-radius: 0px 8px 8px 0px;
+
+}
 /* dashboard css end */
 
 
@@ -973,6 +984,7 @@ ul#pills-tab{
     font-weight: 600;
     font-size: 14px;
     text-transform: capitalize;
+    margin-bottom: 8px;
 }
 
 .content .user-form .form-group input::placeholder{
@@ -2032,16 +2044,267 @@ input::-webkit-inner-spin-button {
 .page-change1 .page a:hover{
     color: #FE616B;
 }
-
-
-
-
-
-
-
-
-
 /* love-me css end  */
+
+
+
+
+
+
+/* tutorial css start  */
+.stepToStep{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.stepToStep .line{
+    max-width: 96px;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(101, 1, 7, 0.08);
+    border-radius: 100px;
+    margin: 0 12px;
+}
+
+.stepToStep .identity,.info,.selfie{
+    display: flex;
+    align-items: center;
+}
+
+.stepToStep .identity,.info,.selfie p{
+    font-size: 16px;
+    letter-spacing: 0.024em;
+    color: rgba(101, 1, 7, 0.32);
+}
+
+.stepToStep .step{
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(101, 1, 7, 0.08);
+    margin-right: 8px;
+}
+
+.stepToStep .active1 .step{
+    background: linear-gradient(180deg, #FE858D 0%, #FE616B 100%);
+}
+
+.stepToStep .step span{
+    position: absolute;
+    top: 7px;
+    right: 13px;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(101, 1, 7, 0.2);
+}
+
+.stepToStep .active1 span{
+    color: #FFFFFF;
+}
+
+.stepToStep .active1 p{
+    color: #650107;
+}
+
+.info-update{
+    padding: 32px 78px;
+    border-radius: 0px 24px 24px 0px;
+    background: #FFFFFF;
+}
+
+.info-update .form-group input{
+    border-radius: 8px;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(101, 1, 7, 0.87);
+    padding: 12px 16px;
+    border: 1px solid #E8E8E8;
+}
+
+.info-update .form-group input::placeholder{
+    color: rgba(101, 1, 7, 0.87);
+}
+
+.info-update .form-group input:focus{
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 10%);
+}
+
+
+.sex-choose{
+    display: flex;
+}
+
+
+.sex-choose input[type="radio"]{
+	display: none;
+}
+.sex-choose label{
+	width: 100%;
+	max-width: 194px;
+	height: 48px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.012em;
+	color: rgba(101, 1, 7, 0.32);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.sex-choose input[type="radio"]:checked + label{
+	background: rgba(254, 97, 107, 0.08);
+	border-radius: 8px;
+	color: #FE616B;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 10%);
+}
+
+.info-update h5{
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(101, 1, 7, 0.87);
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.form-row>[class*=col-] {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.identity-update{
+    display: none;
+    padding: 32px 78px;
+    border-radius: 0px 24px 24px 0px;
+    background: #FFFFFF;
+}
+
+.identity-update .change-id{
+    max-width: 389px;
+    width: 100%;
+    height: 240px;
+    border-radius: 8px;
+    border: 1px solid #E8E8E8;
+    position: relative;
+}
+
+.identity-update .change-id img{
+    width: 100%;
+}
+
+.identity-update .change-id .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+    background: linear-gradient(0deg, rgba(61, 0, 4, 0.6), rgba(61, 0, 4, 0.6));
+    opacity: 0;
+    cursor: pointer;
+}
+
+.identity-update .change-id .overlay:hover{
+    opacity: 1;
+}
+
+.identity-update .change-id .overlay .camera{
+    position: absolute;
+    top: 42%;
+    left: 40%;
+    text-align: center;
+}
+
+.identity-update .change-id .overlay .camera i{
+    font-size: 35px;
+    color:  rgba(255, 255, 255, 0.87);
+    margin-bottom: 9px;
+}
+
+.identity-update .change-id .overlay .camera p{
+    font-weight: 500;
+    font-size: 16px;
+    color:  rgba(255, 255, 255, 0.87);
+}
+
+.next-button{
+    position: fixed;
+    bottom: -100%;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px -4px 16px rgba(254, 97, 107, 0.04);
+    border-radius: 24px 24px 0px 0px;
+    padding: 14px 80px;
+    text-align: right;
+    transition-duration: 0.5s;
+}
+
+.next-button .info-button{
+    padding: 10px 24px;
+    background: linear-gradient(180deg, #FE858D 0%, #FE616B 100%);
+    box-shadow: 0px 6px 24px rgba(254, 97, 107, 0.16);
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+    font-size: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.next-button  i{
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+.next-button .id-next{
+    display: none;
+    padding: 10px 24px;
+    background: linear-gradient(180deg, #FE858D 0%, #FE616B 100%);
+    box-shadow: 0px 6px 24px rgba(254, 97, 107, 0.16);
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+    font-size: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+.id-next  i{
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+.next-button .id-prev{
+    display: none;
+    padding: 10px 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 24px rgba(254, 97, 107, 0.16);
+    border-radius: 8px;
+    border: 1px solid #FE616B;
+    font-weight: 500;
+    font-size: 15px;
+    color: #FE616B;
+    cursor: pointer;
+}
+
+.id-prev  i{
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+
+
+
+
+/* tutorial css end  */
+
 
 /* Content css end */
 

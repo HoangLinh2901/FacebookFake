@@ -203,7 +203,7 @@
                                         <label for="imageUpload"><i class="fas fa-camera"></i></label>
                                     </div>
                                     <div class="avatar-preview">
-                                        <div id="imagePreview" style="background-image: url(https://c.tenor.com/bsCVomxWcG8AAAAM/rem.gif);">
+                                        <div id="imagePreview" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLl-Q9QSWLkqnNeeRvMdytIowy0a2MG2KM-mCPMPgUA0Lpq6l5RcfCG44dFryjLAhF9jQ&usqp=CAU);">
                                         </div>
                                     </div>
                                     <div class="user-name">
@@ -829,7 +829,89 @@
                                   </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="v-pills-tutorial" role="tabpanel" aria-labelledby="v-pills-tutorial-tab">oke</div>
+                        <div class="tab-pane fade" id="v-pills-tutorial" role="tabpanel" aria-labelledby="v-pills-tutorial-tab">
+                            <div class="stepToStep">
+                                <div class="info active1">
+                                    <div class="step">
+                                        <span>1</span>
+                                    </div>
+                                    <p>Thông tin cá nhân</p>
+                                </div>
+                                <div class="line"></div>
+                                <div class="identity">
+                                    <div class="step">
+                                        <span>2</span>
+                                    </div>
+                                    <p>Giấy tờ tùy thân</p>
+                                </div>
+                                <div class="line"></div>
+                                <div class="selfie">
+                                    <div class="step">
+                                        <span>3</span>
+                                    </div>
+                                    <p>Chụp selfie</p>
+                                </div>
+                            </div>
+                            <div class="info-update">
+                                <form action="">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="name">Họ & Tên</label>
+                                            <input type="name" class="form-control" id="inputEmail4" placeholder="Nguyễn Đình Trần Thiện">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="name">Ngày Sinh</label>
+                                            <input type="date" class="form-control" id="inputPassword4" >
+                                        </div>
+                                    </div>
+                                    <h5>Giới tính</h5>
+                                    <div class="sex-choose">
+                                        <input type="radio" name="gioi_tinh" id="male">
+                                        <label for="male">Nam</label>
+                                        <input type="radio" name="gioi_tinh" id="female" checked="checked">
+                                        <label for="female">Nữ</label>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="name">Email</label>
+                                            <input type="name" class="form-control" id="inputEmail4" placeholder="tranthiennguyen12@gmail.com">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="name">Số điện thoại</label>
+                                            <input type="number" class="form-control" id="inputPassword4" placeholder="0123 456 7890">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="identity-update">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="name">Mặt trước</label>
+                                        <div class="change-id">
+                                            <img src="img/cmnd1.png" alt="">
+                                            <div class="overlay">
+                                                <div class="camera">
+                                                    <i class="fas fa-camera"></i>
+                                                    <p>Chụp ảnh</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="name">Mặt Sau</label>
+                                        <div class="change-id">
+                                            <img src="img/cmnd2.png" alt="">
+                                            <div class="overlay">
+                                                <div class="camera">
+                                                    <i class="fas fa-camera"></i>
+                                                    <p>Chụp ảnh</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="tab-pane fade" id="v-pills-tool" role="tabpanel" aria-labelledby="v-pills-tool-tab">
                             <div class="setting">
                                 <form action="">
@@ -899,6 +981,11 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="next-button">
+            <button class="info-button">Tiếp theo: Giấy tờ tùy thân <i class="fas fa-greater-than"></i></button>
+            <button class="id-prev">Quay về: Thông tin cá nhân <i class="fas fa-less-than"></i></button>
+            <button class="id-next">Tiếp theo: Chụp selfie <i class="fas fa-greater-than"></i></button>
         </div>
     </section>
 
@@ -971,6 +1058,35 @@ readURL(this);
 				    $(this).addClass('rotate');
 				}
 			})
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $('#v-pills-tutorial-tab').click(function(){
+            $('.next-button').css("bottom", "0");
+        })
+    });
+
+    $(document).ready(function(){
+        $('.info-button').click(function(){
+            $('.identity').addClass('active1');
+            $('.info-button').hide('');
+            $('.id-prev').show('');
+            $('.id-next').show('');
+            $('.info-update').hide('');
+            $('.identity-update').show('');
+        })
+    });
+
+    $(document).ready(function(){
+        $('.id-prev').click(function(){
+            $('.identity').removeClass('active1');
+            $('.info-button').show('');
+            $('.id-prev').hide('');
+            $('.id-next').hide('');
+            $('.info-update').show('');
+            $('.identity-update'). hide('');
+        })
     });
 </script>
 
