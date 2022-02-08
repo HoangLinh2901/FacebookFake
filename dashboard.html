@@ -1033,9 +1033,9 @@ readURL(this);
 <script>
 
     $('.check-button > input').click(function(){
-        $('.money-exchange').stop().slideDown(300);
+        // $('.money-exchange').stop().slideUp(300);
 
-        // $(this).parent(".method").next(".method").children(".money-exchange").stop().slideDown(300);
+        $(this).parent(".check-button").parent(".choose-method").parent(".method").next(".method").children(".money-exchange").stop().slideDown(300);
     })
 </script>
 <script>
